@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: "production", 
@@ -48,11 +49,10 @@ module.exports = {
             title: "Nesto",
             template: path.resolve(__dirname, "src/index.html")
         }),
-        new ImageminPlugin({
-            test: /\.(jpe?g|png|gif|svg)$/i,
-            pngquant: {
-                quality: '90'
-            }
-        })
+        new CopyWebpackPlugin([{
+            from: 'src/images',
+            to: 'images'
+        }]),
+        new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
     ]
 }
