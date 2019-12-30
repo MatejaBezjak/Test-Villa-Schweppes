@@ -9,24 +9,33 @@
 <body>
     <div class="main-wrapper">
         <div class="b-header wrapper">
-            <div class="b-header__components">
+            <div class="b-header__content">
                 <div class="b-header__logo">
                     <h1><img id="vLogo" src="./images/LOGO-VS.svg"/></h1>
                 </div>
                 <nav class="b-header__navigation">
                     <ul class="b-header__navigation-list">
-                        <li class="b-header__navigation-link">MIXOLOGIE</li>
-                        <li class="b-header__navigation-link">ÉVÉNEMENTS</li>
-                        <li class="b-header__navigation-link">LIEUX</li>
-                        <li class="b-header__navigation-link">LIFESTYLE</li>
-                        <li class="b-header__navigation-link">MUSIQUE</li>
+                        <li class="b-header__navigation-page">
+                            <a class="b-header__navigation-link" href="#"><span>MIXOLOGIE</span></a></li>
+                        <li class="b-header__navigation-page">
+                            <a class="b-header__navigation-link" href="#"><span>ÉVÉNEMENTS</span></a></li>
+                        <li class="b-header__navigation-page">
+                            <a class="b-header__navigation-link" href="#"><span>LIEUX</span></a></li>
+                        <li class="b-header__navigation-page">
+                            <a class="b-header__navigation-link" href="#"><span>LIFESTYLE</span></a></li>
+                        <li class="b-header__navigation-page">
+                            <a class="b-header__navigation-link b-header__navigation-link--last" href="#"><span>MUSIQUE</span></a></li>
+                        <!-- <li class="b-header__navigation-page">ÉVÉNEMENTS</li>
+                        <li class="b-header__navigation-page">LIEUX</li>
+                        <li class="b-header__navigation-page">LIFESTYLE</li>
+                        <li class="b-header__navigation-page">MUSIQUE</li> -->
 
                     </ul>
                 </nav>
                 <div class="b-header__search">
                     <div class="b-header__search-content">
-                        <div class="b-header__search-content-icon">
-                            <img src="./images/search-icone.svg"/>
+                        <div class="b-header__search-content-search">
+                            <img class="b-header__search-content-search-icon" src="./images/search-icone.svg"/>
                         </div>
                         <div class="b-header__search-content-location">
                             <div class="b-header__search-content-location-field">
@@ -40,6 +49,48 @@
                 </div>
             </div>
         </div>
+        <div class="b-footer">
+            <div class="b-footer__content">
+                <ul b-footer__list>
+                    <li class="b-footer__page">
+                        <a class="b-footer__link" href="#">Contact</a>
+                    </li>
+                    <li class="b-footer__page">
+                        <a class="b-footer__link" href="#">CGU</a>
+                    </li>
+                    <li class="b-footer__page">
+                        <a class="b-footer__link" href="#">Mentions legales</a>
+                    </li>
+                    <li class="b-footer__page">
+                        <a class="b-footer__link" href="#">Tous les tags</a>
+                    </li>
+                    <li class="b-footer__page">
+                        <a class="b-footer__link" href="#">Espace presse</a>
+                    </li>
+                    <li class="b-footer__page">
+                        <a class="b-footer__link" href="#">Tous les artistes</a>
+                    </li>
+                    <li class="b-footer__page">
+                        <a class="b-footer__link" href="#">Tous les lieux</a>
+                    </li>
+                </ul>
+                <div class="b-footer__social">
+                    <div class="b-footer__social-field">
+                        <img class="b-footer__social-field-icon" src="./images/facebook-logo.svg">
+                    </div>
+                    <div class="b-footer__social-field">
+                        <img class="b-footer__social-field-icon" src="./images/twitter-logo.svg">
+                    </div>
+                    <div class="b-footer__social-field">
+                        <img class="b-footer__social-field-icon" src="./images/youtube-logo.svg">
+                    </div>
+                </div>
+                <div class="b-footer__logo">
+                    <img class="b-footer__logo-img" src="./images/LOGO-VS.svg">
+                </div>
+            </div>
+        </div>
+
     </div>
 <script type="text/javascript" src="js/bundle.js"></script></body>
 </html>

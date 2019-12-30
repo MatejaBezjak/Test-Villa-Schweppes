@@ -2,7 +2,7 @@
     background-color: red;
     position: sticky;
     padding: 2.3rem 1.9rem 1rem 2.3rem;
-    &__components{
+    &__content{
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -20,23 +20,58 @@
     &__navigation{
         display: none;
         @include breakpoint(desktop){
-            display: block;
-            &-list{
-
+            display: flex;
+        }
+        &-list{
+            @include breakpoint(desktop){
+                display: flex;
             }
-            &-link{
 
+        }
+        &-page{
+            @include breakpoint(desktop){
+                display: flex;
             }
+
+        }
+        &-link{
+            @include breakpoint(desktop){
+                display: flex;
+                padding: 0 2.7rem;
+                font-size: 1.56rem;
+                line-height: 2rem;
+                letter-spacing: .25rem;
+                text-transform: uppercase;
+                display: flex;
+                transition: all .3s linear;
+                padding: 0 2.7rem;
+                &::after{
+                    position: relative;
+                    content: '/';
+                    color: #c0b500;
+                    font-size: 2rem;
+                    transform: rotate(12deg);
+                }
+                &--last{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+
         }
     }
+    
     &__search{
+        @include breakpoint(desktop){
+            display: flex;
+        }
         &-content{
             display: flex;
             &-search{
                 background-color: white;
                 padding: 1.4rem 1.2rem;
                 border-radius: .2rem;
-                //margin-top: -0.3rem;
                 &-icon{
                     width: 1.2rem;
 
@@ -46,16 +81,26 @@
             &-location{
                 display: none;
                 @include breakpoint(desktop){
-                    display: block;
+                    display: flex;
+                    align-items: center;
+
                 }
                 &-field{
-
+                    @include breakpoint(desktop){
+                        display: flex;
+                        align-items: center;
+                        background-color: grey;
+                        height: 95%;
+                        padding: 0.2rem 1rem;
+                    } 
                 }
                 &-icon{
-
+                    @include breakpoint(desktop){
+                        padding-right: 1rem;
+                    }
                 }
                 &-text{
-
+                    display: block;
                 }
             }
         }
