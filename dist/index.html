@@ -5,53 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- Slick Slider CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" /> -->
+
 <link href="css/style.css" rel="stylesheet"></head>
 <body>
-    <div class="main-wrapper">
-        <div class="b-header wrapper">
-            <div class="b-header__content">
-                <div class="b-header__logo">
-                    <h1><img id="vLogo" src="./images/LOGO-VS.svg"/></h1>
-                </div>
-                <nav class="b-header__navigation">
-                    <ul class="b-header__navigation-list">
-                        <li class="b-header__navigation-page">
-                            <a class="b-header__navigation-link" href="#"><span>MIXOLOGIE</span></a></li>
-                        <li class="b-header__navigation-page">
-                            <a class="b-header__navigation-link" href="#"><span>ÉVÉNEMENTS</span></a></li>
-                        <li class="b-header__navigation-page">
-                            <a class="b-header__navigation-link" href="#"><span>LIEUX</span></a></li>
-                        <li class="b-header__navigation-page">
-                            <a class="b-header__navigation-link" href="#"><span>LIFESTYLE</span></a></li>
-                        <li class="b-header__navigation-page">
-                            <a class="b-header__navigation-link b-header__navigation-link--last" href="#"><span>MUSIQUE</span></a></li>
-                        <!-- <li class="b-header__navigation-page">ÉVÉNEMENTS</li>
-                        <li class="b-header__navigation-page">LIEUX</li>
-                        <li class="b-header__navigation-page">LIFESTYLE</li>
-                        <li class="b-header__navigation-page">MUSIQUE</li> -->
-
-                    </ul>
-                </nav>
-                <div class="b-header__search">
-                    <div class="b-header__search-content">
-                        <div class="b-header__search-content-search">
-                            <img class="b-header__search-content-search-icon" src="./images/search-icone.svg"/>
-                        </div>
-                        <div class="b-header__search-content-location">
-                            <div class="b-header__search-content-location-field">
-                                <div class="b-header__search-content-location-icon">
-                                    <img src="./images/geoloc-nav.png"/>
+    <!-- <div class="main-wrapper clearfix"> -->
+        <div class="b-header">
+            <div class="wrapper">
+                <div class="b-header__content">
+                    <div class="b-header__logo">
+                        <h1 class="b-header__logo-wrapper"><img class="b-header__logo-img" src="./images/LOGO-VS.svg"/></h1>
+                    </div>
+                    <nav class="b-header__navigation">
+                        <ul class="b-header__navigation-list">
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span>MIXOLOGIE</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span>ÉVÉNEMENTS</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span>LIEUX</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span>LIFESTYLE</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link b-header__navigation-link--last" href="#"><span class="b-header__navigation-title">MUSIQUE</span></a></li>
+                            <!-- <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span class="b-header__navigation-title">MIXOLOGIE</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span class="b-header__navigation-title">ÉVÉNEMENTS</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span class="b-header__navigation-title">LIEUX</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span class="b-header__navigation-title">LIFESTYLE</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link b-header__navigation-link--last" href="#"><span class="b-header__navigation-title">MUSIQUE</span></a></li> -->
+                        </ul>
+                    </nav>
+                    <div class="b-header__search">
+                        <div class="b-header__search-content">
+                            <div class="b-header__search-content-search">
+                                <img class="b-header__search-content-search-icon" src="./images/search-icone.svg"/>
+                            </div>
+                            <div class="b-header__search-content-location">
+                                <div class="b-header__search-content-location-field">
+                                    <div class="b-header__search-content-location-icon">
+                                        <img src="./images/geoloc-nav.png"/>
+                                    </div>
+                                    <span class="b-header__search-content-location-text">TROUVER UN LIEU</span>
                                 </div>
-                                <span class="b-header__search-content-location-text">TROUVER UN LIEU</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-header__mobile">
+                    <div class="b-header__mobile__content">
+                        <div class="b-header__mobile__links">
+                            <div class="b-header__mobile__burger">
+                                <div class="b-header__mobile__burger-line"></div>
+                                <div class="b-header__mobile__burger-line"></div>
+                                <div class="b-header__mobile__burger-line"></div>
+                            </div>
+                            <div class="b-header__mobile__target">
+                                <a class="b-header__mobile__target-link" href="#">
+                                    <img class="b-header__mobile__target-pageicon" src="./images/Glass-icone-01.svg"/>
+                                    <span class="b-header__mobile__target-pagetext">MIXOLOGIE</span>
+                                </a> 
+                            </div>
+                            <div class="b-header__mobile__target b-header__mobile__target--last">
+                                <a class="b-header__mobile__target-link" href="#">
+                                    <img class="b-header__mobile__target-locationicon" src="./images/map-icone.svg"/>
+                                    <span class="b-header__mobile__target-locationtext">TROUVER UN LIEU</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="b-banner wrapper">
+                <div class="b-banner__content">
+                    <img class="b-banner__imgmobile" src="./images/bannermobile.png"/>
+                    <img class="b-banner__imgdesk" src="./images/bannerdesk.png"/>
+
+                </div>
+        </div>
+        <div class="b-mixologie wrapper">
+            <h2 class="b-mixologie__title">
+                Mixo
+                <span>logie</span>
+            </h2>
+            <div class="b-mixologie__articles">
+                <div class="b-mixologie__articles--left">
+                    <div class="b-mixologie__articles--left__img">
+                        <img class="b-mixologie__articles--left__img-mobile" src="./images/Article_mobile1.png"/>
+                        <img class="b-mixologie__articles--left__img-desk" src="./images/Article_desk1.png"/>
+                    </div>
+                    <p class="b-mixologie__articles--left__text">Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                </div>
+                <div class="b-mixologie__articles--right">
+                    <div class="b-mixologie__articles--right__article">
+                        <img class="b-mixologie__articles--right__article__imgmobile" src="./images/Article_mobile2.png"/>
+                        <img class="b-mixologie__articles--right__article__imgdesk" src="./images/Article_desk2.png"/>
+                    <p class="b-mixologie__articles--right__article__text">Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    </div>
+                    <div class="b-mixologie__articles--right__article b-mixologie__articles--right__article--last">
+                        <img class="b-mixologie__articles--right__article__imgdesk" src="./images/Article_desk3.png"/>
+                    <p class="b-mixologie__articles--right__article__text">Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-btn">
+                <a class="c-btn__link" href="#">
+                    <span class="c-btn__text">VOIR TOUS LES COCKTAILS</span>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="b-slider">
+            <img class="b-slider__arrows-left" src="./images/Fleche_Gauche.svg"/>
+            <img class="b-slider__arrows-right"src="./images/Fleche_Droite.svg"/>  
+            <div class="b-slider__content">
+                <div class="b-slider__img">1</div>
+                <div class="b-slider__img">2</div>
+                <div class="b-slider__img">3</div>
+                <div class="b-slider__arrows"></div>
+                
+            </div>
+            
+        </div> -->
+
+        <!-- <div class="b-slider">
+            <div class="b-slider__imgwrapper">
+                <h1>Slide 1</h1> -->
+                <!-- <img class="b-slider__img" src="./images/map-icone.svg"/> -->
+            <!-- </div>
+            <div class="b-slider__imgwrapper">
+                <h1>Slide 2</h1> -->
+                <!-- <img class="b-slider__img" src="./images/map-icone.svg"/> -->
+            <!-- </div>
+            <div class="b-slider__imgwrapper">
+                <h1>Slide 3</h1> -->
+                <!-- <img class="b-slider__img" src="./images/map-icone.svg"/> -->
+            <!-- </div>
+            <div class="b-slider__imgwrapper"> -->
+                <!-- <h1>Slide mobile 1</h1> -->
+                <!-- <img class="b-slider__img" src="./images/slider_mobile1.png"/>
+            </div>
+            <div class="b-slider__imgwrapper"> -->
+                <!-- <h1>Slide mobile 2</h1> -->
+                <!-- <img class="b-slider__img" src="./images/slider_mobile2.png"/>
+            </div>
+            <div class="b-slider__imgwrapper"> -->
+                <!-- <h1>Slide mobile 3</h1> -->
+                <!-- <img class="b-slider__img" src="./images/slider_mobile3.png"/>
+            </div>
+        </div> -->
+        <!-- <div class="b-slider">
+            <div class="b-slider__imgwrapper">
+                <img class="b-slider__mobileimg" src="./images/slider_mobile11.png"/>
+                <img class="b-slider__deskimg" src="./images/slider_desk1.png">
+                <img class="b-slider__mobileimg" src="./images/slider_mobile22.png"/>
+                <img class="b-slider__deskimg" src="./images/slider_desk2.png">
+                <img class="b-slider__mobileimg" src="./images/slider_mobile33.png"/>
+                <img class="b-slider__deskimg" src="./images/slider_desk3.png">
+            </div> -->
+            <!-- <div class="b-slider__imgwrapper">
+                <img class="b-slider__mobileimg" src="./images/slider_mobile1.png"/>
+                <img class="b-slider__deskimg" src="./images/slider-desk1.png"/>
+                
+            </div>
+            <div class="b-slider__imgwrapper">
+                <img class="b-slider__mobileimg" src="./images/slider_mobile1.png"/>
+                <img class="b-slider__deskimg" src="./images/slider-desk1.png"/>
+            </div>
+            <div class="b-slider__imgwrapper"> -->
+                <!-- <img class="b-slider__mobileimg" src="./images/slider_mobile1.png"/>
+                <img class="b-slider__deskimg" src="./images/slider-desk1.png"/>
+            </div> -->
+        <!-- </div> -->
+
+        
         <div class="b-footer">
+            <!-- <div class="b-footer--triangle"></div> -->
             <div class="b-footer__content">
-                <ul b-footer__list>
+                <ul class="b-footer__list">
                     <li class="b-footer__page">
                         <a class="b-footer__link" href="#">Contact</a>
                     </li>
@@ -60,6 +197,9 @@
                     </li>
                     <li class="b-footer__page">
                         <a class="b-footer__link" href="#">Mentions legales</a>
+                    </li>
+                    <li class="b-footer__page">
+                        <a class="b-footer__link" href="#">Politique de confidentialite</a>
                     </li>
                     <li class="b-footer__page">
                         <a class="b-footer__link" href="#">Tous les tags</a>
@@ -91,6 +231,13 @@
             </div>
         </div>
 
-    </div>
+    </h2>
+
+    <!-- Jquery CDN Link -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+
+    <!-- Slick Slider JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script> -->
+    <!--  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 <script type="text/javascript" src="js/bundle.js"></script></body>
 </html>

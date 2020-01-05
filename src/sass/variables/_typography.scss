@@ -3,3 +3,7 @@ $base-font-size: 10;
 html {
   @include fontSizeVw($base-font-size, $base-font-size, $base-font-size);
 }
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap');
+
+$raleway: 'Raleway', sans-serif;

@@ -1,31 +1,105 @@
 .b-footer{
-    background-color: cornflowerblue;
+    position: relative;
+    top: 100%;
+    background-color: $black;
+    margin-top: 40rem;
+    &::before{
+        content:"";
+        // border-style: solid;
+        // border-width: 10px 15px 10px 0;
+        // border-color: transparent #dd4397 transparent transparent;
+        // position: absolute;
+        // left: -15px;
+        position: absolute;
+        top:-4.6rem;
+        height:4.6rem;
+        left:0;
+        right:0;
+        background:linear-gradient(to bottom right, transparent 49%, $black 50%);
+        @include breakpoint(desktop){
+            top: -16.8rem;
+            height: 16.9rem;
+        }
+    }
+    // &--triangle{
+    //     border-style: solid;
+    //     border-width: 10px 15px 10px 10px;
+    //     border-color: transparent #dd4397 transparent transparent;
+    // }
     &__content{
         position: relative;
         text-align: center;
-        padding-top: 15rem;
+        background-color: black;
+        padding: 0.2rem 0 8rem 0;
+        //padding-top: 15rem;
+        @include breakpoint(desktop){
+            display: flex;
+            justify-content: space-between;
+            padding: 3.4rem 14.7rem 9rem 13.6rem;
+        }
     }
     &__list{
-
+        padding-bottom: 1.2rem;
+        padding-top: 3.1rem;
+        @include breakpoint(desktop){
+            display: flex;
+            padding-top: 3.4rem;
+            padding-bottom: 0;
+        }
     }
     &__page{
-
+        padding-bottom: 1.5rem;
+        @include breakpoint(desktop){
+            padding-bottom: 0;
+        }
     }
     &__link{
+        display: block;
+        color: $white;
+        font-family: $raleway;
+        font-size: 1.1rem;
+        font-weight: 500;
+        //padding-bottom: 0.7rem;
+        @include breakpoint(desktop){
+            font-size: 1.5rem;
+            padding-right: 6rem;
+        }
 
     }
     &__social{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        max-width: 47%;
+        margin: auto;
+        padding-bottom: 5rem;
+        @include breakpoint(desktop){
+            position: absolute;
+            justify-content: center;
+            padding-bottom: 0;
+            right: 12.1rem;
+            top: -5.3rem;
+
+        }
         &-field{
+            @include breakpoint(desktop){
+                padding-right: 1rem;
+            }
             &-icon{
-                width: 4rem;
+                filter: invert(100%);
+                width: 2.9rem;
+                @include breakpoint(desktop){
+                    width: 2.6rem;
+                }
             }
         }
     }
     &__logo{
         &-img{
             margin: auto;
+            width: 7.2rem;
+            @include breakpoint(desktop){
+                width: 7.6rem;
+            }
         }
     }
 }

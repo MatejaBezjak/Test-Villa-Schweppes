@@ -1,0 +1,112 @@
+.b-mixologie{
+    &__title{
+        position: relative;
+        font-family: $raleway;
+        font-size: 5.8rem;
+        font-weight: 500;
+        color: $black;
+        padding: 4.3rem 2.3rem 5rem 2rem;
+        @include breakpoint(desktop){
+            font-size: 9.8rem;
+            padding: 6.1rem 2.3rem 3rem 19.4rem;
+        }
+        span{
+            display: inline-block;
+            position: relative;
+            font-family: $raleway;
+            font-size: 5.8rem;
+            font-weight: 500;
+            color: $black;
+            left: -1.3rem;
+            top: 0.9rem;
+            @include breakpoint(desktop){
+                font-size: 9.8rem;
+                left: -2.3rem;
+                top: 1.9rem;
+            }
+        }
+    }
+    &__articles{
+        width: 100%;
+        @include breakpoint(desktop){
+            display: flex;
+        }
+        &--left{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            @include breakpoint(desktop){
+                width: 50%;
+            }
+            &__img{
+                width: 50%;
+                position: relative;
+                &::after{
+                    content:"";
+                    position: absolute;
+                    background-color: $yellow;
+                    width: 3.5rem;
+                    top: 0;
+                    left: 16rem;
+                    height: 23.1rem;
+                }
+                &-mobile{
+                    position: relative;
+                    width: 100%;
+                    height: 23.1rem;
+                    
+                    @include breakpoint(desktop){
+                        display: none;
+                    }
+                }
+                &-desk{
+                    display: none;
+                    @include breakpoint(desktop){
+                        display: block;
+                    }
+                }
+            
+
+            }
+            
+            &__text{
+                font-family: $raleway;
+                font-weight: 500;
+                font-size: 1.4rem;
+                color: $black;
+                display: block;
+                width: 35%;
+                position: relative;
+                top: -1.7rem;
+                left: 2rem;
+                letter-spacing: 0.064em;
+                line-height: 1.38em;
+            }
+        }
+        &--right{
+            &__article{
+                &__imgmobile{
+                    @include breakpoint(desktop){
+                        display: none;
+                    }
+                }
+                &__imgdesk{
+                    display: none;
+                    @include breakpoint(desktop){
+                        display: block;
+                    }
+                }
+                &__text{
+
+                }
+                &--last{
+                    display: none;
+                    @include breakpoint(desktop){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+}

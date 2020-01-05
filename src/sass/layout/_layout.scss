@@ -12,3 +12,9 @@
 	margin: 0 auto;
 	max-width: 144rem;
 }
+
+.clearfix::before {
+    content: "";
+    clear: both;
+    display: table;
+  }

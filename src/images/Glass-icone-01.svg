@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="34" viewBox="0 0 30 34">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>Glass-icone</title>
+  <g id="Rectangle_arrondi_771" data-name="Rectangle arrondi 771" class="cls-1">
+    <g id="Rectangle_arrondi_771-2" data-name="Rectangle arrondi 771">
+      <rect x="7" y="32.09" width="15.97" height="1.91" rx="0.77" ry="0.77"/>
+    </g>
+  </g>
+  <g id="Rectangle_arrondi_773" data-name="Rectangle arrondi 773" class="cls-1">
+    <g id="Rectangle_arrondi_773-2" data-name="Rectangle arrondi 773">
+      <rect x="13.97" y="18.72" width="2" height="14.31" rx="0.8" ry="0.8"/>
+    </g>
+  </g>
+  <g id="Polygone_773" data-name="Polygone 773" class="cls-1">
+    <g id="Polygone_773-2" data-name="Polygone 773">
+      <path d="M25.22,8.32,15,18.74,4.77,8.32H25.22m4.76-2H0L15,21.59,30,6.32Z"/>
+    </g>
+  </g>
+  <g id="Forme_775" data-name="Forme 775" class="cls-1">
+    <polyline class="cls-2" points="0.59 2.81 4.46 2.81 8.71 7.41"/>
+  </g>
+</svg>

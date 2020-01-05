@@ -1,19 +1,34 @@
 .b-header{
-    background-color: red;
-    position: sticky;
+    //background-color: red;
+    position: relative;
+    top: 0;
+    width: 100%;
     padding: 2.3rem 1.9rem 1rem 2.3rem;
+    //margin-bottom: 40rem;
+    @include breakpoint(desktop){
+        position: fixed;
+        background-color: $black;
+        padding: 3.7rem 6.1rem 1rem 9.2rem;
+        //margin-bottom: 100rem;
+    }
     &__content{
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        @include breakpoint(desktop){
+            align-items: flex-start;
+        }
     }
     &__logo{
         position: relative;
         max-width: 100%;
         &-img{
             width: 6.4rem;
+            @include breakpoint(desktop){
+                width: 10.4rem;
+            }
         }
 
     }
@@ -21,10 +36,14 @@
         display: none;
         @include breakpoint(desktop){
             display: flex;
+            padding-top: 1.9rem;
+            padding-left: 2rem;
+            //max-width: 57%;
         }
         &-list{
             @include breakpoint(desktop){
                 display: flex;
+                max-width: 100%;
             }
 
         }
@@ -37,20 +56,23 @@
         &-link{
             @include breakpoint(desktop){
                 display: flex;
-                padding: 0 2.7rem;
-                font-size: 1.56rem;
+                //padding: 0 2.7rem;
+                font-family: $raleway;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: $white;
                 line-height: 2rem;
                 letter-spacing: .25rem;
                 text-transform: uppercase;
-                display: flex;
                 transition: all .3s linear;
-                padding: 0 2.7rem;
+                padding-right: 4.3rem;
                 &::after{
                     position: relative;
                     content: '/';
                     color: #c0b500;
                     font-size: 2rem;
                     transform: rotate(12deg);
+                    left: 2.2rem;
                 }
                 &--last{
                     &::after{
@@ -60,6 +82,9 @@
             }
 
         }
+        // &-title{
+
+        // }
     }
     
     &__search{
@@ -70,10 +95,18 @@
             display: flex;
             &-search{
                 background-color: white;
-                padding: 1.4rem 1.2rem;
-                border-radius: .2rem;
+                padding: 1.3rem 1.2rem;
+                border-radius: 0.2em;
+                margin-top: -0.2rem;
+                @include breakpoint(desktop){
+                    padding: 1.93rem 1rem;
+                    margin-top: 0;
+                }
                 &-icon{
                     width: 1.2rem;
+                    @include breakpoint(desktop){
+                        width: 1.4rem;
+                    }
 
                 }
 
@@ -83,15 +116,16 @@
                 @include breakpoint(desktop){
                     display: flex;
                     align-items: center;
+                    margin-left: 1.25rem;
 
                 }
                 &-field{
                     @include breakpoint(desktop){
                         display: flex;
                         align-items: center;
-                        background-color: grey;
-                        height: 95%;
-                        padding: 0.2rem 1rem;
+                        background-color: $dark-grey;
+                        height: 97%;
+                        padding: 0.1rem 4.7rem 0.2rem 3.5rem;
                     } 
                 }
                 &-icon{
@@ -100,7 +134,13 @@
                     }
                 }
                 &-text{
-                    display: block;
+                    @include breakpoint(desktop){
+                        display: block;
+                        font-family: $raleway;
+                        font-size: 1.2rem;
+                        color: $white;
+                    }
+
                 }
             }
         }
