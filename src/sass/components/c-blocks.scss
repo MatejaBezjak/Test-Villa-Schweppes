@@ -1,0 +1,22 @@
+.c-block--last{
+    display: none;
+    @include breakpoint(desktop){
+        display: block;
+    }
+}
+
+.c-block--three{
+    width: 100%;
+        @include breakpoint(desktop){
+            display: flex;
+            justify-content: flex-start;
+        }
+}
+
+// .c-block--left{
+//     width: 100%;
+//     display: flex;
+//     @include breakpoint(desktop){
+//         width: 50%;
+//     }
+// }

@@ -1,26 +1,17 @@
-.b-mixologie{
-    padding-bottom: 8.5rem;
+.b-lieux{
     &__title{
-        //position: relative;
-        //font-family: $macondo;
-        font-size: 12.8rem;
-        //padding-left: 4rem;
-        //font-weight: 500;
-        color: $black;
-        padding: 4.3rem 2rem 4.3rem 4rem;
+        font-size: 14.3rem;
+        color: $yellow;
+        padding: 4.3rem 2rem 4.3rem 6rem;
         @include breakpoint(desktop){
             font-size: 9.9rem;
-            padding: 2.1rem 2.3rem 3rem 19.4rem;
+            padding: 6.1rem 2.3rem 3rem 19.4rem;
         }
         span{
-            //display: inline-block;
-            //position: relative;
-            //font-family: $macondo;
-            font-size: 12.8rem;
-            //font-weight: 500;
-            color: $black;
+            font-size: 14.3rem;
+            color: $yellow;
             left: -4.3rem;
-            top: 2rem;
+            top: -1.9rem;
             @include breakpoint(desktop){
                 font-size: 9.8rem;
                 left: -2.3rem;
@@ -29,9 +20,8 @@
         }
     }
     &__articles{
-        // width: 100%;
         margin-bottom: 9.9rem;
-        margin-top: 4.8rem;
+        margin-top: 1.1rem;
         @include breakpoint(desktop){
             display: flex;
             justify-content: flex-start;
@@ -41,37 +31,23 @@
         &--left{
             width: 100%;
             display: flex;
-            //align-items: center;
-            margin-bottom: 4.4rem;
+            padding: 0 4rem 4.4rem 4rem;
+            margin-bottom: 2.6rem;
             @include breakpoint(desktop){
                 width: 50%;
                 margin-top: 4.2rem;
-                //margin-bottom: 0;
             }
             &__img{
-                width: 50%;
+                width: 100%;
                 position: relative;
                 @include breakpoint(desktop){
                     width: 66.5%;
                 }
-                &::after{
-                    content:"";
-                    position: absolute;
-                    background-color: $yellow;
-                    width: 7rem;
-                    top: 0;
-                    left: 32rem;
-                    height: 46.1rem;
-                    @include breakpoint(desktop){
-                        width: 6.5rem;
-                        left: 47.9rem;
-                        height: 53.5rem;
-                    }
-                }
+                
                 &-mobile{
                     position: relative;
                     width: 100%;
-                    height: 46.1rem;
+                    height: 55.6rem;
                     
                     @include breakpoint(desktop){
                         display: none;
@@ -82,7 +58,7 @@
                     @include breakpoint(desktop){
                         display: block;
                         margin-left: 14.4rem;
-                        height: 53.5rem;
+                        height: 60.5rem;
 
                     }
                 }
@@ -92,24 +68,19 @@
             
             &__text{
                 font-family: $raleway;
-                font-weight: 500;
-                @include fontSizeRem (31, 18);
-                //font-size: 3.1rem;
-                color: $black;
+                color: $white;
+                @include fontSizeRem (32, 18);
                 display: block;
-                width: 64%;
-                position: absolute;
-                top: 10rem;
-                left: 36rem;
-                letter-spacing: 0.02em;
-                line-height: 1.23em;
-                z-index: 1;
+                width: 100%;
+                position: relative;
+                line-height: 1.18em;
+                padding-top: 2.6rem;
                 @include breakpoint(desktop){
                     width: 27%;
-                    top: 17.6rem;
+                    //top: 17.6rem;
                     letter-spacing: 0;
                     line-height: 2.61rem;
-                    left: 50.9rem;
+                    //left: 50.9rem;
                 }
                 p{
                     font-weight: 500;
@@ -117,43 +88,41 @@
             }
         }
         &--right{
-            margin: 0 4rem 9.9rem;
+            margin: 0 4rem 10.2rem;
+            display: flex;
             @include breakpoint(desktop){
                 padding-left: 1rem;
                 margin: 0;
             }
             &__article{
                 position: relative;
-                //margin-left: 4rem;
+                widows: 54.6%;
                 @include breakpoint(desktop){
                     margin-left: 0;
                     margin-bottom: 6.8rem;
                 }
                 &__imgmobile{
-                    width: 100%;
                     @include breakpoint(desktop){
                         display: none;
-                        height: 41.5rem;
+                        height: 37.9rem;
                     }
                 }
                 &__imgdesk{
                     display: none;
                     @include breakpoint(desktop){
                         display: block;
-                        height: 30.9rem;
+                        height: 28rem;
                     }
                 }
                 &__text{
                     position: absolute;
                     font-family: $raleway;
                     font-size: 3.21rem;
-                    font-weight: 500;
                     color: $white;
-                    top: 59.5%;
-                    left: 6.7rem;
-                    width: 68%;
-                    line-height: 1.16em;
-                    letter-spacing: 0.007em;
+                    top: 18.9%;
+                    left: 37.4rem;
+                    width: 46%;
+                    line-height: 1.19em;
                     @include breakpoint(desktop){
                         font-size: 1.8rem;
                         top: 70.5%;
@@ -166,12 +135,6 @@
                         font-weight: 500;
                     }
                 }
-                // &--last{
-                //     display: none;
-                //     @include breakpoint(desktop){
-                //         display: block;
-                //     }
-                // }
             }
         }
     }
@@ -190,4 +153,3 @@
     }
 
 }
-

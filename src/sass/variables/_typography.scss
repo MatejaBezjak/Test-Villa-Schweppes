@@ -6,4 +6,19 @@ html {
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap');
 
-$raleway: 'Raleway', sans-serif;
+$raleway: 'Raleway', 'sans-serif';
+
+@import url('https://fonts.googleapis.com/css?family=Macondo&display=swap');
+
+$macondo: 'Macondo', cursive;
+
+// @font-face {
+//   font-family: 'quaintonregular';
+//   src: url('quainton-webfont.woff2') format('woff2'),
+//        url('quainton-webfont.woff') format('woff');
+//   // font-weight: normal;
+//   // font-style: normal;
+
+// }
+
+// $quainton: 'quaintonregular', 'Arial', 'sans-serif';

@@ -1,4 +1,4 @@
-$site-mobile: 320;
+$site-mobile: 640;
 //$site-tablet: 1023;
 $site-desktop: 1440;
 
@@ -58,7 +58,7 @@ $site-desktop: 1440;
 }
 
 //Font size rem 
-@mixin fontSizeRem($mobile-font-size, $tablet-font-size, $desktop-font-size) {
+@mixin fontSizeRem($mobile-font-size, $desktop-font-size) {
 	@include breakpoint(mobile) {
 		font-size: calculateRem($mobile-font-size);
 	}
@@ -71,7 +71,7 @@ $site-desktop: 1440;
 }
 
 //Line height rem
-@mixin lineHeightRem($mobile-line-height, $tablet-line-height, $desktop-line-height) {
+@mixin lineHeightRem($mobile-line-height, $desktop-line-height) {
 	@include breakpoint(mobile) {
 		line-height: calculateRem($mobile-line-height);
 	}
