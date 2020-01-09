@@ -1,12 +1,11 @@
 console.log('Yeeeeesh!');
-// $(document).ready(function(){
-//     $('.b-slider .b-slider__imgwrapper').slick({
-//         autoplay: false,
-//         centerMode: true,
-//         slidesToShow: 1,
-//         dots: true
-//     });
-// });
+$(document).ready(function(){
+    $('.b-slider').slick({
+        autoplay: false,
+        slidesToShow: 1,
+        dots: true
+    });
+});
 // $('.b-slider .b-slider__content').slick({
 //     // infinite: true,
 //     centerMode: true,

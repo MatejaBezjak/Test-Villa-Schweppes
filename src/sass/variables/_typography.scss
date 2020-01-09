@@ -12,13 +12,13 @@ $raleway: 'Raleway', 'sans-serif';
 
 $macondo: 'Macondo', cursive;
 
-// @font-face {
-//   font-family: 'quaintonregular';
-//   src: url('quainton-webfont.woff2') format('woff2'),
-//        url('quainton-webfont.woff') format('woff');
-//   // font-weight: normal;
-//   // font-style: normal;
+@font-face {
+  font-family: 'quaintonregular';
+  src: url('../fonts/quainton-webfont.woff2') format('woff2'),
+       url('../fonts/quainton-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
-// }
+}
 
 // $quainton: 'quaintonregular', 'Arial', 'sans-serif';

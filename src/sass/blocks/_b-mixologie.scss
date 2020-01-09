@@ -1,37 +1,30 @@
 .b-mixologie{
-    padding-bottom: 8.5rem;
+    padding-bottom: 13.7rem;
     &__title{
-        //position: relative;
-        //font-family: $macondo;
-        font-size: 12.8rem;
-        //padding-left: 4rem;
-        //font-weight: 500;
+        font-size: 11.9rem;
         color: $black;
-        padding: 4.3rem 2rem 4.3rem 4rem;
+        padding: 4.3rem 2rem 0 4.8rem;
         @include breakpoint(desktop){
-            font-size: 9.9rem;
-            padding: 2.1rem 2.3rem 3rem 19.4rem;
+            font-size: 10rem;
+            padding-left: 20rem;
+            margin-bottom: 2.9rem;
         }
         span{
-            //display: inline-block;
-            //position: relative;
-            //font-family: $macondo;
-            font-size: 12.8rem;
-            //font-weight: 500;
+            font-size: 11.9rem;
             color: $black;
-            left: -4.3rem;
-            top: 2rem;
+            left: -3.3rem;
+            top: 1.9rem;
             @include breakpoint(desktop){
-                font-size: 9.8rem;
-                left: -2.3rem;
-                top: 1.9rem;
+                font-size: 10rem;
+                left: -2.9rem;
+                top: 1.5rem;
             }
         }
     }
     &__articles{
         // width: 100%;
         margin-bottom: 9.9rem;
-        margin-top: 4.8rem;
+        margin-top: 9.8rem;
         @include breakpoint(desktop){
             display: flex;
             justify-content: flex-start;
@@ -41,7 +34,6 @@
         &--left{
             width: 100%;
             display: flex;
-            //align-items: center;
             margin-bottom: 4.4rem;
             @include breakpoint(desktop){
                 width: 50%;
@@ -63,7 +55,7 @@
                     left: 32rem;
                     height: 46.1rem;
                     @include breakpoint(desktop){
-                        width: 6.5rem;
+                        width: 6.8rem;
                         left: 47.9rem;
                         height: 53.5rem;
                     }
@@ -101,15 +93,15 @@
                 position: absolute;
                 top: 10rem;
                 left: 36rem;
-                letter-spacing: 0.02em;
+                letter-spacing: 0.01em;
                 line-height: 1.23em;
                 z-index: 1;
                 @include breakpoint(desktop){
-                    width: 27%;
-                    top: 17.6rem;
+                    width: 28%;
+                    top: 17.7rem;
                     letter-spacing: 0;
                     line-height: 2.61rem;
-                    left: 50.9rem;
+                    left: 50.8rem;
                 }
                 p{
                     font-weight: 500;

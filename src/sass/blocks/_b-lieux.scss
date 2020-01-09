@@ -1,21 +1,21 @@
 .b-lieux{
     &__title{
-        font-size: 14.3rem;
+        font-size: 13rem;
         color: $yellow;
-        padding: 4.3rem 2rem 4.3rem 6rem;
+        padding: 0 2rem 4.8rem 6rem;
         @include breakpoint(desktop){
-            font-size: 9.9rem;
-            padding: 6.1rem 2.3rem 3rem 19.4rem;
+            font-size: 13rem;
+            padding-left: 29.9rem;
         }
         span{
-            font-size: 14.3rem;
+            font-size: 13rem;
             color: $yellow;
-            left: -4.3rem;
-            top: -1.9rem;
+            left: -3.5rem;
+            top: -2rem;
             @include breakpoint(desktop){
-                font-size: 9.8rem;
-                left: -2.3rem;
-                top: 1.9rem;
+                font-size: 13rem;
+                left: -4.3rem;
+                top: -2rem;
             }
         }
     }
@@ -26,7 +26,7 @@
             display: flex;
             justify-content: flex-start;
             margin-bottom: 2.7rem;
-            margin-top: 0;
+            margin-top: -5.8rem;
         }
         &--left{
             width: 100%;
@@ -35,13 +35,14 @@
             margin-bottom: 2.6rem;
             @include breakpoint(desktop){
                 width: 50%;
-                margin-top: 4.2rem;
+                margin-top: 5.6rem;
+                padding: 0;
             }
             &__img{
                 width: 100%;
                 position: relative;
                 @include breakpoint(desktop){
-                    width: 66.5%;
+                    width: 86.8%;
                 }
                 
                 &-mobile{
@@ -57,7 +58,7 @@
                     display: none;
                     @include breakpoint(desktop){
                         display: block;
-                        margin-left: 14.4rem;
+                        margin-left: 22.6rem;
                         height: 60.5rem;
 
                     }
@@ -76,7 +77,7 @@
                 line-height: 1.18em;
                 padding-top: 2.6rem;
                 @include breakpoint(desktop){
-                    width: 27%;
+                    width: 46%;
                     //top: 17.6rem;
                     letter-spacing: 0;
                     line-height: 2.61rem;
@@ -88,20 +89,24 @@
             }
         }
         &--right{
-            margin: 0 4rem 10.2rem;
-            display: flex;
+            //margin: 0 4rem 10.2rem;
+            //display: flex;
             @include breakpoint(desktop){
                 padding-left: 1rem;
                 margin: 0;
             }
             &__article{
                 position: relative;
-                widows: 54.6%;
+                width: 63.6%;
+                padding-left: 4rem;
+                padding-bottom: 0.2rem;
                 @include breakpoint(desktop){
+                    width: 100%;
                     margin-left: 0;
-                    margin-bottom: 6.8rem;
+                    margin-bottom: 15.8rem;
                 }
                 &__imgmobile{
+                    height: 37.9rem;
                     @include breakpoint(desktop){
                         display: none;
                         height: 37.9rem;
@@ -119,20 +124,21 @@
                     font-family: $raleway;
                     font-size: 3.21rem;
                     color: $white;
-                    top: 18.9%;
-                    left: 37.4rem;
+                    top: 11.5%;
+                    left: 41.4rem;
                     width: 46%;
                     line-height: 1.19em;
                     @include breakpoint(desktop){
                         font-size: 1.8rem;
-                        top: 70.5%;
-                        left: 4.24rem;
+                        top: 100%;
+                        left: 2.34rem;
                         width: 69%;
                         line-height: 2.51rem;
-                        letter-spacing: 0.009em;
+                        letter-spacing: 0.003em;
                     }
                     p{
                         font-weight: 500;
+                        padding-top: 2.7rem;
                     }
                 }
             }
@@ -152,4 +158,7 @@
         }
     }
 
+}
+.main-wrapper{
+    background-color: $black;
 }
