@@ -1,7 +1,8 @@
 .b-banner{
+    position: relative;
     padding-bottom: 4.1rem;
     @include breakpoint(desktop){
-        padding-bottom: 6.1rem;
+        padding-bottom: 2rem;
     }
     &__content{
         width: 100%;

@@ -10,7 +10,8 @@
 .wrapper {
     width: 100%;
 	margin: 0 auto;
-	max-width: 144rem;
+    max-width: 144rem;
+    position: relative;
 }
 
 .clearfix::before {
