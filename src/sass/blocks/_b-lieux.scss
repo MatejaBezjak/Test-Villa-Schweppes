@@ -1,11 +1,16 @@
 .b-lieux{
+    padding-bottom: 13.8rem;
+    @include breakpoint(desktop){
+        padding-bottom: 17.5rem;
+    }
     &__title{
         font-size: 13rem;
         color: $yellow;
         padding: 0 2rem 4.8rem 6rem;
         @include breakpoint(desktop){
             font-size: 13rem;
-            padding-left: 29.9rem;
+            padding-left: 30.1rem;
+            padding-bottom: 5rem;
         }
         span{
             font-size: 13rem;
@@ -14,7 +19,7 @@
             top: -2rem;
             @include breakpoint(desktop){
                 font-size: 13rem;
-                left: -4.3rem;
+                left: -3.7rem;
                 top: -2rem;
             }
         }
@@ -25,7 +30,7 @@
         @include breakpoint(desktop){
             display: flex;
             justify-content: flex-start;
-            margin-bottom: 2.7rem;
+            margin-bottom: 5.85rem;
             margin-top: -5.8rem;
         }
         &--left{
@@ -78,10 +83,10 @@
                 padding-top: 2.6rem;
                 @include breakpoint(desktop){
                     width: 46%;
-                    //top: 17.6rem;
+                    top: 0.1rem;
                     letter-spacing: 0;
                     line-height: 2.61rem;
-                    //left: 50.9rem;
+                    left: 25.6rem;
                 }
                 p{
                     font-weight: 500;
@@ -102,7 +107,7 @@
                 padding-bottom: 0.2rem;
                 @include breakpoint(desktop){
                     width: 100%;
-                    margin-left: 0;
+                    padding-left: 0;
                     margin-bottom: 15.8rem;
                 }
                 &__imgmobile{
@@ -153,6 +158,8 @@
     }
     &__text{
         color: $black;
+        left: -1.8rem;
+        top: 0.1rem;
         &::before{
             background-color: $black;
         }
