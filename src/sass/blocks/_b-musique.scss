@@ -1,53 +1,56 @@
 .b-musique{
-    padding-bottom: 13.8rem;
+    padding-bottom: 7.5rem;
     @include breakpoint(desktop){
         // padding-bottom: 17.5rem;
     }
     &__title{
-        font-size: 13rem;
+        font-size: 11.9rem;
         color: $yellow;
-        padding: 0 2rem 4.8rem 6rem;
+        letter-spacing: 0.01em;
+        padding: 1rem 2rem 3.3rem 19.2rem;
         @include breakpoint(desktop){
-            // font-size: 13rem;
-            // padding-left: 30.1rem;
-            // padding-bottom: 5rem;
+            font-size: 13.7rem;
+            letter-spacing: 0;
+            padding: 0;
+            text-align: right;
+            top: 22.5rem;
+            left: -22rem;
         }
         span{
-            font-size: 13rem;
+            font-size: 11.9rem;
             color: $yellow;
-            left: -3.5rem;
-            top: -2rem;
+            top: -1.1rem;
+            margin-left: -3.6rem;
             @include breakpoint(desktop){
-                // font-size: 13rem;
-                // left: -3.7rem;
-                // top: -2rem;
+                // font-size: 13.4rem;
+                // letter-spacing: 0.003em;
+                // margin-left: -4.3rem;
+                // top: -1.3rem;
             }
         }
     }
     &__articles{
-        margin-bottom: 9.9rem;
-        margin-top: 1.1rem;
+        margin-bottom: 0.4rem;
+        // margin-top: 1.1rem;
         @include breakpoint(desktop){
-            // display: flex;
-            // justify-content: flex-start;
-            // margin-bottom: 5.85rem;
-            // margin-top: -5.8rem;
+            margin-bottom: 0;
+            padding: 0 18.8rem 0 18.8rem;
         }
         &--top{
             width: 100%;
-            padding: 0 4rem 4.4rem 4rem;
-            margin-bottom: 2.6rem;
+            padding: 0 11.1rem 4.4rem 4rem;
+            margin-bottom: 3.2rem;
             @include breakpoint(desktop){
-                // width: 50%;
-                // margin-top: 5.6rem;
-                // padding: 0;
+                padding: 0 4rem 4.4rem 4rem;
+                margin-bottom: 3.2rem;
             }
             &__content{
                 &__img{
                     width: 100%;
                     position: relative;
+                    height: 46.6rem;
                     @include breakpoint(desktop){
-                        // width: 86.8%;
+                        height: 53.6rem;
                     }
                 }
                 &__text{
@@ -55,53 +58,85 @@
                     color: $white;
                     @include fontSizeRem (32, 18);
                     display: block;
-                    width: 100%;
+                    // width: 100%;
                     position: relative;
-                    line-height: 1.18em;
-                    padding-top: 2.6rem;
+                    line-height: 1.19em;
+                    padding: 3.3rem 4rem 0 7rem;
                     @include breakpoint(desktop){
-                        width: 46%;
-                        top: 0.1rem;
+                        // width: 46%;
+                        // top: 0.1rem;
+                        // letter-spacing: 0;
+                        // line-height: 2.61rem;
+                        // left: 25.6rem;
+                        position: absolute;
+                        display: flex;
+                        width: 24%;
+                        top: 38.5rem;
                         letter-spacing: 0;
                         line-height: 2.61rem;
-                        left: 25.6rem;
+                        left: 75.7rem;
                     }
                     p{
                         font-weight: 500;
                     }
                 }
+            //     &__text{
+            //     font-family: $raleway;
+            //     font-weight: 500;
+            //     @include fontSizeRem (31, 18);
+            //     color: $white;
+            //     display: block;
+            //     width: 64%;
+            //     position: absolute;
+            //     top: 10rem;
+            //     left: 36rem;
+            //     letter-spacing: 0.01em;
+            //     line-height: 1.23em;
+            //     z-index: 1;
+            //     @include breakpoint(desktop){
+            //         width: 24%;
+            //         top: 28rem;
+            //         letter-spacing: 0;
+            //         line-height: 2.61rem;
+            //         left: 59.8rem;
+            //     }
+            //     p{
+            //         font-weight: 500;
+            //     }
+            // }
             }  
         }
         &--bottom{
+            width: 100%;
+            position: relative;
             @include breakpoint(desktop){
                 // padding-left: 1rem;
                 // margin: 0;
             }
             &__article{
                 position: relative;
-                width: 63.6%;
-                padding-left: 4rem;
-                padding-bottom: 0.2rem;
+                width: 100%;
+                padding: 0 11rem 4.4rem 11rem;
                 @include breakpoint(desktop){
                     // width: 100%;
                     // padding-left: 0;
                     // margin-bottom: 15.8rem;
                 }
                 &__img{
-                    height: 37.9rem;
+                    height: 34rem;
                     @include breakpoint(desktop){
                         // display: none;
                         // height: 37.9rem;
                     }
                 }
                 &__text{
-                    position: absolute;
+                    position: reltive;
                     font-family: $raleway;
                     font-size: 3.21rem;
                     color: $white;
-                    top: 11.5%;
-                    left: 41.4rem;
-                    width: 46%;
+                    // top: 11.5%;
+                    // left: 41.4rem;
+                    // width: 46%;
                     line-height: 1.19em;
                     @include breakpoint(desktop){
                         // font-size: 1.8rem;
