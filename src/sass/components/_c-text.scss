@@ -1,0 +1,46 @@
+.c-title{
+    position: relative;
+    font-family: 'quaintonregular';
+}
+
+.c-infotext{
+    font-family: $raleway;
+    @include fontSizeRem (32, 18);
+    p{
+        font-weight: 500;
+    }
+}
+
+.c-infotext__inside{
+    position: absolute;
+    font-family: "Raleway", "sans-serif";
+    @include fontSizeRem (32, 18);
+    font-weight: 500;
+    color: #fff;
+    top: 59.5%;
+    line-height: 1.16em;
+    letter-spacing: 0.007em;
+    @include breakpoint(desktop){
+        top: 70.5%;
+        line-height: 2.51rem;
+        letter-spacing: 0.001em
+    }
+}
+
+.c-infotext__under{
+    font-family: "Raleway", "sans-serif";
+    @include fontSizeRem (32, 18);
+    color: #fff;
+    display: block;
+    width: 100%;
+    position: relative;
+    line-height: 1.18em;
+    padding-top: 2.6rem;
+    @include breakpoint(desktop){
+        width: 46%;
+        top: 0.1rem;
+        letter-spacing: 0;
+        line-height: 2.61rem;
+    }
+
+}

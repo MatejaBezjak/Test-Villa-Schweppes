@@ -13,10 +13,43 @@
         }
 }
 
-// .c-block--left{
-//     width: 100%;
-//     display: flex;
-//     @include breakpoint(desktop){
-//         width: 50%;
-//     }
-// }
+.c-bordered{
+    position: relative;
+    display: flex;
+    align-items: center;
+    // @include breakpoint(desktop){
+    //     width: 6.8rem;
+            // left: 47.9rem;
+            // height: 53.5rem;
+    // }
+    &__img{
+        position: relative;
+        &::after{
+        content: "";
+        position: absolute;
+        background-color: #fff000;
+        width: 7rem;
+        top: 0;
+        height: 46.1rem;
+            @include breakpoint(desktop){
+                    width: 6.8rem;
+                    height: 53.5rem;
+            }
+        }
+    }
+    &__text{
+        font-family: "Raleway", "sans-serif";
+        @include fontSizeRem (32, 18);
+        color: #000;
+        display: block;
+        width: 64%;
+        position: absolute;
+        top: 10rem;
+        letter-spacing: 0.01em;
+        line-height: 1.23em;
+        z-index: 1;
+        p{
+            font-weight: 500;
+        }
+    }
+}

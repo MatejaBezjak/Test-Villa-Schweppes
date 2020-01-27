@@ -25,7 +25,6 @@
         }
     }
     &__articles{
-        // width: 100%;
         margin-bottom: 9.9rem;
         margin-top: 9.8rem;
         @include breakpoint(desktop){
@@ -41,7 +40,6 @@
             @include breakpoint(desktop){
                 width: 50%;
                 margin-top: 4.2rem;
-                //margin-bottom: 0;
             }
             &__img{
                 width: 50%;
@@ -89,7 +87,6 @@
                 font-family: $raleway;
                 font-weight: 500;
                 @include fontSizeRem (31, 18);
-                //font-size: 3.1rem;
                 color: $black;
                 display: block;
                 width: 64%;
@@ -119,7 +116,6 @@
             }
             &__article{
                 position: relative;
-                //margin-left: 4rem;
                 @include breakpoint(desktop){
                     margin-left: 0;
                     margin-bottom: 6.8rem;
@@ -161,23 +157,21 @@
                         font-weight: 500;
                     }
                 }
-                // &--last{
-                //     display: none;
-                //     @include breakpoint(desktop){
-                //         display: block;
-                //     }
-                // }
             }
         }
     }
    
     
 }
-.c-btn--yellow{
+.c-btn--mixologie{
     &__field{
         background-color: $yellow;
         &::before{
             background-color: $black;
+            top: 5.1rem;
+            @include breakpoint(desktop){
+                top: 3.1rem;
+            }
         }
     }
     &__text{

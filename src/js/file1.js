@@ -3,17 +3,12 @@ $(document).ready(function(){
     $('.b-slider').slick({
         autoplay: false,
         slidesToShow: 1,
-        dots: true
+        slidesToScroll: 1,
+        dots: true,
+        adaptiveHeight: true,
+        rows: 0,
+        // arrows: true,
+        nextArrow: $('b-slider__arrows--right'),
+        prevArrow: $('b-slider__arrows--left')
     });
 });
-// $('.b-slider .b-slider__content').slick({
-//     // infinite: true,
-//     centerMode: true,
-//     slidesToShow: 1,
-//     dots: true,
-//     autoplay: false,
-//     nextArrow: $('b-slider__arrow-right'),
-//     prevArrow: $('b-slider__arrow-left')
-//     //adaptiveHeight: true
-
-// });

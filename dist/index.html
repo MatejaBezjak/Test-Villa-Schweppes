@@ -7,16 +7,16 @@
     <title>Document</title>
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
 
 <link href="css/style.css" rel="stylesheet"></head>
 <body>
-    <!-- <div class="main-wrapper clearfix"> -->
+    <div class="main-wrapper clearfix">
         <div class="b-header">
             <div class="wrapper">
                 <div class="b-header__content">
                     <div class="b-header__logo">
-                        <h1 class="b-header__logo-wrapper"><img class="b-header__logo-img" src="./images/LOGO-VS.svg"/></h1>
+                        <h1 class="b-header__logo-wrapper"><img class="b-header__logo-img" src="./images/LOGO-VS.svg" alt="Villa Schweppes"/></h1>
                     </div>
                     <nav class="b-header__navigation">
                         <ul class="b-header__navigation-list">
@@ -30,17 +30,6 @@
                                 <a class="b-header__navigation-link" href="#"><span>LIFESTYLE</span></a></li>
                             <li class="b-header__navigation-page">
                                 <a class="b-header__navigation-link b-header__navigation-link--last" href="#"><span class="b-header__navigation-title">MUSIQUE</span></a></li>
-                            <!-- <li class="b-header__navigation-page">
-                                <a class="b-header__navigation-link" href="#"><span class="b-header__navigation-title">MIXOLOGIE</span></a></li>
-                            <li class="b-header__navigation-page">
-                                <a class="b-header__navigation-link" href="#"><span class="b-header__navigation-title">ÉVÉNEMENTS</span></a></li>
-                            <li class="b-header__navigation-page">
-                                <a class="b-header__navigation-link" href="#"><span class="b-header__navigation-title">LIEUX</span></a></li>
-                            <li class="b-header__navigation-page">
-                                <a class="b-header__navigation-link" href="#"><span class="b-header__navigation-title">LIFESTYLE</span></a></li>
-                            <li class="b-header__navigation-page">
-                                <a class="b-header__navigation-link b-header__navigation-link--last" href="#"><span class="b-header__navigation-title">MUSIQUE</span></a></li> -->
-                        </ul>
                     </nav>
                     <div class="b-header__search">
                         <div class="b-header__search-content">
@@ -83,37 +72,53 @@
                 </div>
             </div>
         </div>
-        <div class="b-slider">
-            <div class="b-slider__imgwrapper">
-                <picture>
-                    <source srcset="./images/Slider_desk1.png" media="(min-width: 768px)">
-                    <img srcset="./images/Slider_mobile1.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
-                </picture>
-                <!-- <img class="b-slider__img" src="./images/map-icone.svg"/>
-                <img class="b-slider__img" src="./images/map-icone.svg"/> -->
+        <div class="main-wrapper--black">
+            <div class="b-slider wrapper">
+                    <div class="b-slider__slide">
+                        <picture class="b-slider__img">
+                            <source srcset="./images/Slider_desk1.png" media="(min-width: 768px)">
+                            <img srcset="./images/Slider_mobile1.png" alt="Lorem ipsum dolor sit amet consectetur - Villa Schweppes">
+                        </picture>
+                        <div class="b-slider__intro">
+                            <h3 class="b-slider__intro__title">Lorem ipsum dolor sit amet consectetur</h3>
+                            <span class="b-slider__intro__info">By Yann Guilou <br> 19. 2018</span>
+                        </div>
+                    </div>
+                    <div class="b-slider__slide">
+                        <picture class="b-slider__img">
+                            <source srcset="./images/Slider_desk2.png" media="(min-width: 768px)">
+                            <img srcset="./images/Slider_mobile2.png" alt="Lorem ipsum dolor sit amet consectetur - Villa Schweppes">
+                        </picture>
+                        <div class="b-slider__intro">
+                            <h3 class="b-slider__intro__title">Lorem ipsum dolor sit amet consectetur</h3>
+                            <span class="b-slider__intro__info">By Yann Guilou <br> 19. 2018</span>
+                        </div>
+                    </div>
+                    <div class="b-slider__slide">
+                        <picture class="b-slider__img">
+                            <source srcset="./images/Slider_desk3.png" media="(min-width: 768px)">
+                            <img srcset="./images/Slider_mobile3.png" alt="Lorem ipsum dolor sit amet consectetur - Villa Schweppes">
+                        </picture>
+                        <div class="b-slider__intro">
+                            <h3 class="b-slider__intro__title">Lorem ipsum dolor sit amet consectetur</h3>
+                            <span class="b-slider__intro__info">By Yann Guilou <br> 19. 2018</span>
+                        </div>
+                    </div>
             </div>
-            <div class="b-slider__imgwrapper">
-                <picture>
-                    <source srcset="./images/Slider_desk2.png" media="(min-width: 768px)">
-                    <img srcset="./images/Slider_mobile2.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
-                </picture>
-                <!-- <img class="b-slider__img" src="./images/map-icone.svg"/>
-                <img class="b-slider__img" src="./images/map-icone.svg"/> -->
+            <!-- <div class="b-slider__arrows b-slider__arrows--left">
+    
             </div>
-            <div class="b-slider__imgwrapper">
-                <picture>
-                    <source srcset="./images/Slider_desk3.png" media="(min-width: 768px)">
-                    <img srcset="./images/Slider_mobile3.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
-                </picture>
-                <!-- <img class="b-slider__img" src="./images/map-icone.svg"/>
-                <img class="b-slider__img" src="./images/map-icone.svg"/> -->
-            </div>
+            <div class="b-slider__arrows b-slider__arrows--right">
+    
+            </div> -->
         </div>
+        
         <div class="b-banner wrapper">
                 <div class="b-banner__content">
-                    <img class="b-banner__imgmobile" src="./images/bannermobile.png"/>
-                    <img class="b-banner__imgdesk" src="./images/bannerdesk.png"/>
-
+                    <picture class="b-banner__content__img">
+                        <source srcset="./images/bannerdesk.png" media="(min-width: 768px)">
+                        <img srcset="./images/bannermobile.png" alt="Lorem ipsum dolor sit amet consectetur - Villa Schweppes">
+                    </picture>
                 </div>
         </div>
         <div class="b-mixologie wrapper">
@@ -147,13 +152,13 @@
                     </div>
                 </div>
             </div>
-            <div class="c-btn c-btn--yellow">
-                <a class="c-btn__field c-btn--yellow__field" href="#">
-                    <span class="c-btn__text c-btn--yellow__text">VOIR TOUS LES COCKTAILS</span>
+            <div class="c-btn c-btn--mixologie">
+                <a class="c-btn__field c-btn--mixologie__field" href="#">
+                    <span class="c-btn__text c-btn--mixologie__text">VOIR TOUS LES COCKTAILS</span>
                 </a>
             </div>
         </div>
-        <div class="b-lieux main-wrapper">
+        <div class="b-lieux main-wrapper--black">
         <div class="wrapper">
             <h2 class="b-lieux__title c-title">
                 Lieu
@@ -185,9 +190,9 @@
                     </div>
                 </div>
             </div>
-            <div class="c-btn c-btn--yellow">
-                <a class="c-btn__field c-btn--yellow__field" href="#">
-                    <span class="c-btn__text c-btn--yellow__text">VOIR TOUS LES LIEUX</span>
+            <div class="c-btn c-btn--lieux">
+                <a class="c-btn__field c-btn--lieux__field" href="#">
+                    <span class="c-btn__text c-btn--lieux__text">VOIR TOUS LES LIEUX</span>
                 </a>
             </div>
         </div>
@@ -195,7 +200,7 @@
     <div class="b-megabanner wrapper">
         <div class="b-megabanner__content">
             <picture class="b-megabanner__content__img">
-                <source srcset="./images/Teaser_desk.png" media="(min-width: 768px)">
+                <source srcset="./images/Megabanner_desk.png" media="(min-width: 768px)">
                 <img srcset="./images/Teaser_mobile.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
             </picture>
             <div class="b-megabanner__content__text">
@@ -214,7 +219,7 @@
             </div>
         </div>
     </div>
-    <div class="b-musique main-wrapper">
+    <div class="b-musique main-wrapper--black">
         <div class="wrapper">
             <h2 class="b-musique__title c-title">
                 Mus
@@ -227,8 +232,6 @@
                             <source srcset="./images/Musique_desk1.png" media="(min-width: 768px)">
                             <img srcset="./images/Musique_mobile1.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
                         </picture>
-                        <!-- <img class="b-musique__articles--top__img-mobile" src="./images/Musique_mobile1.png"/>
-                        <img class="b-musique__articles--top__img-desk" src="./images/Musique_desk1.png"/> -->
                         <div class="b-musique__articles--top__content__text">
                             <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
@@ -240,8 +243,6 @@
                             <source srcset="./images/Musique_desk2.png" media="(min-width: 768px)">
                             <img srcset="./images/Musique_mobile2.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
                         </picture>
-                        <!-- <img class="b-musique__articles--bottom__article__imgmobile" src="./images/Musique_mobile2.png"/>
-                        <img class="b-musique__articles--bottom__article__imgdesk" src="./images/Musique_desk2.png"/> -->
                         <div class="b-musique__articles--bottom__article__text">
                             <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
@@ -249,16 +250,67 @@
                     <div class="b-musique__articles--bottom__article c-block--last">
                         <img class="b-musique__articles--bottom__article__img" src="./images/Musique_desk3.png"/>
                         <div class="b-musique__articles--bottom__article__text">
-                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="c-btn c-btn--yellow">
-                <a class="c-btn__field c-btn--yellow__field" href="#">
-                    <span class="c-btn__text c-btn--yellow__text">VOIR TOUS LES LIEUX</span>
+            <div class="c-btn c-btn--musique">
+                <a class="c-btn__field c-btn--musique__field" href="#">
+                    <span class="c-btn__text c-btn--musique__text">VOIR TOUS LES ARTICLES MUSIQUE</span>
                 </a>
             </div>
+        </div>
+    </div>
+    <div class="b-lifestyle wrapper">
+        <h2 class="b-lifestyle__title c-title">
+            Life
+            <span class="c-title">style</span>
+        </h2>
+        <div class="b-lifestyle__articles">
+            <div class="b-lifestyle__articles--top">
+                <div class="b-lifestyle__articles--top__content">
+                    <picture class="b-lifestyle__articles--top__content__imgleft">
+                        <source srcset="./images/Lifestyle_desk1.png" media="(min-width: 768px)">
+                        <img srcset="./images/Lifestyle_mobile1.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
+                    </picture>
+                    <div class="b-lifestyle__articles--top__content__textleft c-infotext__under">
+                        <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    </div>
+                </div>
+                <div class="b-lifestyle__articles--top__content c-bordered">
+                    <picture class="b-lifestyle__articles--top__content__imgright c-bordered__img">
+                        <source srcset="./images/Lifestyle_desk2.png" media="(min-width: 768px)">
+                        <img srcset="./images/Lifestyle_mobile2.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
+                    </picture>
+                    <div class="b-lifestyle__articles--top__content__textright c-bordered__text">
+                        <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    </div>
+                </div>
+            </div>
+            <div class="b-lifestyle__articles--bottom c-block--last">
+                <div class="b-lifestyle__articles--bottom__content">
+                    <picture class="b-lifestyle__articles--bottom__content__img">
+                        <img srcset="./images/Lifestyle_desk3.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
+                    </picture>
+                    <div class="b-lifestyle__articles--bottom__content__text c-infotext__inside">
+                        <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    </div>
+                </div>
+                <div class="b-lifestyle__articles--bottom__content">
+                    <picture class="b-lifestyle__articles--bottom__content__img">
+                        <img srcset="./images/Lifestyle_desk4.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
+                    </picture>
+                    <div class="b-lifestyle__articles--bottom__content__text b-lifestyle__articles--bottom__content__text--right c-infotext__inside">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-btn c-btn--lifestyle">
+            <a class="c-btn__field c-btn--lifestyle__field" href="#">
+                <span class="c-btn__text c-btn--lifestyle__text">VOIR TOUS ARTICLES LIFESTYLE</span>
+            </a>
         </div>
     </div>
 
@@ -266,7 +318,6 @@
 
         
         <div class="b-footer">
-            <!-- <div class="b-footer--triangle"></div> -->
             <div class="b-footer__content">
                 <ul class="b-footer__list">
                     <li class="b-footer__page">
@@ -311,7 +362,7 @@
             </div>
         </div>
 
-    </h2>
+    </div>
 
     <!-- Jquery CDN Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

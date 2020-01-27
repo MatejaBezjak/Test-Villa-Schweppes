@@ -94,8 +94,6 @@
             }
         }
         &--right{
-            //margin: 0 4rem 10.2rem;
-            //display: flex;
             @include breakpoint(desktop){
                 padding-left: 1rem;
                 margin: 0;
@@ -152,20 +150,25 @@
    
     
 }
-.c-btn--yellow{
+.c-btn--lieux{
     &__field{
         background-color: $yellow;
+        padding-left: 4.9rem;
+        @include breakpoint(desktop){
+            padding-left: 2.8rem;
+        }
+        &::before{
+            background-color: $black;
+            left: 6.8rem;
+            top: 4.9rem;
+            @include breakpoint(desktop){
+                left: 7rem;
+                top: 3.4rem;
+            }
+        }
     }
     &__text{
         color: $black;
-        left: -1.8rem;
-        top: 0.1rem;
-        &::before{
-            background-color: $black;
-        }
     }
 
-}
-.main-wrapper{
-    background-color: $black;
 }

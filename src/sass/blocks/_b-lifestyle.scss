@@ -1,0 +1,156 @@
+.b-lifestyle{
+    &__title{
+        font-size: 10.4rem;
+        padding-left: 5.46rem;
+        margin-bottom: 5.3rem;
+        @include breakpoint(desktop){
+            padding-left: 18.4rem;
+            margin-bottom: 0;
+            top: 3.44rem;
+            letter-spacing: -0.001em;
+        }
+        span{
+            left: -3.09rem;
+            top: -1rem;
+        }
+    }
+    &__articles{
+        margin-bottom: 9.4rem;
+        padding-left: 4rem;
+        @include breakpoint(desktop){
+            padding: 9.1rem 22.8rem 0 22.8rem;
+            margin-bottom: 10.2rem;
+        }
+        &--top{
+            position: relative;
+            @include breakpoint(desktop){
+                display: flex;
+                margin-bottom: 3.8rem;
+            }
+
+            
+            &__content{
+                position: relative;
+                margin-bottom: 5rem;
+                @include breakpoint(desktop){
+                    width: 57.5;
+                }
+                &:nth-of-type(1){
+                    padding-right: 10.9rem;
+                    @include breakpoint(desktop){
+                        padding-right: 1.8rem;
+                        width: 42.5%;
+                    }
+                }
+                &__imgleft{
+                    height: 39.5rem;
+                    @include breakpoint(desktop){
+                        height: 29.5rem;
+                    }
+                }
+                &__textleft{
+                    color: $black;
+                    width: 88%;
+                    line-height: 1.19em;
+                    padding-top: 2rem;
+                    left: 2.2rem;
+                    letter-spacing: 0.001em;
+                    @include breakpoint(desktop){
+                        width: 88%;
+                        line-height: 2.61rem;
+                        padding-top: 3rem;
+                        padding-left: 2.5rem;
+                        left: 0;
+                    }
+                    p{
+                        font-weight: 500;
+                    }
+                }
+                &__imgright{
+                    height: 46.8rem;
+                    @include breakpoint(desktop){
+                        height: 53.6rem;
+                    }
+                    &::after{
+                        height: 46.8rem;
+                        left: 35rem;
+                        @include breakpoint(desktop){
+                            height: 53.6rem;
+                            left: 39.7rem;
+                            width: 8.6rem;
+                        }
+                    }
+                    img{
+                        height: 100%;
+                    }
+                }
+                &__textright{
+                    width: 31%;
+                    left: 37.6rem;
+                    line-height: 1.21em;
+                    top: 9rem;
+                    letter-spacing: 0;
+                    @include breakpoint(desktop){
+                        width: 41%;
+                        left: 43.5rem;
+                        line-height: 2.61rem;
+                        top: 20.5rem;
+                    }
+                }
+            }
+        }
+        &--bottom{
+            @include breakpoint(desktop){
+                position: relative;
+                display: flex;
+            }
+            &__content{
+                @include breakpoint(desktop){
+                    position: relative;
+                    &:nth-of-type(1){
+                        padding-right: 2rem;
+                    }
+                }
+                &__img{
+                    @include breakpoint(desktop){
+                        height: 35.8rem;
+                    }
+
+                }
+                &__text{
+                    @include breakpoint(desktop){
+                        top: 70.6%;
+                        line-height: 2.61rem;
+                        letter-spacing: 0.001rem;
+                        padding-left: 6rem;
+                        width: 80%;
+                    }
+                    p{
+                        font-weight: 500;
+                    }
+                    &--right{
+                        @include breakpoint(desktop){
+                            line-height: 2.7rem;
+                            padding-left: 6.3rem;
+                            width: 84%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.c-btn--lifestyle{
+    &__field{
+        padding-left: 8rem;
+        @include breakpoint(desktop){
+            line-height: 7.7rem;        }
+        &::before{
+            left: 4.5rem;
+            @include breakpoint(desktop){
+                left: 3.6rem;
+                top: 3.8rem;
+            }
+        }
+    }
+}

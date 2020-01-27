@@ -1,69 +1,163 @@
 .b-slider{
+    width: 144rem;
     position: relative;
-    // max-width: 144rem;
-    // border: 1px solid red;
-    &__imgwrapper{
+    height: 113.6rem;
+    background-color: $black;
+    @include breakpoint(desktop){
+        height: 74.8rem;
+    }
+    &__slide{
+        display: block;
+        position: relative;
         width: 100%;
-        height: 105.3rem;
+        height: 113.6rem;
         margin: 0 auto;
         overflow: hidden;
-
         width: 100%;
-        height: 40rem;
-
+        @include breakpoint(desktop){
+            height: 67.6rem;
+            margin: auto;
+            max-width: 146rem;
+        }
     }
-    // &__img{
-    //     display: inline-block;
-    //     background-color: lightcoral;
-    //     width: 32rem;
-    //     height: 57rem;
-    // }
-    // &__mobileimg{
-    //     width: 100%;
-    //     @include breakpoint(desktop){
-    //         display: none;
-    //     }
-    // }
-    // &__deskimg{
-    //     // width:100%;
-    //     display:none;
-    //     @include breakpoint(desktop){
-    //         display: block;
-    //     }
-    // }
-    
-}
-.slick-prev{
+    &__img{
+        display: inline-block;
+        width: 64rem;
+        height: 100%;
+        @include breakpoint(desktop){
+            width: 102.5rem;
+            height: 67.6rem;
+            margin-left: 29.1rem;
+        }
+        img{
+            width: 100%;
+            @include breakpoint(desktop){
+                height: 100%;
+            }
+        }
+    }
+    &__intro{
+        position: absolute;
+        width: 53rem;
+        height: 49.4rem;
+        background: $black;
+        bottom: 0;
+        left: 0;
+        line-height: 7rem;
+        letter-spacing: -0.04rem;
+        padding: 4.7rem 6.2rem 23rem 6.2rem;
+        @include breakpoint(desktop){
+            width: 48.2rem;
+            height: 39rem;
+            bottom: 10.7rem;
+            left: 14.4rem;
+            line-height: 6.7rem;
+            letter-spacing: 0;
+            padding: 6.9rem 7.2rem 11rem 7.2rem;
+        }
+        &__title{
+            font-family: 'quaintonregular';
+            color: $white;
+            @include fontSizeRem (60, 55);
+            font-weight: 400;
+        }
+        &__info{
+            display: none;
+            @include breakpoint(desktop){
+                display: block;
+                position: relative;
+                font-family: $raleway;
+                font-size: 1.2rem;
+                color: $white;
+                line-height: 1.7rem;
+                margin-top: 0.9rem;
+                padding-left: 0.4rem;
+                letter-spacing: 0.05rem;
+                font-weight: 700;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 2.3rem;
+                    height: 0.4rem;
+                    background-color: $yellow;
+                    border-radius: 0.2rem;
+                    top: 3.9rem;
+                    left: 0.4rem;
+                }
+            }
+        }
+    }
     
 }
 .slick-dots {
 	display: flex;
 	justify-content: center;
-	
 	margin: 0;
 	padding: 1rem 0;
-	
-	list-style-type: none;
+    list-style-type: none;
+    bottom: 15.8rem;
+    @include breakpoint(desktop){
+        bottom: 10.1rem;
+        left: 8.3rem;
+    }
 	
 		li {
-			margin: 0 0.25rem;
+            margin: 0 0.29rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            @include breakpoint(desktop){
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            button {
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                background-color: $dark-grey;
+                text-indent: -9999px;
+            }
 		}
 	
-		button {
-			display: block;
-			width: 1rem;
-			height: 1rem;
-			padding: 0;
-			
-			border: none;
-			border-radius: 100%;
-			background-color: blue;
-			
-			text-indent: -9999px;
-		}
+		
 	
 		li.slick-active button {
-			background-color: red;
+            background-color: $yellow;
 		}
 	
 }
+.slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
+
+// .b-slider__arrows{
+//     position: absolute;
+//     width: 11rem;
+//     height: 11rem;
+//     bottom: 30rem;
+//         &--left{
+//             width: 11rem;
+//             height: 11rem;
+//             &::before{
+//                 position: absolute;
+//                 content: "";
+//                 background: url(/images/Fleche_Gauche.svg) no-repeat;
+//                 width: 100%;
+//                 height: 100%;
+//             }
+//         }
+//         &--right{
+//             width: 11rem;
+//             height: 11rem;
+//             &::before{
+//                 position: absolute;
+//                 content: "";
+//                 background: url(/images/Fleche_Droite.svg) no-repeat;
+//                 width: 100%;
+//                 height: 100%;
+//             }
+//         }
+    
+// }

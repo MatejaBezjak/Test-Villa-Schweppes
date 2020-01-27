@@ -17,12 +17,10 @@
     &__links{
         display: flex;
         justify-content: space-between;
-        //align-items: flex-end;
     }
     &__burger{
         display: inline-block;
         position: relative;
-        //top: -0.3rem;
         &::after{
             position: absolute;
             content: '';
@@ -80,7 +78,6 @@
         }
         &-locationicon{
             width: 3.4rem;
-            //margin-top: -0.1rem;
 
         }
         &-locationtext{
