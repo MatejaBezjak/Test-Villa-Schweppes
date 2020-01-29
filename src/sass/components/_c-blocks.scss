@@ -17,11 +17,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    // @include breakpoint(desktop){
-    //     width: 6.8rem;
-            // left: 47.9rem;
-            // height: 53.5rem;
-    // }
     &__img{
         position: relative;
         &::after{
@@ -42,12 +37,15 @@
         @include fontSizeRem (32, 18);
         color: #000;
         display: block;
-        width: 64%;
+        width: 35%;
         position: absolute;
-        top: 10rem;
-        letter-spacing: 0.01em;
-        line-height: 1.23em;
-        z-index: 1;
+        top: 10.1rem;
+        letter-spacing: -0.003em;
+        line-height: 1.19em;
+        z-index: 0;
+        @include breakpoint(desktop){
+            width: 22%;
+        }
         p{
             font-weight: 500;
         }

@@ -1,5 +1,5 @@
 .b-lieux{
-    padding-bottom: 13.8rem;
+    padding-bottom: 14rem;
     @include breakpoint(desktop){
         padding-bottom: 17.5rem;
     }
@@ -43,33 +43,23 @@
                 margin-top: 5.6rem;
                 padding: 0;
             }
-            &__img{
+            &__content{
                 width: 100%;
                 position: relative;
                 @include breakpoint(desktop){
                     width: 86.8%;
                 }
-                
-                &-mobile{
-                    position: relative;
-                    width: 100%;
-                    height: 55.6rem;
-                    
-                    @include breakpoint(desktop){
-                        display: none;
-                    }
-                }
-                &-desk{
-                    display: none;
-                    @include breakpoint(desktop){
-                        display: block;
-                        margin-left: 22.6rem;
-                        height: 60.5rem;
+            }
+            &__img{
+                position: relative;
+                width: 100%;
+                height: 55.6rem;
+                @include breakpoint(desktop){
+                    display: block;
+                    margin-left: 22.6rem;
+                    height: 60.5rem;
 
-                    }
                 }
-            
-
             }
             
             &__text{
@@ -83,7 +73,6 @@
                 padding-top: 2.6rem;
                 @include breakpoint(desktop){
                     width: 46%;
-                    top: 0.1rem;
                     letter-spacing: 0;
                     line-height: 2.61rem;
                     left: 25.6rem;
@@ -98,7 +87,7 @@
                 padding-left: 1rem;
                 margin: 0;
             }
-            &__article{
+            &__content{
                 position: relative;
                 width: 63.6%;
                 padding-left: 4rem;
@@ -108,41 +97,35 @@
                     padding-left: 0;
                     margin-bottom: 15.8rem;
                 }
-                &__imgmobile{
-                    height: 37.9rem;
-                    @include breakpoint(desktop){
-                        display: none;
-                        height: 37.9rem;
-                    }
+            }
+            &__img{
+                height: 37.9rem;
+                @include breakpoint(desktop){
+                    display: block;
+                    height: 28rem;
                 }
-                &__imgdesk{
-                    display: none;
-                    @include breakpoint(desktop){
-                        display: block;
-                        height: 28rem;
-                    }
+
+            }
+            &__text{
+                position: absolute;
+                font-family: $raleway;
+                font-size: 3.21rem;
+                color: $white;
+                top: 11.5%;
+                left: 41.4rem;
+                width: 46%;
+                line-height: 1.19em;
+                @include breakpoint(desktop){
+                    font-size: 1.8rem;
+                    top: 100%;
+                    left: 2.34rem;
+                    width: 69%;
+                    line-height: 2.54rem;
+                    letter-spacing: 0.003em;
                 }
-                &__text{
-                    position: absolute;
-                    font-family: $raleway;
-                    font-size: 3.21rem;
-                    color: $white;
-                    top: 11.5%;
-                    left: 41.4rem;
-                    width: 46%;
-                    line-height: 1.19em;
-                    @include breakpoint(desktop){
-                        font-size: 1.8rem;
-                        top: 100%;
-                        left: 2.34rem;
-                        width: 69%;
-                        line-height: 2.51rem;
-                        letter-spacing: 0.003em;
-                    }
-                    p{
-                        font-weight: 500;
-                        padding-top: 2.7rem;
-                    }
+                p{
+                    font-weight: 500;
+                    padding-top: 2.7rem;
                 }
             }
         }

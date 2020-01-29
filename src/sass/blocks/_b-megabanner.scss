@@ -1,7 +1,5 @@
 .b-megabanner{
     position: relative;
-    @include breakpoint(desktop){
-    }
     &__content{
         position: relative;
         width: 100%;
@@ -24,7 +22,6 @@
             @include breakpoint(desktop){
                 top: 31.8%;
                 padding-left: 48.7rem;
-
             }
             &::after{
                 position: absolute;
@@ -95,13 +92,14 @@
                     font-size: 6.8rem;
                     letter-spacing: -0.01em;
                     font-weight: 700;
-                    margin-top: -4.1rem;
+                    margin-top: -3.9rem;
                     span{
                         position: relative;
                         font-family: 'quaintonregular';
-                        font-size: 11.5rem;
-                        top: 0.6rem;
+                        font-size: 11.2rem;
+                        top: 0.4rem;
                         left: 0.6rem;
+                        letter-spacing: 0.01em;
                         &::before{
                             position: absolute;
                             content: '';
@@ -109,12 +107,9 @@
                             background-size: contain;
                             width: 19.4rem;
                             height: 1rem;
-                            top: 8.5rem;
+                            top: 8.2rem;
                             left: 8rem;
-        
-        
                         }
-
                     }
                 }
             }
@@ -145,13 +140,9 @@
                         height: 1rem;
                         top: 6rem;
                         left: -2.9rem;
-    
-    
                     }
                 }
             }
-            
-        }
-        
+        }  
     }
 }

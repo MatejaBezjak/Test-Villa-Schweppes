@@ -92,13 +92,14 @@
 .slick-dots {
 	display: flex;
 	justify-content: center;
-	margin: 0;
+	margin: auto;
 	padding: 1rem 0;
     list-style-type: none;
     bottom: 15.8rem;
     @include breakpoint(desktop){
+        max-width: 102.5rem;
         bottom: 10.1rem;
-        left: 8.3rem;
+        margin-left: 29.1rem;
     }
 	
 		li {

@@ -17,9 +17,8 @@
     @include fontSizeRem (32, 18);
     font-weight: 500;
     color: #fff;
-    top: 59.5%;
+    top: 59.2%;
     line-height: 1.16em;
-    letter-spacing: 0.007em;
     @include breakpoint(desktop){
         top: 70.5%;
         line-height: 2.51rem;

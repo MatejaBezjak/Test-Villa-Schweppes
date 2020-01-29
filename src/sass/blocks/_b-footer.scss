@@ -1,55 +1,59 @@
 .b-footer{
     position: relative;
-    top: 100%;
     background-color: $black;
-    margin-top: 40rem;
+    margin-top: 14.4rem;
+    padding-bottom: 20rem;
+    @include breakpoint(desktop){
+        padding-bottom: 6rem;
+    }
     &::before{
         content:"";
         position: absolute;
-        top:-4.6rem;
-        height:4.6rem;
+        top:-8.9rem;
+        height: 9rem;
         left:0;
         right:0;
         background:linear-gradient(to bottom right, transparent 49%, $black 50%);
         @include breakpoint(desktop){
-            top: -16.8rem;
-            height: 16.9rem;
+            top: -13.5rem;
+            height: 13.6rem;
         }
     }
     &__content{
         position: relative;
         text-align: center;
         background-color: black;
-        padding: 0.2rem 0 8rem 0;
+        padding: 6.4rem 0 8rem 0;
         @include breakpoint(desktop){
             display: flex;
             justify-content: space-between;
-            padding: 3.4rem 14.7rem 9rem 13.6rem;
+            padding: 1.6rem 14.7rem 9rem 13.6rem;
         }
     }
     &__list{
-        padding-bottom: 1.2rem;
-        padding-top: 3.1rem;
+        padding-bottom: 4.4rem;
+        padding-left: 2.9rem;
+        padding-right: 2rem;
         @include breakpoint(desktop){
             display: flex;
-            padding-top: 3.4rem;
-            padding-bottom: 0;
+            padding: 3.9rem 0 0 0;
         }
     }
     &__page{
-        padding-bottom: 1.5rem;
+        padding-bottom: 2rem;
         @include breakpoint(desktop){
             padding-bottom: 0;
         }
     }
     &__link{
+        font-family: $raleway;
+        @include fontSizeRem (24, 14);
+        font-weight: 500;
         display: block;
         color: $white;
-        font-family: $raleway;
-        font-size: 1.1rem;
-        font-weight: 500;
+        line-height: 3rem;
+        letter-spacing: -0.002em;
         @include breakpoint(desktop){
-            font-size: 1.5rem;
             padding-right: 6rem;
         }
 
@@ -59,32 +63,39 @@
         justify-content: space-between;
         max-width: 47%;
         margin: auto;
-        padding-bottom: 5rem;
+        padding-bottom: 10.5rem;
         @include breakpoint(desktop){
             position: absolute;
             justify-content: center;
             padding-bottom: 0;
-            right: 12.1rem;
-            top: -5.3rem;
+            right: 11.2rem;
+            top: -5.6rem;
 
         }
         &-field{
+            width: 5.5rem;
+            height: 5.5rem;
             @include breakpoint(desktop){
-                padding-right: 1rem;
+                margin-right: 1.2rem;
+                width: 2.6rem;
+                height: 2.6rem;
             }
             &-icon{
                 filter: invert(100%);
-                width: 2.9rem;
-                @include breakpoint(desktop){
-                    width: 2.6rem;
-                }
+                width: 100%;
+                height: 100%;
             }
         }
     }
     &__logo{
+        height: 15.6rem;
+        max-width: 15rem;
+        margin: auto;
+        @include breakpoint(desktop){
+            height: 7rem;
+        }
         &-img{
-            margin: auto;
-            width: 7.2rem;
+            height: 100%;
             @include breakpoint(desktop){
                 width: 7.6rem;
             }

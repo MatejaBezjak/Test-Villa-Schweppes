@@ -1,7 +1,7 @@
 .b-mixologie{
-    padding-bottom: 13.7rem;
+    padding-bottom: 13.6rem;
     @include breakpoint(desktop){
-        padding-bottom: 12.6rem;
+        padding-bottom: 12.5rem;
     }
     &__title{
         font-size: 11.9rem;
@@ -30,81 +30,48 @@
         @include breakpoint(desktop){
             display: flex;
             justify-content: flex-start;
-            margin-bottom: 2.7rem;
+            margin-bottom: 2.6rem;
             margin-top: 0;
         }
         &--left{
             width: 100%;
-            display: flex;
             margin-bottom: 4.4rem;
             @include breakpoint(desktop){
                 width: 50%;
                 margin-top: 4.2rem;
             }
-            &__img{
-                width: 50%;
-                position: relative;
+            &__content{
                 @include breakpoint(desktop){
-                    width: 66.5%;
+                    padding-left: 14.4rem;
+                }
+            }
+            &__img{
+                width: 32rem;
+                height: 46.2rem;
+                @include breakpoint(desktop){
+                    width: 33.5rem;
+                    height: 53.5rem;
                 }
                 &::after{
-                    content:"";
-                    position: absolute;
-                    background-color: $yellow;
-                    width: 7rem;
-                    top: 0;
                     left: 32rem;
-                    height: 46.1rem;
+                    height: 46.2rem;
                     @include breakpoint(desktop){
-                        width: 6.8rem;
-                        left: 47.9rem;
+                        left: 33.5rem;
                         height: 53.5rem;
                     }
                 }
-                &-mobile{
-                    position: relative;
-                    width: 100%;
-                    height: 46.1rem;
-                    
-                    @include breakpoint(desktop){
-                        display: none;
-                    }
+                img{
+                    height: 100%;
                 }
-                &-desk{
-                    display: none;
-                    @include breakpoint(desktop){
-                        display: block;
-                        margin-left: 14.4rem;
-                        height: 53.5rem;
-
-                    }
-                }
-            
-
             }
             
             &__text{
-                font-family: $raleway;
-                font-weight: 500;
-                @include fontSizeRem (31, 18);
-                color: $black;
-                display: block;
-                width: 64%;
-                position: absolute;
-                top: 10rem;
                 left: 36rem;
-                letter-spacing: 0.01em;
-                line-height: 1.23em;
-                z-index: 1;
                 @include breakpoint(desktop){
-                    width: 28%;
-                    top: 17.7rem;
+                    top: 17.8rem;
                     letter-spacing: 0;
                     line-height: 2.61rem;
                     left: 50.8rem;
-                }
-                p{
-                    font-weight: 500;
                 }
             }
         }
@@ -114,48 +81,29 @@
                 padding-left: 1rem;
                 margin: 0;
             }
-            &__article{
+            &__content{
                 position: relative;
                 @include breakpoint(desktop){
                     margin-left: 0;
-                    margin-bottom: 6.8rem;
+                    margin-bottom: 7rem;
                 }
-                &__imgmobile{
-                    width: 100%;
-                    @include breakpoint(desktop){
-                        display: none;
-                        height: 41.5rem;
-                    }
+            }
+            &__img{
+                width: 100%;
+                @include breakpoint(desktop){
+                    height: 30.9rem;
+
                 }
-                &__imgdesk{
-                    display: none;
-                    @include breakpoint(desktop){
-                        display: block;
-                        height: 30.9rem;
-                    }
+            }
+            &__text{
+                left: 6.7rem;
+                width: 68%;
+                @include breakpoint(desktop){
+                    left: 4.16rem;
+                    width: 69%;
                 }
-                &__text{
-                    position: absolute;
-                    font-family: $raleway;
-                    font-size: 3.21rem;
+                p{
                     font-weight: 500;
-                    color: $white;
-                    top: 59.5%;
-                    left: 6.7rem;
-                    width: 68%;
-                    line-height: 1.16em;
-                    letter-spacing: 0.007em;
-                    @include breakpoint(desktop){
-                        font-size: 1.8rem;
-                        top: 70.5%;
-                        left: 4.16rem;
-                        width: 69%;
-                        line-height: 2.51rem;
-                        letter-spacing: 0.001em;
-                    }
-                    p{
-                        font-weight: 500;
-                    }
                 }
             }
         }
@@ -180,4 +128,5 @@
     }
 
 }
+
 

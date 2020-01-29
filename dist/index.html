@@ -11,7 +11,7 @@
 
 <link href="css/style.css" rel="stylesheet"></head>
 <body>
-    <div class="main-wrapper clearfix">
+    <div class="main-wrapper">
         <div class="b-header">
             <div class="wrapper">
                 <div class="b-header__content">
@@ -128,25 +128,33 @@
             </h2>
             <div class="b-mixologie__articles c-block--three">
                 <div class="b-mixologie__articles--left">
-                    <div class="b-mixologie__articles--left__img">
-                        <img class="b-mixologie__articles--left__img-mobile" src="./images/Article_mobile1.png"/>
-                        <img class="b-mixologie__articles--left__img-desk" src="./images/Article_desk1.png"/>
-                        <div class="b-mixologie__articles--left__text">
+                    <div class="b-mixologie__articles--left__content c-bordered">
+                        <picture class="b-mixologie__articles--left__img c-bordered__img">
+                            <source srcset="./images/Article_desk1.png" media="(min-width: 768px)">
+                            <img srcset="./images/Article_mobile1.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                        </picture>
+                        <!-- <img class="b-mixologie__articles--left__img-mobile" src="./images/Article_mobile1.png"/>
+                        <img class="b-mixologie__articles--left__img-desk" src="./images/Article_desk1.png"/> -->
+                        <div class="b-mixologie__articles--left__text c-bordered__text">
                             <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
                     </div>
                 </div>
                 <div class="b-mixologie__articles--right">
-                    <div class="b-mixologie__articles--right__article">
-                        <img class="b-mixologie__articles--right__article__imgmobile" src="./images/Article_mobile2.png"/>
-                        <img class="b-mixologie__articles--right__article__imgdesk" src="./images/Article_desk2.png"/>
-                        <div class="b-mixologie__articles--right__article__text">
+                    <div class="b-mixologie__articles--right__content">
+                        <picture class="b-mixologie__articles--right__img">
+                            <source srcset="./images/Article_desk2.png" media="(min-width: 768px)">
+                            <img srcset="./images/Article_mobile2.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                        </picture>
+                        <!-- <img class="b-mixologie__articles--right__article__imgmobile" src="./images/Article_mobile2.png"/>
+                        <img class="b-mixologie__articles--right__article__imgdesk" src="./images/Article_desk2.png"/> -->
+                        <div class="b-mixologie__articles--right__text c-infotext__inside">
                             <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
                     </div>
-                    <div class="b-mixologie__articles--right__article c-block--last">
-                        <img class="b-mixologie__articles--right__article__imgdesk" src="./images/Article_desk3.png"/>
-                        <div class="b-mixologie__articles--right__article__text">
+                    <div class="b-mixologie__articles--right__content c-block--last">
+                        <img class="b-mixologie__articles--right__img" src="./images/Article_desk3.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes"/>
+                        <div class="b-mixologie__articles--right__text c-infotext__inside">
                             <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
                     </div>
@@ -166,25 +174,33 @@
             </h2>
             <div class="b-lieux__articles c-block--three">
                 <div class="b-lieux__articles--left">
-                    <div class="b-lieux__articles--left__img">
-                        <img class="b-lieux__articles--left__img-mobile" src="./images/Lieux_mobile1.png"/>
-                        <img class="b-lieux__articles--left__img-desk" src="./images/Lieux_desk1.png"/>
+                    <div class="b-lieux__articles--left__content">
+                        <picture class="b-lieux__articles--left__img">
+                            <source srcset="./images/Lieux_desk1.png" media="(min-width: 768px)">
+                            <img srcset="./images/Lieux_mobile1.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                        </picture>
+                        <!-- <img class="b-lieux__articles--left__img-mobile" src="./images/Lieux_mobile1.png"/>
+                        <img class="b-lieux__articles--left__img-desk" src="./images/Lieux_desk1.png"/> -->
                         <div class="b-lieux__articles--left__text">
                             <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
                     </div>
                 </div>
                 <div class="b-lieux__articles--right">
-                    <div class="b-lieux__articles--right__article">
-                        <img class="b-lieux__articles--right__article__imgmobile" src="./images/Lieux_mobile2.png"/>
-                        <img class="b-lieux__articles--right__article__imgdesk" src="./images/Lieux_desk2.png"/>
-                        <div class="b-lieux__articles--right__article__text">
+                    <div class="b-lieux__articles--right__content">
+                        <picture class="b-lieux__articles--right__img">
+                            <source srcset="./images/Lieux_desk2.png" media="(min-width: 768px)">
+                            <img srcset="./images/Lieux_mobile2.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                        </picture>
+                        <!-- <img class="b-lieux__articles--right__article__imgmobile" src="./images/Lieux_mobile2.png"/>
+                        <img class="b-lieux__articles--right__article__imgdesk" src="./images/Lieux_desk2.png"/> -->
+                        <div class="b-lieux__articles--right__text">
                             <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
                     </div>
-                    <div class="b-lieux__articles--right__article c-block--last">
-                        <img class="b-lieux__articles--right__article__imgdesk" src="./images/Lieux_desk3.png"/>
-                        <div class="b-lieux__articles--right__article__text">
+                    <div class="b-lieux__articles--right__content c-block--last">
+                        <img class="b-lieux__articles--right__img" src="./images/Lieux_desk3.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes"/>
+                        <div class="b-lieux__articles--right__text">
                             <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
                     </div>
@@ -201,7 +217,7 @@
         <div class="b-megabanner__content">
             <picture class="b-megabanner__content__img">
                 <source srcset="./images/Megabanner_desk.png" media="(min-width: 768px)">
-                <img srcset="./images/Teaser_mobile.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
+                <img srcset="./images/Teaser_mobile.png" alt="Megabanner - Villa Schweppes">
             </picture>
             <div class="b-megabanner__content__text">
                 <span class="b-megabanner__content__text-firstrow">LES</span>
@@ -219,6 +235,13 @@
             </div>
         </div>
     </div>
+    <div class="main-wrapper--black">
+        <div class="b-evenements wrapper">
+            <h2 class="b-evenements__title c-title">Evene
+                <span>ments</span>
+            </h2>
+        </div>
+    </div>
     <div class="b-musique main-wrapper--black">
         <div class="wrapper">
             <h2 class="b-musique__title c-title">
@@ -228,28 +251,28 @@
             <div class="b-musique__articles">
                 <div class="b-musique__articles--top">
                     <div class="b-musique__articles--top__content">
-                        <picture class="b-musique__articles--top__content__img">
+                        <picture class="b-musique__articles--top__img">
                             <source srcset="./images/Musique_desk1.png" media="(min-width: 768px)">
-                            <img srcset="./images/Musique_mobile1.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
+                            <img srcset="./images/Musique_mobile1.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                         </picture>
-                        <div class="b-musique__articles--top__content__text">
+                        <div class="b-musique__articles--top__text">
                             <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
                     </div>
                 </div>
                 <div class="b-musique__articles--bottom">
-                    <div class="b-musique__articles--bottom__article">
-                        <picture class="b-musique__articles--bottom__article__img">
+                    <div class="b-musique__articles--bottom__content">
+                        <picture class="b-musique__articles--bottom__img">
                             <source srcset="./images/Musique_desk2.png" media="(min-width: 768px)">
-                            <img srcset="./images/Musique_mobile2.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
+                            <img srcset="./images/Musique_mobile2.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                         </picture>
-                        <div class="b-musique__articles--bottom__article__text">
+                        <div class="b-musique__articles--bottom__text">
                             <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
                     </div>
-                    <div class="b-musique__articles--bottom__article c-block--last">
-                        <img class="b-musique__articles--bottom__article__img" src="./images/Musique_desk3.png"/>
-                        <div class="b-musique__articles--bottom__article__text">
+                    <div class="b-musique__articles--bottom__content c-block--last">
+                        <img class="b-musique__articles--bottom__img" src="./images/Musique_desk3.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor - Villa Schweppes"/>
+                        <div class="b-musique__articles--bottom__text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                         </div>
                     </div>
@@ -270,38 +293,38 @@
         <div class="b-lifestyle__articles">
             <div class="b-lifestyle__articles--top">
                 <div class="b-lifestyle__articles--top__content">
-                    <picture class="b-lifestyle__articles--top__content__imgleft">
+                    <picture class="b-lifestyle__articles--top__imgleft">
                         <source srcset="./images/Lifestyle_desk1.png" media="(min-width: 768px)">
                         <img srcset="./images/Lifestyle_mobile1.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
                     </picture>
-                    <div class="b-lifestyle__articles--top__content__textleft c-infotext__under">
+                    <div class="b-lifestyle__articles--top__textleft c-infotext__under">
                         <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                     </div>
                 </div>
                 <div class="b-lifestyle__articles--top__content c-bordered">
-                    <picture class="b-lifestyle__articles--top__content__imgright c-bordered__img">
+                    <picture class="b-lifestyle__articles--top__imgright c-bordered__img">
                         <source srcset="./images/Lifestyle_desk2.png" media="(min-width: 768px)">
                         <img srcset="./images/Lifestyle_mobile2.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
                     </picture>
-                    <div class="b-lifestyle__articles--top__content__textright c-bordered__text">
+                    <div class="b-lifestyle__articles--top__textright c-bordered__text">
                         <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                     </div>
                 </div>
             </div>
             <div class="b-lifestyle__articles--bottom c-block--last">
                 <div class="b-lifestyle__articles--bottom__content">
-                    <picture class="b-lifestyle__articles--bottom__content__img">
+                    <picture class="b-lifestyle__articles--bottom__img">
                         <img srcset="./images/Lifestyle_desk3.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
                     </picture>
-                    <div class="b-lifestyle__articles--bottom__content__text c-infotext__inside">
+                    <div class="b-lifestyle__articles--bottom__text c-infotext__inside">
                         <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                     </div>
                 </div>
                 <div class="b-lifestyle__articles--bottom__content">
-                    <picture class="b-lifestyle__articles--bottom__content__img">
+                    <picture class="b-lifestyle__articles--bottom__img">
                         <img srcset="./images/Lifestyle_desk4.png" alt="Soirées, cocktails et people de la nuit - Villa Schweppes">
                     </picture>
-                    <div class="b-lifestyle__articles--bottom__content__text b-lifestyle__articles--bottom__content__text--right c-infotext__inside">
+                    <div class="b-lifestyle__articles--bottom__text b-lifestyle__articles--bottom__text--right c-infotext__inside">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
                     </div>
                 </div>
