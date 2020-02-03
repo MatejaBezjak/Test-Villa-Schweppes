@@ -117,7 +117,7 @@
                 padding: 0;
                 border: none;
                 border-radius: 100%;
-                background-color: $dark-grey;
+                background-color: $light-grey;
                 text-indent: -9999px;
             }
 		}
@@ -133,32 +133,3 @@
     margin-bottom: 0;
 }
 
-// .b-slider__arrows{
-//     position: absolute;
-//     width: 11rem;
-//     height: 11rem;
-//     bottom: 30rem;
-//         &--left{
-//             width: 11rem;
-//             height: 11rem;
-//             &::before{
-//                 position: absolute;
-//                 content: "";
-//                 background: url(/images/Fleche_Gauche.svg) no-repeat;
-//                 width: 100%;
-//                 height: 100%;
-//             }
-//         }
-//         &--right{
-//             width: 11rem;
-//             height: 11rem;
-//             &::before{
-//                 position: absolute;
-//                 content: "";
-//                 background: url(/images/Fleche_Droite.svg) no-repeat;
-//                 width: 100%;
-//                 height: 100%;
-//             }
-//         }
-    
-// }

@@ -46,7 +46,8 @@ module.exports = {
             filename: "css/style.css"
         }),
         new HtmlWebpackPlugin({
-            title: "Nesto",
+            // title: "Nesto",
+            filename: "index.html",
             template: path.resolve(__dirname, "src/index.html")
         }),
         new CopyWebpackPlugin([{
@@ -54,5 +55,7 @@ module.exports = {
             to: 'images'
         }]),
         new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
+
+        
     ]
 }

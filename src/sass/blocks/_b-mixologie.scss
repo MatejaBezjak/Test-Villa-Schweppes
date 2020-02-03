@@ -44,6 +44,12 @@
                 @include breakpoint(desktop){
                     padding-left: 14.4rem;
                 }
+                &::after{
+                    height: 46.2rem;
+                    @include breakpoint(desktop){
+                        height: 53.5rem;
+                    }
+                }
             }
             &__img{
                 width: 32rem;
@@ -52,14 +58,6 @@
                     width: 33.5rem;
                     height: 53.5rem;
                 }
-                &::after{
-                    left: 32rem;
-                    height: 46.2rem;
-                    @include breakpoint(desktop){
-                        left: 33.5rem;
-                        height: 53.5rem;
-                    }
-                }
                 img{
                     height: 100%;
                 }
@@ -67,6 +65,7 @@
             
             &__text{
                 left: 36rem;
+                z-index: 0;
                 @include breakpoint(desktop){
                     top: 17.8rem;
                     letter-spacing: 0;
@@ -83,15 +82,19 @@
             }
             &__content{
                 position: relative;
+                width: 56rem;
+                height: 41.5rem;
                 @include breakpoint(desktop){
                     margin-left: 0;
                     margin-bottom: 7rem;
+                    width: 48.3rem;
+                    height: 30.9rem;
                 }
             }
             &__img{
                 width: 100%;
+                height: 100%;
                 @include breakpoint(desktop){
-                    height: 30.9rem;
 
                 }
             }
@@ -128,5 +131,6 @@
     }
 
 }
+
 
 

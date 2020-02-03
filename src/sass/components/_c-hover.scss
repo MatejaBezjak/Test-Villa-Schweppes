@@ -1,0 +1,23 @@
+.c-img{
+    @include breakpoint (desktop){
+        &:before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transition: all 0.3s ease-in-out;
+            background: url(/images/circle_plus.png) center center no-repeat rgba(0, 0, 0, 0.6);
+            background-size: 2rem 2rem;
+            opacity: 0;
+        }
+        &:hover::before{
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            transition: all 0.3s linear;
+            z-index: 1;
+            }
+    }
+}

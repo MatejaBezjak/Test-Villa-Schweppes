@@ -30,7 +30,7 @@
         @include breakpoint(desktop){
             display: flex;
             justify-content: flex-start;
-            margin-bottom: 5.85rem;
+            margin-bottom: 6.1rem;
             margin-top: -5.8rem;
         }
         &--left{
@@ -47,7 +47,8 @@
                 width: 100%;
                 position: relative;
                 @include breakpoint(desktop){
-                    width: 86.8%;
+                    width: 40rem;
+                    height: 60.5rem;
                 }
             }
             &__img{
@@ -57,7 +58,8 @@
                 @include breakpoint(desktop){
                     display: block;
                     margin-left: 22.6rem;
-                    height: 60.5rem;
+                    height: 100%;
+                    width: 100%;
 
                 }
             }
@@ -72,7 +74,7 @@
                 line-height: 1.18em;
                 padding-top: 2.6rem;
                 @include breakpoint(desktop){
-                    width: 46%;
+                    width: 73%;
                     letter-spacing: 0;
                     line-height: 2.61rem;
                     left: 25.6rem;
@@ -93,7 +95,8 @@
                 padding-left: 4rem;
                 padding-bottom: 0.2rem;
                 @include breakpoint(desktop){
-                    width: 100%;
+                    height: 28rem;
+                    width: 48.3rem;
                     padding-left: 0;
                     margin-bottom: 15.8rem;
                 }
@@ -102,7 +105,8 @@
                 height: 37.9rem;
                 @include breakpoint(desktop){
                     display: block;
-                    height: 28rem;
+                    height: 100%;
+                    width: 100%;
                 }
 
             }
