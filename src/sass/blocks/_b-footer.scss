@@ -4,8 +4,6 @@
     margin-top: 14.4rem;
     padding-bottom: 20rem;
     @include breakpoint(desktop){
-        // padding-bottom: 6rem;
-        // margin-top: 21.4rem;
         padding-bottom: 11.2rem;
         margin-top: 17.5rem;
     }
@@ -21,8 +19,6 @@
             top: -13.56rem;
             height: 9.5rem;
             margin-top: 4.1rem;
-            // top: -13.3rem;
-            // height: 9.6rem;
         }
     }
     &__content{
@@ -33,14 +29,8 @@
         @include breakpoint(desktop){
             display: flex;
             justify-content: space-between;
-            // padding: 0 4.1rem 9.2rem 14.2rem;
             padding: 0 4.1rem 5.2rem 14.2rem;
             top: 7.2rem;
-            // top: 10.3rem;
-            // padding-left: 14.2rem;
-            // padding-right: 4rem;
-            // padding-top: 0;
-            // padding-bottom: 0;
         }
     }
     &__list{
@@ -116,7 +106,6 @@
         &-img{
             height: 100%;
             @include breakpoint(desktop){
-                // width: 7.6rem;
                 width: 100%;
             }
         }
