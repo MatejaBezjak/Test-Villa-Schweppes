@@ -26,7 +26,7 @@
             &::after{
                 position: absolute;
                 content: '';
-                background: url(/images/circle_plus.png) center center no-repeat;
+                background: url(../images/circle_plus.png) center center no-repeat;
                 background-size: contain;
                 height: 3.6rem;
                 width: 3.6rem;
@@ -103,7 +103,7 @@
                         &::before{
                             position: absolute;
                             content: '';
-                            background: url(/images/yellow_wave.png) no-repeat;
+                            background: url(../images/yellow_wave.png) no-repeat;
                             background-size: contain;
                             width: 19.4rem;
                             height: 1rem;
@@ -134,7 +134,7 @@
                     &::before{
                         position: absolute;
                         content: '';
-                        background: url(/images/yellow_wave.png) no-repeat;
+                        background: url(../images/yellow_wave.png) no-repeat;
                         background-size: contain;
                         width: 23.4rem;
                         height: 1rem;
