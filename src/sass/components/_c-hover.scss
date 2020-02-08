@@ -21,3 +21,15 @@
             }
     }
 }
+
+
+.bkgr--black{
+    // display: none;
+    background-color: $black;
+    transition: background-color .9s ease;
+}
+
+.bkgr--white{
+    background-color: $white;
+    transition: background-color .9s ease;
+}

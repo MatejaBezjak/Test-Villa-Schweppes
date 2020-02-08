@@ -92,7 +92,21 @@
                 filter: invert(100%);
                 width: 100%;
                 height: 100%;
+                &:hover{
+                    color: $yellow;
+                transition: all .1s linear;
+                cursor: pointer;
+                opacity: 0;
+                }
             }
+        }
+        &:hover{
+            @include breakpoint(desktop){
+                color: $yellow;
+                transition: all .1s linear;
+                cursor: pointer;
+            }
+                
         }
     }
     &__logo{
@@ -102,6 +116,7 @@
         @include breakpoint(desktop){
             height: 7rem;
             width: 6.6rem;
+            
         }
         &-img{
             height: 100%;

@@ -29,6 +29,22 @@
                 margin-bottom: 4rem;
 
             }
+            &::after{
+                position: absolute;
+                content: "";
+                background: url(../images/line3.png);
+                top: 78.2rem;
+                right: 0rem;
+                width: 38rem;
+                height: 24rem;
+                background-size: cover;
+                @include breakpoint(desktop){
+                    top: 25.7rem;
+                    right: -19.8rem;
+                    height: 23.3rem;
+                    width: 60.7rem;
+                }
+            }
             &__content{
                 position: relative;
                 margin-bottom: 5rem;

@@ -1,0 +1,105 @@
+.b-hero{
+    @include breakpoint(desktop){
+        // padding-top: 2rem;
+    }
+    &__content{
+        @include breakpoint(desktop){
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+        }
+    }
+    &__visual{
+        position: relative;
+        width: 64rem;
+        height: 49.8rem;
+        @include breakpoint(desktop){
+            width: 71rem;
+            height: 86rem;
+        }
+        &__img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__intro{
+        position: relative;
+        @include breakpoint(desktop){
+            width: 49%;
+        }
+        &__title{
+            position: absolute;
+            color: $white;
+            font-size: 14rem;
+            display: inline-block;
+            top: -14.3rem;
+            padding-left: 3.3rem;
+            @include breakpoint(desktop){
+                font-size: 15rem;
+                top: -38.4rem;
+                left: 20rem;
+            }
+            span{
+                top: -2rem;
+                left: -4.5rem;
+                @include breakpoint(desktop){
+                    position: absolute;
+                    left: 32.5rem;
+                }
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                background: url(../images/Triangle.png) no-repeat;
+                background-size: cover;
+                width: 32.3rem;
+                height: 29.6rem;
+                top: -6.7rem;
+                left: 5rem;
+                @include breakpoint(desktop){
+                    top: -11rem;
+                    left: -5.6rem;
+                }
+            }
+        }
+        &__text{
+            position: relative;
+            color: #a3a3a3;
+            font-weight: 500;
+            font-size: 2.6rem;
+            font-family: $raleway;
+            padding: 19.2rem 8rem 7rem 6.8rem;
+            text-align: left;
+            line-height: 4rem;
+            letter-spacing: -0.002em;
+            @include breakpoint(desktop){
+                font-size: 1.4rem;
+                padding: 0;
+                bottom: 12.3rem;
+                width: 40.6%; 
+                line-height: 2.11rem;
+                margin-left: 28.6rem;
+            }
+    
+            &::first-letter{
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 14.1rem;
+                opacity: 100%;
+                color: $white;
+                margin-right: 1rem;
+                margin-left: -0.9rem;
+                @include breakpoint(desktop){
+                    font-size: 6rem;
+                    margin-right: 0.5rem;
+                    margin-left: -0.4rem;
+                }
+            }
+        }
+    }
+}

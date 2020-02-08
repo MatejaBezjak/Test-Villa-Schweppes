@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
+
+<link href="css/style.css" rel="stylesheet"></head>
+<body>
+    <div class="main-wrapper">
+        <div class="b-header b-header--mixologie-p">
+            <div class="wrapper">
+                <div class="b-header__content">
+                    <div class="b-header__logo">
+                        <h1 class="b-header__logo-wrapper"><img class="b-header__logo-img" src="./images/LOGO-VS.svg" alt="Villa Schweppes"/></h1>
+                    </div>
+                    <nav class="b-header__navigation">
+                        <ul class="b-header__navigation-list">
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span>MIXOLOGIE</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span>ÉVÉNEMENTS</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span>LIEUX</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link" href="#"><span>LIFESTYLE</span></a></li>
+                            <li class="b-header__navigation-page">
+                                <a class="b-header__navigation-link b-header__navigation-link--last" href="#"><span class="b-header__navigation-title">MUSIQUE</span></a></li>
+                    </nav>
+                    <div class="b-header__search">
+                        <div class="b-header__search-content">
+                            <div class="b-header__search-content-search">
+                                <img class="b-header__search-content-search-icon" src="./images/search-icone.svg"/>
+                            </div>
+                            <div class="b-header__search-content-location">
+                                <div class="b-header__search-content-location-field">
+                                    <div class="b-header__search-content-location-icon">
+                                        <img src="./images/geoloc-nav.png"/>
+                                    </div>
+                                    <span class="b-header__search-content-location-text">TROUVER UN LIEU</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-header__mobile">
+                    <div class="b-header__mobile__content">
+                        <div class="b-header__mobile__links">
+                            <div class="b-header__mobile__burger">
+                                <div class="b-header__mobile__burger-line"></div>
+                                <div class="b-header__mobile__burger-line"></div>
+                                <div class="b-header__mobile__burger-line"></div>
+                            </div>
+                            <div class="b-header__mobile__target">
+                                <a class="b-header__mobile__target-link" href="#">
+                                    <img class="b-header__mobile__target-pageicon" src="./images/Glass-icone-01.svg"/>
+                                    <span class="b-header__mobile__target-pagetext">MIXOLOGIE</span>
+                                </a> 
+                            </div>
+                            <div class="b-header__mobile__target b-header__mobile__target--last">
+                                <a class="b-header__mobile__target-link" href="#">
+                                    <img class="b-header__mobile__target-locationicon" src="./images/map-icone.svg"/>
+                                    <span class="b-header__mobile__target-locationtext">TROUVER UN LIEU</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="b-hero main-wrapper main-wrapper--black">
+        <div class="b-hero__content wrapper">
+            <div class="b-hero__visual">
+                <picture class="b-hero__visual__img c-img">
+                    <source srcset="./images/Cocktails_main_desk.png" media="(min-width: 768px)">
+                    <img srcset="./images/Cocktails_main_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                </picture>
+            </div>
+            <div class="b-hero__intro">
+                <h2 class="b-hero__intro__title c-title">
+                    Mixo
+                    <span class="c-title">logie</span>
+                </h2>
+                <p class="b-hero__intro__text">
+                    Sorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="b-cocktails main-wrapper--black">
+        <div class="b-cocktails__picker wrapper">
+            <h2 class="b-cocktails__picker__title">Trouver une recette de cocktail</h2>
+            <div class="b-cocktails__picker__container">
+                <div class="b-cocktails__picker__filter b-cocktails__picker__filter--left c-filter-btn">
+                    <span CLASS="b-cocktails__picker__filter__text c-filter-btn__text">AVEC ALCOOL</span>
+                    <span class="b-cocktails__picker__filter__icon c-filter-btn__icon"></span>
+                </div>
+                <div class="b-cocktails__picker__filter b-cocktails__list__filter--right c-filter-btn">
+                    <span CLASS="b-cocktails__picker__filter__text c-filter-btn__text">SANS ALCOOL</span>
+                    <span class="b-cocktails__picker__filter__icon c-filter-btn__icon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="b-cocktails__list main-wrapper--white">
+            <div class="b-cocktails__articles c-block--three wrapper">
+                <div class="b-cocktails__articles--left">
+                    <div class="b-cocktails__articles--left__content ">
+                        <div class="b-cocktails__articles--left__visual c-bordered">
+                            <picture class="b-cocktails__articles--left__visual__img c-bordered__img c-img">
+                                <source srcset="./images/Cocktails_1_1_desk.png" media="(min-width: 768px)">
+                                <img srcset="./images/Cocktails_1_1_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                            </picture>
+                        </div>
+                        <div class="b-cocktails__articles--left__text c-bordered__text">
+                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                            <span>20.07.18</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-cocktails__articles--right">
+                    <div class="b-cocktails__articles--right__content">
+                        <div class="b-cocktails__articles--right__visual">
+                            <picture class="b-cocktails__articles--right__visual__img c-img">
+                                <source srcset="./images/Cocktails_1_2_desk.png" media="(min-width: 768px)">
+                                <img srcset="./images/Cocktails_1_2_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                            </picture>
+                        </div>
+                        <div class="b-cocktails__articles--right__text c-infotext__inside">
+                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                            <span>20.07.18</span>
+                        </div>
+                    </div>
+                    <div class="b-cocktails__articles--right__content c-block--last c-img">
+                        <div class="b-cocktails__articles--right__visual">
+                            <img class="b-cocktails__articles--right__visual__img" src="./images/Cocktails_1_3_desk.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes"/>
+                        </div>
+                        <div class="b-cocktails__articles--right__text c-infotext__inside">
+                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                            <span>19.07.18</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-cocktails__wrapper wrapper">
+                <div class="b-banner wrapper">
+                    <div class="b-banner__content b-banner--mixologie-p">
+                        <picture class="b-banner__content__img">
+                            <source srcset="./images/Banner_mix_desk.png" media="(min-width: 768px)">
+                            <img srcset="./images/Banner_mix_mob.png" alt="Lorem ipsum dolor sit amet consectetur - Villa Schweppes">
+                        </picture>
+                    </div>
+                </div>
+                <div class="b-cocktails__second-list wrapper">
+                    <div class="b-cocktails__second-list__articles">
+                        <div class="b-cocktails__second-list__article c-block--last">
+                            <div class="b-cocktails__second-list__article__visual">
+                                <picture class="b-cocktails__second-list__article__visual__img c-img">
+                                    <img srcset="./images/Cocktails_2_1_desk.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                                </picture>
+                            </div>
+                            <div class="b-cocktails__second-list__article__text c-infotext__under">
+                                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                                <span class="b-cocktails__second-list__article__date">12.07.18</span>
+                            </div>
+                        </div>
+                        <div class="b-cocktails__second-list__article">
+                            <div class="b-cocktails__second-list__article__visual">
+                                <picture class="b-cocktails__second-list__article__visual__img c-img">
+                                    <source srcset="./images/Cocktails_2_2_desk.png" media="(min-width: 768px)">
+                                    <img srcset="./images/Cocktails_2_2_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                                </picture>
+                            </div>
+                            <div class="b-cocktails__second-list__article__text b-cocktails__second-list__article__text--second c-infotext__under">
+                                <p>Quis nostrud exercitation ullamco laboris</p>
+                                <span class="b-cocktails__second-list__article__date b-cocktails__second-list__article__date--second">12.07.18</span>
+                            </div>
+                        </div>
+                        <div class="b-cocktails__second-list__article">
+                            <div class="b-cocktails__second-list__article__visual">
+                                <picture class="b-cocktails__second-list__article__visual__img c-img">
+                                    <source srcset="./images/Cocktails_2_3_desk.png" media="(min-width: 768px)">
+                                    <img srcset="./images/Cocktails_2_3_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                                </picture>
+                            </div>
+                            <div class="b-cocktails__second-list__article__text b-cocktails__second-list__article__text--third c-infotext__under">
+                                <p>Quis nostrud exercitation ullamco laboris</p>
+                                <span class="b-cocktails__second-list__article__date b-cocktails__second-list__article__date--third">08.07.18</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-cocktails__third-list wrapper">
+                <div class="b-cocktails__third-list__articles">
+                    <div class="b-cocktails__third-list__article b-cocktails__third-list__article--left">
+                        <div class="b-cocktails__third-list__article__visual b-cocktails__third-list__article__visual--left">
+                            <picture class="b-cocktails__third-list__article__visual__img b-cocktails__third-list__article__visual__img--left c-img">
+                                <source srcset="./images/Cocktails_3_1_desk.png" media="(min-width: 768px)">
+                                <img srcset="./images/Cocktails_3_1_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                            </picture>
+                        </div>
+                        <div class="b-cocktails__third-list__article__text b-cocktails__third-list__article__text--left c-infotext__under">
+                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                            <span class="b-cocktails__third-list__article__date b-cocktails__second-list__article__date--left">08.07.18</span>
+                        </div>
+                    </div>
+                    <div class="b-cocktails__third-list__article b-cocktails__third-list__article--right">
+                        <div class="b-cocktails__third-list__article__visual b-cocktails__third-list__article__visual--right">
+                            <picture class="b-cocktails__third-list__article__visual__img b-cocktails__third-list__article__visual__img--right c-img">
+                                <source srcset="./images/Cocktails_3_2_desk.png" media="(min-width: 768px)">
+                                <img srcset="./images/Cocktails_3_2_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                            </picture>
+                        </div>
+                        <div class="b-cocktails__third-list__article__text b-cocktails__third-list__article__text--right c-infotext__under">
+                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                            <span class="b-cocktails__third-list__article__date b-cocktails__second-list__article__date--right">22.06.18</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-btn c-btn--cocktails">
+                <a class="c-btn__field c-btn--cocktails__field" href="#">
+                    <span class="c-btn__text c-btn--cocktails__text">VOIR PLUS</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="b-feed wrapper">
+        <div class="b-feed__intro">
+            <h2 class="b-feed__intro__title c-title">
+                <span class="b-feed__intro__title__first-row c-title">Autres</span>
+                <span class="b-feed__intro__title__second-row c-title">articles</span>
+                <span class="b-feed__intro__title__third-row c-title">cocktails</span>
+            </h2>
+            <div class="b-feed__intro__filter">
+                <div class="b-feed__intro__filter__field c-filter-btn">
+                    <span class="b-feed__intro__filter__field__text c-filter-btn__text">LES PLUS RECENTS</span>
+                    <span class="b-feed__intro__filter__field__icon c-filter-btn__icon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="b-feed__articles">
+            <div class="b-feed__article b-feed__article--left b-feed__article--first-desk">
+                <div class="b-feed__article__visual ">
+                    <picture class="b-feed__article__visual__img c-img">
+                        <source srcset="./images/List_1_desk.png" media="(min-width: 768px)">
+                        <img srcset="./images/List_1_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                    </picture>
+                </div>
+                
+                <div class="b-feed__article__text c-infotext__under">
+                    <p>Quis nostrud exercitation ullamco laboris</p>
+                    <span class="b-feed__article__date">12.06.18</span>
+                </div>
+            </div>
+            <div class="b-feed__article">
+                <div class="b-feed__article__visual">
+                    <picture class="b-feed__article__visual__img c-img">
+                        <source srcset="./images/List_2_desk.png" media="(min-width: 768px)">
+                        <img srcset="./images/List_2_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                    </picture>
+                </div>
+                
+                <div class="b-feed__article__text c-infotext__under">
+                    <p>Quis nostrud exercitation ullamco laboris</p>
+                    <span class="b-feed__article__date">12.06.18</span>
+                </div>
+            </div>
+            <div class="b-feed__article b-feed__article--left">
+                <div class="b-feed__article__visual ">
+                    <picture class="b-feed__article__visual__img c-img">
+                        <source srcset="./images/List_3_desk.png" media="(min-width: 768px)">
+                        <img srcset="./images/List_3_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                    </picture>
+                </div>
+                
+                <div class="b-feed__article__text c-infotext__under">
+                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <span class="b-feed__article__date">12.06.18</span>
+                </div>
+            </div>
+            <div class="b-feed__article b-feed__article--first-desk">
+                <div class="b-feed__article__visual ">
+                    <picture class="b-feed__article__visual__img c-img">
+                        <source srcset="./images/List_4_desk.png" media="(min-width: 768px)">
+                        <img srcset="./images/List_4_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                    </picture>
+                </div>
+                
+                <div class="b-feed__article__text c-infotext__under">
+                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <span class="b-feed__article__date">12.06.18</span>
+                </div>
+            </div>
+            <div class="b-feed__article b-feed__article--left">
+                <div class="b-feed__article__visual ">
+                    <picture class="b-feed__article__visual__img c-img">
+                        <source srcset="./images/List_5_desk.png" media="(min-width: 768px)">
+                        <img srcset="./images/List_5_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                    </picture>
+                </div>
+                
+                <div class="b-feed__article__text c-infotext__under">
+                    <p>Quis nostrud exercitation ullamco laboris</p>
+                    <span class="b-feed__article__date">12.06.18</span>
+                </div>
+            </div>
+            <div class="b-feed__article">
+                <div class="b-feed__article__visual">
+                    <picture class="b-feed__article__visual__img c-img">
+                        <source srcset="./images/List_6_desk.png" media="(min-width: 768px)">
+                        <img srcset="./images/List_6_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                    </picture>
+                </div>
+                
+                <div class="b-feed__article__text c-infotext__under">
+                    <p>Quis nostrud exercitation ullamco laboris</p>
+                    <span class="b-feed__article__date">12.06.18</span>
+                </div>
+            </div>
+            <div class="b-feed__article b-feed__article--left b-feed__article--first-desk">
+                <div class="b-feed__article__visual">
+                    <picture class="b-feed__article__visual__img c-img">
+                        <source srcset="./images/List_7_desk.png" media="(min-width: 768px)">
+                        <img srcset="./images/List_7_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                    </picture>
+                </div>
+                
+                <div class="b-feed__article__text c-infotext__under">
+                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <span class="b-feed__article__date">12.06.18</span>
+                </div>
+            </div>
+            <div class="b-feed__article">
+                <div class="b-feed__article__visual">
+                    <picture class="b-feed__article__visual__img c-img">
+                        <source srcset="./images/List_8_desk.png" media="(min-width: 768px)">
+                        <img srcset="./images/List_8_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                    </picture>
+                </div>
+                
+                <div class="b-feed__article__text c-infotext__under">
+                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <span class="b-feed__article__date">12.06.18</span>
+                </div>
+            </div>
+            <div class="b-feed__article c-block--last">
+                <div class="b-feed__article__visual">
+                    <picture class="b-feed__article__visual__img c-img">
+                        <img srcset="./images/List_9_desk.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
+                    </picture>
+                </div>
+                
+                <div class="b-feed__article__text c-infotext__under">
+                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <span class="b-feed__article__date">12.06.18</span>
+                </div>
+            </div>
+        </div>
+        <div class="c-btn c-btn--cocktails">
+            <a class="c-btn__field c-btn--cocktails__field" href="#">
+                <span class="c-btn__text c-btn--cocktails__text">VOIR PLUS</span>
+            </a>
+        </div>
+    </div>
+    <div class="b-footer main-wrapper--black">
+        <div class="b-footer__content wrapper">
+            <ul class="b-footer__list">
+                <li class="b-footer__page">
+                    <a class="b-footer__link" href="#">Contact</a>
+                </li>
+                <li class="b-footer__page">
+                    <a class="b-footer__link" href="#">CGU</a>
+                </li>
+                <li class="b-footer__page">
+                    <a class="b-footer__link" href="#">Mentions legales</a>
+                </li>
+                <li class="b-footer__page">
+                    <a class="b-footer__link b-footer__link--mob" href="#">Politique de confidentialite</a>
+                </li>
+                <li class="b-footer__page">
+                    <a class="b-footer__link" href="#">Tous les tags</a>
+                </li>
+                <li class="b-footer__page">
+                    <a class="b-footer__link" href="#">Espace presse</a>
+                </li>
+                <li class="b-footer__page">
+                    <a class="b-footer__link" href="#">Tous les artistes</a>
+                </li>
+                <li class="b-footer__page">
+                    <a class="b-footer__link" href="#">Tous les lieux</a>
+                </li>
+            </ul>
+            <div class="b-footer__social">
+                <div class="b-footer__social-field">
+                    <img class="b-footer__social-field-icon" src="./images/facebook-logo.svg">
+                </div>
+                <div class="b-footer__social-field">
+                    <img class="b-footer__social-field-icon" src="./images/twitter-logo.svg">
+                </div>
+                <div class="b-footer__social-field">
+                    <img class="b-footer__social-field-icon" src="./images/youtube-logo.svg">
+                </div>
+            </div>
+            <div class="b-footer__logo">
+                <img class="b-footer__logo-img" src="./images/LOGO-VS.svg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

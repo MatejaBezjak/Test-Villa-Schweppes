@@ -50,6 +50,10 @@ module.exports = {
             filename: "index.html",
             template: path.resolve(__dirname, "src/index.html")
         }),
+        new HtmlWebpackPlugin({
+            filename: "mixologie_page.html",
+            template: path.resolve(__dirname, "src/mixologie_page.html")
+        }),
         new CopyWebpackPlugin([{
             from: 'src/images',
             to: 'images'

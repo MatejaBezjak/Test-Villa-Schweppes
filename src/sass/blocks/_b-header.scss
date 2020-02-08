@@ -71,6 +71,15 @@
                     transform: rotate(12deg);
                     left: 2.2rem;
                 }
+                &:hover{
+                    height: 100%;
+                    width: 100%;
+                    // opacity: 1;
+                    color: $yellow;
+                    transition: all 0.3s linear;
+                    // z-index: 1;
+                }
+
                 &--last{
                     &::after{
                         display: none;
@@ -138,5 +147,12 @@
                 }
             }
         }
+    }
+}
+
+.b-header--mixologie-p{
+    @include breakpoint(desktop){
+        position: fixed;
+        background-color: transparent;
     }
 }

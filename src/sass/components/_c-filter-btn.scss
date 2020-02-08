@@ -1,0 +1,55 @@
+.c-filter-btn{
+    width: 56rem;
+    background-color: $white;
+    margin: auto;
+    text-align: left;
+    line-height: 12.5rem;
+    margin-bottom: 2.2rem;
+    margin-top: 1.4rem;
+    // padding-left: 7rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 0 7rem;
+    @include breakpoint(desktop){
+        width: 40.1rem;
+        line-height: 7.2rem;
+        margin-top: 0.6rem;
+        padding-left: 2.8rem;
+        padding-right: 3rem;
+    }
+    &__text{
+        font-family: $raleway;
+        font-size: 2.1rem;
+        color: $black;
+        display: inline-block;
+        margin-top: 0.4rem;
+        font-weight: 600;
+        letter-spacing: 0.008em;
+        @include breakpoint(desktop){
+            font-size: 1.5rem;
+            letter-spacing: -0.037em;
+            margin-top: 0.6rem;
+        }
+    }
+    &__icon{
+        position: relative;
+        display: inline-block;
+        &::before{
+            position: relative;
+            content: "";
+            // background: url("../images/Arrow_black.png") no-repeat;
+            // background-size: contain;
+            width: 2.2rem;
+            height: 2.2rem;
+            display: inline-block;
+            top: 1.8rem;
+            @include breakpoint(desktop){
+                width: 1.5rem;
+                height: 1.5rem;
+                top: 1.2rem;
+            }
+
+        }
+
+    }
+}

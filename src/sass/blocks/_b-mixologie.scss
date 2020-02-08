@@ -75,10 +75,28 @@
             }
         }
         &--right{
+            position: relative;
             margin: 0 4rem 9.9rem;
             @include breakpoint(desktop){
                 padding-left: 1rem;
                 margin: 0;
+            }
+
+            &::after{
+                position: absolute;
+                content: "";
+                background: url(../images/line1.png);
+                top: -7.9rem;
+                right: -3.99rem;
+                width: 34.2rem;
+                height: 23rem;
+                background-size: cover;
+                @include breakpoint(desktop){
+                    top: -11.9rem;
+                    right: -22.6rem;
+                    height: 25.3rem;
+                    width: 57.8rem;
+                }
             }
             &__content{
                 position: relative;
