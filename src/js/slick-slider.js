@@ -48,49 +48,7 @@ $(window).resize(function(e){
 
 
 
-// $(window).ready(function() {
 
-//     var winHeight = $(window).height();
-//     var topLimit = winHeight * 0.2;
-//     var bottomLimit = winHeight * 0.8;
-//     $('body')
-//         .height(winHeight)
-//         .scrollie({
-
-//         })
-// })
-
-// $(window).scroll(function(){
-//     if($(this).scrollTop().offset().top - 200){
-//         $('html, body').addClass('bkgr--black')
-//     }
-//     if($(this).scrollTop().offset().top - 1000){
-//         $('html, body').removeClass('bkgr--black')
-//     }
-// });
-
-// $(window).load(function() {
-//     $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
-//     $(window).scroll(function(){
-//         if($(window).height() >700){
-//             $('html, body').addClass('bkgr--black')
-//         }
-//         if($(window).height() >= 7000){
-//             $('html, body').removeClass('bkgr--black')
-//         }
-//     });
-//   });
-
-
-// $(window).scroll(function() {
-    
-//         if($(window).height().top -50){
-//             $('html, body').addClass('bkgr--black')
-//         }
-//         if($(window).height().bottom -50){
-//             $('html, body').removeClass('bkgr--black')
-//         }
-//   });
 
 
 

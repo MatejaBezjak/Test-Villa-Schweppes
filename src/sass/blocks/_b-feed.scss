@@ -120,8 +120,6 @@
             width: 79%;
             margin: auto;
             padding-bottom: 8rem;
-
-
         }
         
     }
@@ -129,7 +127,6 @@
         width: 42.8%;
         padding-bottom: 4.9rem;
         @include breakpoint(desktop){
-            // margin-left: 2rem;
             width: 29.6%;
             padding-bottom: 2.3rem;
             &--first-desk{

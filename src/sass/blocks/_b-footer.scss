@@ -16,7 +16,7 @@
         right:0;
         background:linear-gradient(to bottom right, transparent 49%, $black 50%);
         @include breakpoint(desktop){
-            top: -13.56rem;
+            top: -13.4rem;
             height: 9.5rem;
             margin-top: 4.1rem;
         }
@@ -64,6 +64,14 @@
                 display: none;
             }
         }
+        &:hover{
+            @include breakpoint(desktop){
+                color: $yellow;
+                transition: all .1s linear;
+                cursor: pointer;
+            }
+                
+        }
 
     }
     &__social{
@@ -88,28 +96,33 @@
                 width: 2.51rem;
                 height: 2.51rem;
             }
+            
             &-icon{
-                filter: invert(100%);
                 width: 100%;
                 height: 100%;
-                &:hover{
-                    color: $yellow;
-                transition: all .1s linear;
+                display: inline-block;
+                transition: all .3s ease;
                 cursor: pointer;
-                opacity: 0;
+                
+                img{
+                    filter: invert(100%);
+                    width: 100%;
+                    
                 }
             }
-        }
-        &:hover{
-            @include breakpoint(desktop){
-                color: $yellow;
-                transition: all .1s linear;
-                cursor: pointer;
+            &-icon:hover{
+                @include breakpoint(desktop){
+                    color: $yellow;
+                    transition: all .1s linear;
+                }
+                    
             }
-                
+            
         }
+        
     }
     &__logo{
+        display: block;
         height: 15.6rem;
         max-width: 15rem;
         margin: auto;

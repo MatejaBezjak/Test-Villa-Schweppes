@@ -1,8 +1,7 @@
 .b-cocktails{
-    padding-top: 4.3rem;
     margin-bottom: 10.1rem;
+    margin-top: -0.2rem;
     @include breakpoint(desktop){
-        padding-top: 5.2rem;
         margin-bottom: 11.1rem;
     }
     &__picker{
@@ -20,7 +19,6 @@
             padding: 0 5rem 4rem 3.9rem;
             letter-spacing: -0.007em;
             text-align: left;
-            // margin-bottom: 9.5rem;
             @include breakpoint(desktop){
                 font-size: 4.9rem;
                 padding-left: 30.8rem;
@@ -38,58 +36,17 @@
 
         }
         &__filter{
-            // width: 56rem;
-            // background-color: $white;
-            // margin: auto;
-            // text-align: left;
-            // line-height: 12.5rem;
-            // margin-bottom: 2.2rem;
-            // margin-top: 1.4rem;
-            // display: flex;
-            // justify-content: space-between;
-            // padding: 0 4rem 0 7rem;
             @include breakpoint(desktop){
-                // width: 40.1rem;
-                // line-height: 7.2rem;
-                // margin-top: 0.6rem;
-                // padding-left: 2.8rem;
-                // padding-right: 3rem;
                 &--right{
                     padding-right: 3.2rem;
                 }
             }
             &__text{
-                // font-family: $raleway;
-                // font-size: 2.1rem;
-                // color: $black;
-                // display: inline-block;
-                // margin-top: 0.4rem;
-                // font-weight: 600;
-                // letter-spacing: 0.008em;
-                // @include breakpoint(desktop){
-                //     font-size: 1.5rem;
-                //     letter-spacing: -0.037em;
-                //     margin-top: 0.6rem;
-                // }
             }
             &__icon{
-                // position: relative;
-                // display: inline-block;
                 &::before{
-                    // position: relative;
-                    // content: "";
                     background: url("../images/Arrow_black.png") no-repeat;
                     background-size: contain;
-                    // width: 2.2rem;
-                    // height: 2.2rem;
-                    // display: inline-block;
-                    // top: 1.8rem;
-                    // @include breakpoint(desktop){
-                    //     width: 1.5rem;
-                    //     height: 1.5rem;
-                    //     top: 1.2rem;
-                    // }
-
                 }
 
             }
@@ -115,7 +72,6 @@
             @include breakpoint(desktop){
                 padding-bottom: 0;
                 margin-top: 11.7rem;
-                // padding-left: 4.7rem;
                 width: 50%;
             }
             &__content{
@@ -181,7 +137,7 @@
                 }
                 span{
                     font-size: 2.5rem;
-                    color: #a3a3a3;
+                    color: $light;
                     @include breakpoint(desktop){
                         font-size: 1.2rem;
                         display: block;
@@ -228,8 +184,6 @@
                     width: 48.3rem;
                     height: 30.9rem;
                 }
-                
-                
                 &__img{
                     width: 100%;
                     height: 100%;
@@ -262,7 +216,7 @@
                 span{
                     font-size: 2.5rem;
                     top: -1rem;
-                    color: #a3a3a3;
+                    color: $light;
                     @include breakpoint(desktop){
                         font-size: 1.2rem;
                     }
@@ -347,9 +301,6 @@
                     padding-bottom: 0.6rem;
                     @include breakpoint(desktop){
                         padding-bottom: 0.3rem;
-                        &--third{
-                            // padding-bottom: 0.3rem;
-                        }
                     }
                 }
             }
@@ -358,7 +309,7 @@
                 font-size: 2.4rem;
                 font-weight: 500;
                 margin-left: 0.1rem;
-                color: #a3a3a3;
+                color: $light;
                 @include breakpoint(desktop){
                     font-size: 1.2rem;
                     &--second{
@@ -466,12 +417,6 @@
                         padding-bottom: 0.3rem;
                     }
                 }
-                &--left{
-    
-                }
-                &--right{
-    
-                }
             }
             &__date{
                 position: relative;
@@ -479,19 +424,12 @@
                 font-size: 2.4rem;
                 font-weight: 500;
                 letter-spacing: 0.001em;
-                color: #a3a3a3;
+                color: $light;
                 @include breakpoint(desktop){
                     font-size: 1.2rem;
                 }
-                &--left{
-    
-                }
-                &--right{
-    
-                }
             }
         }
-        
     }
 }
 

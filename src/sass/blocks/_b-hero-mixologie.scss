@@ -1,6 +1,7 @@
 .b-hero{
+    padding-bottom: 4.5rem;
     @include breakpoint(desktop){
-        // padding-top: 2rem;
+        padding-bottom: 5.4rem;
     }
     &__content{
         @include breakpoint(desktop){

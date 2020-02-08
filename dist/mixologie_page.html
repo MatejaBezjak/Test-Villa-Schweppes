@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./images/Favicon.png"/>
+    <title>Villa Schweppes</title>
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
@@ -15,9 +16,9 @@
         <div class="b-header b-header--mixologie-p">
             <div class="wrapper">
                 <div class="b-header__content">
-                    <div class="b-header__logo">
+                    <a class="b-header__logo" href="index.html">
                         <h1 class="b-header__logo-wrapper"><img class="b-header__logo-img" src="./images/LOGO-VS.svg" alt="Villa Schweppes"/></h1>
-                    </div>
+                    </a>
                     <nav class="b-header__navigation">
                         <ul class="b-header__navigation-list">
                             <li class="b-header__navigation-page">
@@ -74,7 +75,7 @@
         </div>
     <div class="b-hero main-wrapper main-wrapper--black">
         <div class="b-hero__content wrapper">
-            <div class="b-hero__visual">
+            <div class="b-hero__visual c-overlay">
                 <picture class="b-hero__visual__img c-img">
                     <source srcset="./images/Cocktails_main_desk.png" media="(min-width: 768px)">
                     <img srcset="./images/Cocktails_main_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
@@ -92,24 +93,27 @@
             
         </div>
     </div>
-    <div class="b-cocktails main-wrapper--black">
-        <div class="b-cocktails__picker wrapper">
-            <h2 class="b-cocktails__picker__title">Trouver une recette de cocktail</h2>
-            <div class="b-cocktails__picker__container">
-                <div class="b-cocktails__picker__filter b-cocktails__picker__filter--left c-filter-btn">
-                    <span CLASS="b-cocktails__picker__filter__text c-filter-btn__text">AVEC ALCOOL</span>
-                    <span class="b-cocktails__picker__filter__icon c-filter-btn__icon"></span>
-                </div>
-                <div class="b-cocktails__picker__filter b-cocktails__list__filter--right c-filter-btn">
-                    <span CLASS="b-cocktails__picker__filter__text c-filter-btn__text">SANS ALCOOL</span>
-                    <span class="b-cocktails__picker__filter__icon c-filter-btn__icon"></span>
+    <div class="b-cocktails main-wrapper">
+        <div class="main-wrapper--black">
+            <div class="b-cocktails__picker wrapper">
+                <h2 class="b-cocktails__picker__title">Trouver une recette de cocktail</h2>
+                <div class="b-cocktails__picker__container">
+                    <div class="b-cocktails__picker__filter b-cocktails__picker__filter--left c-filter-btn">
+                        <span CLASS="b-cocktails__picker__filter__text c-filter-btn__text">AVEC ALCOOL</span>
+                        <span class="b-cocktails__picker__filter__icon c-filter-btn__icon"></span>
+                    </div>
+                    <div class="b-cocktails__picker__filter b-cocktails__list__filter--right c-filter-btn">
+                        <span CLASS="b-cocktails__picker__filter__text c-filter-btn__text">SANS ALCOOL</span>
+                        <span class="b-cocktails__picker__filter__icon c-filter-btn__icon"></span>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <div class="b-cocktails__list main-wrapper--white">
             <div class="b-cocktails__articles c-block--three wrapper">
                 <div class="b-cocktails__articles--left">
-                    <div class="b-cocktails__articles--left__content ">
+                    <div class="b-cocktails__articles--left__content">
                         <div class="b-cocktails__articles--left__visual c-bordered">
                             <picture class="b-cocktails__articles--left__visual__img c-bordered__img c-img">
                                 <source srcset="./images/Cocktails_1_1_desk.png" media="(min-width: 768px)">
@@ -125,7 +129,7 @@
                 <div class="b-cocktails__articles--right">
                     <div class="b-cocktails__articles--right__content">
                         <div class="b-cocktails__articles--right__visual">
-                            <picture class="b-cocktails__articles--right__visual__img c-img">
+                            <picture class="b-cocktails__articles--right__visual__img c-img c-overlay">
                                 <source srcset="./images/Cocktails_1_2_desk.png" media="(min-width: 768px)">
                                 <img srcset="./images/Cocktails_1_2_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                             </picture>
@@ -136,7 +140,7 @@
                         </div>
                     </div>
                     <div class="b-cocktails__articles--right__content c-block--last c-img">
-                        <div class="b-cocktails__articles--right__visual">
+                        <div class="b-cocktails__articles--right__visual c-overlay">
                             <img class="b-cocktails__articles--right__visual__img" src="./images/Cocktails_1_3_desk.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes"/>
                         </div>
                         <div class="b-cocktails__articles--right__text c-infotext__inside">
@@ -246,8 +250,8 @@
         </div>
         <div class="b-feed__articles">
             <div class="b-feed__article b-feed__article--left b-feed__article--first-desk">
-                <div class="b-feed__article__visual ">
-                    <picture class="b-feed__article__visual__img c-img">
+                <div class="b-feed__article__visual  c-img">
+                    <picture class="b-feed__article__visual__img">
                         <source srcset="./images/List_1_desk.png" media="(min-width: 768px)">
                         <img srcset="./images/List_1_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                     </picture>
@@ -259,8 +263,8 @@
                 </div>
             </div>
             <div class="b-feed__article">
-                <div class="b-feed__article__visual">
-                    <picture class="b-feed__article__visual__img c-img">
+                <div class="b-feed__article__visual c-img">
+                    <picture class="b-feed__article__visual__img">
                         <source srcset="./images/List_2_desk.png" media="(min-width: 768px)">
                         <img srcset="./images/List_2_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                     </picture>
@@ -272,8 +276,8 @@
                 </div>
             </div>
             <div class="b-feed__article b-feed__article--left">
-                <div class="b-feed__article__visual ">
-                    <picture class="b-feed__article__visual__img c-img">
+                <div class="b-feed__article__visual c-img">
+                    <picture class="b-feed__article__visual__img">
                         <source srcset="./images/List_3_desk.png" media="(min-width: 768px)">
                         <img srcset="./images/List_3_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                     </picture>
@@ -285,8 +289,8 @@
                 </div>
             </div>
             <div class="b-feed__article b-feed__article--first-desk">
-                <div class="b-feed__article__visual ">
-                    <picture class="b-feed__article__visual__img c-img">
+                <div class="b-feed__article__visual c-img">
+                    <picture class="b-feed__article__visual__img">
                         <source srcset="./images/List_4_desk.png" media="(min-width: 768px)">
                         <img srcset="./images/List_4_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                     </picture>
@@ -298,8 +302,8 @@
                 </div>
             </div>
             <div class="b-feed__article b-feed__article--left">
-                <div class="b-feed__article__visual ">
-                    <picture class="b-feed__article__visual__img c-img">
+                <div class="b-feed__article__visual c-img">
+                    <picture class="b-feed__article__visual__img">
                         <source srcset="./images/List_5_desk.png" media="(min-width: 768px)">
                         <img srcset="./images/List_5_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                     </picture>
@@ -311,8 +315,8 @@
                 </div>
             </div>
             <div class="b-feed__article">
-                <div class="b-feed__article__visual">
-                    <picture class="b-feed__article__visual__img c-img">
+                <div class="b-feed__article__visual c-img">
+                    <picture class="b-feed__article__visual__img">
                         <source srcset="./images/List_6_desk.png" media="(min-width: 768px)">
                         <img srcset="./images/List_6_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                     </picture>
@@ -324,8 +328,8 @@
                 </div>
             </div>
             <div class="b-feed__article b-feed__article--left b-feed__article--first-desk">
-                <div class="b-feed__article__visual">
-                    <picture class="b-feed__article__visual__img c-img">
+                <div class="b-feed__article__visual c-img">
+                    <picture class="b-feed__article__visual__img">
                         <source srcset="./images/List_7_desk.png" media="(min-width: 768px)">
                         <img srcset="./images/List_7_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                     </picture>
@@ -337,8 +341,8 @@
                 </div>
             </div>
             <div class="b-feed__article">
-                <div class="b-feed__article__visual">
-                    <picture class="b-feed__article__visual__img c-img">
+                <div class="b-feed__article__visual c-img">
+                    <picture class="b-feed__article__visual__img">
                         <source srcset="./images/List_8_desk.png" media="(min-width: 768px)">
                         <img srcset="./images/List_8_mob.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                     </picture>
@@ -350,8 +354,8 @@
                 </div>
             </div>
             <div class="b-feed__article c-block--last">
-                <div class="b-feed__article__visual">
-                    <picture class="b-feed__article__visual__img c-img">
+                <div class="b-feed__article__visual c-img">
+                    <picture class="b-feed__article__visual__img">
                         <img srcset="./images/List_9_desk.png" alt="Quis nostrud exercitation ullamco laboris nisi ut aliquip - Villa Schweppes">
                     </picture>
                 </div>
@@ -398,18 +402,24 @@
             </ul>
             <div class="b-footer__social">
                 <div class="b-footer__social-field">
-                    <img class="b-footer__social-field-icon" src="./images/facebook-logo.svg">
+                    <a class="b-footer__social-field-icon" target="_blank" href="https://www.facebook.com/villaschweppes/">
+                        <img src="./images/facebook-logo.svg">
+                    </a>
                 </div>
                 <div class="b-footer__social-field">
-                    <img class="b-footer__social-field-icon" src="./images/twitter-logo.svg">
+                    <a class="b-footer__social-field-icon" target="_blank" href="https://www.instagram.com/villaschweppes/">
+                        <img  src="./images/twitter-logo.svg">
+                    </a>
                 </div>
                 <div class="b-footer__social-field">
-                    <img class="b-footer__social-field-icon" src="./images/youtube-logo.svg">
+                    <a class="b-footer__social-field-icon" target="_blank" href="https://www.instagram.com/villaschweppes/">
+                        <img src="./images/youtube-logo.svg">
+                    </a>
                 </div>
             </div>
-            <div class="b-footer__logo">
+            <a class="b-footer__logo" href="index.html">
                 <img class="b-footer__logo-img" src="./images/LOGO-VS.svg">
-            </div>
+            </a>
         </div>
     </div>
 </div>
