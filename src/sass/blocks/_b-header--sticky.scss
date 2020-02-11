@@ -1,51 +1,59 @@
-.b-header{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: 4.8rem 4rem 1rem 4.7rem;
-    z-index: 3;
+.b-header--sticky{
+    // visibility: hidden;
+    display: none;
     @include breakpoint(desktop){
-        position: sticky;
-        background-color: $black;
-        padding: 3.7rem 6.1rem 0 9.2rem;
-        z-index: 1;
-        transition: all 0.3s linear;
-    }
-    &__content{
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        // visibility: hidden;
+        // display: none;
+        display: block;
+        position: fixed;
         width: 100%;
+        top: 0;
+        background-color: $black;
+        padding: 1.3rem 6.1rem 1.1rem 11.7rem;
+        z-index: 2;
+    }
+    .b-header__content{
+        
         @include breakpoint(desktop){
             align-items: flex-start;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
         }
     }
-    &__logo{
-        position: relative;
-        width: 12.6rem;
-            @include breakpoint(desktop){
-                width: 10.4rem;
-            }
+    .b-header__logo{
+        @include breakpoint(desktop){
+            position: relative;
+            width: 5.8rem;
+            max-width: 100%;
+        }
         &-wrapper{
-            width: 100%;
+            @include breakpoint(desktop){
+                width: 100%;
+            }
         }
         &-img{
-            width: 100%;
+            @include breakpoint(desktop){
+                width: 100%;
+            }
         }
 
     }
-    &__navigation{
-        display: none;
+    .b-header__navigation{
         @include breakpoint(desktop){
             display: flex;
-            padding-top: 1.9rem;
+            padding-top: 2.3rem;
+            width: 59%;
+            padding-right: 0.5rem;
             padding-left: 2rem;
         }
         &-list{
             @include breakpoint(desktop){
                 display: flex;
                 max-width: 100%;
+                width: 100%;
+                justify-content: space-between;
             }
 
         }
@@ -66,14 +74,14 @@
                 letter-spacing: .25rem;
                 text-transform: uppercase;
                 transition: all .3s linear;
-                padding-right: 4.3rem;
+                padding-right: 4.04rem;
                 &::after{
                     position: relative;
                     content: '/';
                     color: #c0b500;
                     font-size: 2rem;
                     transform: rotate(12deg);
-                    left: 2.2rem;
+                    left: 1.9rem;
                 }
                 &:hover{
                     height: 100%;
@@ -81,30 +89,37 @@
                     color: $yellow;
                     transition: all 0.3s linear;
                 }
+                span{
+                    font-weight: 700;
+                }
 
                 &--last{
-                    &::after{
-                        display: none;
+                    @include breakpoint(desktop){
+                        &::after{
+                            display: none;
+                        }
                     }
+                    
                 }
             }
 
         }
     }
     
-    &__search{
+    .b-header__search{
         @include breakpoint(desktop){
             display: flex;
+            margin-top: 0.4rem;
         }
         &-content{
-            display: flex;
+            @include breakpoint(desktop){
+                display: flex;
+            }
             &-search{
-                background-color: white;
-                padding: 2.63rem 2.33rem;
-                border-radius: 0.2em;
-                margin-top: -0.8rem;
                 @include breakpoint(desktop){
-                    padding: 1.93rem 1rem;
+                    background-color: white;
+                    border-radius: 0.2em;
+                    padding: 1.9rem 1rem;
                     margin-top: 0;
                 }
                 &-icon{
@@ -117,7 +132,6 @@
 
             }
             &-location{
-                display: none;
                 @include breakpoint(desktop){
                     display: flex;
                     align-items: center;
@@ -130,12 +144,13 @@
                         align-items: center;
                         background-color: $dark-grey;
                         height: 97%;
-                        padding: 0.1rem 4.7rem 0.2rem 3.5rem;
+                        padding: 0.5rem 4.7rem 0.2rem 3.5rem;
                     } 
                 }
                 &-icon{
                     @include breakpoint(desktop){
                         padding-right: 1rem;
+                        margin-top: -0.4rem;
                     }
                 }
                 &-text{
@@ -149,13 +164,5 @@
                 }
             }
         }
-    }
-}
-
-.b-header--mixologie-p{
-    @include breakpoint(desktop){
-        position: fixed;
-        background-color: $black;
-        
     }
 }
