@@ -1,4 +1,5 @@
-console.log('Yeeeeesh!');
+// Slick-slider Main
+
 $(document).ready(function(){
     $('.b-slider').slick({
         autoplay: false,
@@ -10,6 +11,8 @@ $(document).ready(function(){
         arrows: false
     });
 });
+
+// Slick-slider Evenements
 
 function mobileOnly(){
         $('.b-evenements__slider').slick({
@@ -30,7 +33,6 @@ else{
     if($('.b-evenements__slider').hasClass('slick-initialized')){
         $('.b-evenements__slider').slick('unslick');
     }
-    console.log('yay')
 
 }
 

@@ -1,16 +1,12 @@
 .b-header--sticky{
-    // visibility: hidden;
-    display: none;
     @include breakpoint(desktop){
-        // visibility: hidden;
-        // display: none;
         display: block;
         position: fixed;
         width: 100%;
         top: 0;
         background-color: $black;
         padding: 1.3rem 6.1rem 1.1rem 11.7rem;
-        z-index: 2;
+        z-index: 3;
     }
     .b-header__content{
         
