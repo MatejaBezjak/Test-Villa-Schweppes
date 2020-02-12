@@ -96,10 +96,10 @@
             }
             &__content{
                 position: relative;
-                padding-left: 7rem;
+                margin-left: 7rem;
                 height: 34rem;
                 @include breakpoint(desktop){
-                    padding-left: 0;
+                    margin-left: 0;
                     height: 50rem;
                     width: 40rem;
                 }
@@ -107,6 +107,9 @@
             &__img{
                 height: 100%;
                 width: 100%;
+                img{
+                    width: 100%;
+                }
             }
             &__text{
                 position: reltive;
