@@ -6,10 +6,22 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: "production", 
-    entry: "./src/main.js",
+    entry: {
+        main: "./src/main.js",
+        homePage: "./src/js/home-page.js"
+    },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "js/bundle.js"
+        filename: "js/[name].bundle.js"
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                defaultVendors: {
+                    filename: "[name].bundle.js"
+                }
+            }
+        }
     },
     module: {
         rules: [
@@ -52,7 +64,8 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: "mixologie_page.html",
-            template: path.resolve(__dirname, "src/mixologie_page.html")
+            template: path.resolve(__dirname, "src/mixologie_page.html"),
+            excludeChunks: ["homePage"]
         }),
         new CopyWebpackPlugin([{
             from: 'src/images',
