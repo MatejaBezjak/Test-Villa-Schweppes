@@ -103,19 +103,22 @@
                 display: inline-block;
                 transition: all .3s ease;
                 cursor: pointer;
+                &:hover{
+                    @include breakpoint(desktop){
+                        width: 100%;
+                        height: 100%;
+                        fill: $yellow;
+                        transition: all .1s linear;
+                    }
+                        
+                }
                 
                 img{
                     filter: invert(100%);
                     width: 100%;
                     
                 }
-            }
-            &-icon:hover{
-                @include breakpoint(desktop){
-                    color: $yellow;
-                    transition: all .1s linear;
-                }
-                    
+                
             }
             
         }

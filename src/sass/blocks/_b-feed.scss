@@ -172,17 +172,18 @@
                 line-height: 2.4rem;
                 padding-left: 2.25rem;
             }
-            p{
-                font-weight: 500;
-                padding-bottom: 0.5rem;
-                @include breakpoint(desktop){
-                    padding-bottom: 0;
-                }
+            // p{
+            //     font-weight: 500;
+            //     padding-bottom: 0.5rem;
+            //     @include breakpoint(desktop){
+            //         padding-bottom: 0;
+            //     }
                 
-            }
+            // }
         }
         &__date{
             font-size: 2.33rem;
+            color: $light;
             @include breakpoint(desktop){
                 font-size: 1.4rem;
             }

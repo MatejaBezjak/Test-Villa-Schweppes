@@ -78,7 +78,7 @@
                     padding: 0;
                 }
                 p{
-                    font-weight: 500;
+                    font-weight: 400;
                 }
             }
         }
@@ -126,7 +126,7 @@
                     line-height: 2.61rem;
                 }
                 p{
-                    font-weight: 500;
+                    font-weight: 400;
                     padding-top: 2.7rem;
                 }
             }
@@ -143,15 +143,15 @@
         padding-left: 8.1rem;
         padding-right: 3.5rem;
         @include breakpoint(desktop){
-            line-height: 7rem;
+            // line-height: 7rem;
         }
         &::before{
             background-color: $black;
             left: 3.1rem;
-            top: 4.9rem;
+            // top: 4.9rem;
             @include breakpoint(desktop){
                 left: 3.7rem;
-                top: 3.7rem;
+                // top: 3.7rem;
             }
         }
     }

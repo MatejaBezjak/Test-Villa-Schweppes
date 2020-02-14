@@ -49,8 +49,8 @@
         @include breakpoint(desktop){
             width: 22%;
         }
-        p{
-            font-weight: 500;
+        &--weight{
+            font-weight: 400;
         }
     }
 }

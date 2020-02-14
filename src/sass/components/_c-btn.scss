@@ -9,7 +9,7 @@
 
         @include fontSizeRem (18, 14);
         color: $white;
-        @include lineHeightRem (94, 63);
+        @include lineHeightRem (94, 68);
         display: inline-block;
         padding-left: 7.8rem;
         padding-right: 3.5rem;
@@ -25,18 +25,19 @@
         &::before{
             position: absolute;
             content: '';
-            top: 4.8rem;
+            // top: 4.8rem;
+            top: 50%;
             width: 3.9rem;
             height: 0.2rem;
-            background-color: $yellow;
+            background-color: $gold;
             left: 6.1rem;
             margin-right: 1.7rem;
             transition: all .3s ease;
             cursor: pointer;
             @include breakpoint(desktop){
-                top: 3.1rem;
+                // top: 3.1rem;
                 width: 3.1rem;
-                height: 0.3rem;
+                // height: 0.2rem;
             }
         }
         &:hover::before{

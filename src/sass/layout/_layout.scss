@@ -34,8 +34,12 @@
 
 body {
     background-color: $white;
+    transition: all .3s linear;
+
 }
 
 .colorChange {
     background-color: $black;
+    transition: all .5s linear;
+
 }

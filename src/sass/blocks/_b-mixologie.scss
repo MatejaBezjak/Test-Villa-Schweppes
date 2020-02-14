@@ -120,9 +120,9 @@
                     left: 4.16rem;
                     width: 69%;
                 }
-                p{
-                    font-weight: 500;
-                }
+                // p{
+                //     font-weight: 500;
+                // }
             }
         }
     }
@@ -134,9 +134,9 @@
         background-color: $yellow;
         &::before{
             background-color: $black;
-            top: 5.1rem;
+            // top: 5.1rem;
             @include breakpoint(desktop){
-                top: 3.1rem;
+                // top: 3.1rem;
             }
         }
     }

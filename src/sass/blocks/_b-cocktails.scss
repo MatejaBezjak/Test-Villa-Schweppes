@@ -126,15 +126,15 @@
                     top: 37rem;
                     padding-left: 3.4rem;
                     line-height: 3.3rem;
-                    letter-spacing: -0.007em;
+                    letter-spacing: 0.007em;
                 }
-                p{
-                    padding-bottom: 0.9rem;
-                    font-weight: 600;
-                    @include breakpoint(desktop){
-                        padding-bottom: 0;
-                    }
-                }
+                // p{
+                //     padding-bottom: 0.9rem;
+                //     font-weight: 600;
+                //     @include breakpoint(desktop){
+                //         padding-bottom: 0;
+                //     }
+                // }
                 span{
                     font-size: 2.5rem;
                     color: $light;
@@ -206,13 +206,13 @@
                     line-height: 2.35rem;
                     letter-spacing: -0.005em;
                 }
-                p{
-                    font-weight: 600;
-                    padding-bottom: 0.6rem;
-                    @include breakpoint(desktop){
-                        padding-bottom: 0.3rem;
-                    }
-                }
+                // p{
+                //     font-weight: 600;
+                //     padding-bottom: 0.6rem;
+                //     @include breakpoint(desktop){
+                //         padding-bottom: 0.3rem;
+                //     }
+                // }
                 span{
                     font-size: 2.5rem;
                     top: -1rem;
@@ -296,13 +296,13 @@
 
                     }
                 }
-                p{
-                    font-weight: 500;
-                    padding-bottom: 0.6rem;
-                    @include breakpoint(desktop){
-                        padding-bottom: 0.3rem;
-                    }
-                }
+                // p{
+                //     font-weight: 500;
+                //     padding-bottom: 0.6rem;
+                //     @include breakpoint(desktop){
+                //         padding-bottom: 0.3rem;
+                //     }
+                // }
             }
             &__date{
                 display: block;
@@ -410,13 +410,13 @@
                     }
     
                 }
-                p{
-                    padding-bottom: 0.7rem;
-                    font-weight: 500;
-                    @include breakpoint(desktop){
-                        padding-bottom: 0.3rem;
-                    }
-                }
+                // p{
+                //     padding-bottom: 0.7rem;
+                //     font-weight: 500;
+                //     @include breakpoint(desktop){
+                //         padding-bottom: 0.3rem;
+                //     }
+                // }
             }
             &__date{
                 position: relative;
@@ -442,10 +442,10 @@
 
 .c-btn--cocktails{
     &__field{
-        line-height: 9.5rem;
+        // line-height: 9.5rem;
         padding-left: 7.9rem;
         @include breakpoint(desktop){
-            line-height: 7.8rem;
+            // line-height: 7.8rem;
             padding-left: 4.9rem;
             padding-right: 0.8rem;
             letter-spacing: 0.05em;
@@ -453,10 +453,10 @@
 
         }
         &::before{
-            top: 4.9rem;
+            // top: 4.9rem;
             left: 12.7rem;
             @include breakpoint(desktop){
-                top: 4rem;
+                // top: 4rem;
                 left: 10.7rem;
                 width: 3.6rem;
                 height: 0.2rem;

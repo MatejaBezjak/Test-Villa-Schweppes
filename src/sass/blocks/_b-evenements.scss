@@ -116,7 +116,7 @@
             &__title{
                 font-family: $raleway;
                 font-size: 3rem;
-                font-weight: 700;
+                font-weight: 500;
                 color: $white;
                 width: 35%;
                 padding-top: 4.2rem;
@@ -137,7 +137,7 @@
                     position: relative;
                     display: block;
                     font-family: $raleway;
-                    font-weight: 500;
+                    font-weight: 400;
                     font-size: 1.2rem;
                     color: $white;
                     width: 66%;
@@ -191,7 +191,7 @@
                     position: relative;
                     font-family: $raleway;
                     @include fontSizeRem (60, 51);
-                    font-weight: 600;
+                    font-weight: 500;
                     color: $white;
                     width: 54%;
                     @include breakpoint(desktop){
@@ -207,7 +207,7 @@
                     @include breakpoint(desktop){
                         display: block;
                         font-size: 1.6rem;
-                        font-weight: 700;
+                        font-weight: 400;
                         width: 43%;
                         line-height: 2.3rem;
                         top: 3.2rem;
@@ -275,19 +275,19 @@
     }
     &__field{
         background-color: $yellow;
-        line-height: 9.3rem;
+        // line-height: 9.3rem;
         padding-left: 8.8rem;
         padding-right: 3.7rem;
         @include breakpoint(desktop){
-            line-height: 6.9rem;
+            // line-height: 6.9rem;
             padding-left: 8.5rem;
             padding-right: 4rem;
         }
         &::before{
             background-color: $black;
-            top: 5.1rem;
+            // top: 5.1rem;
             @include breakpoint(desktop){
-                top: 3.6rem;
+                // top: 3.6rem;
                 left: 5.1rem;
             }
         }
@@ -295,8 +295,4 @@
     &__text{
         color: $black;
     }
-}
-
-.safari{
-    padding-left: 4.2rem;
 }

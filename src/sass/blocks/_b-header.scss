@@ -155,7 +155,7 @@
 .b-header--mixologie-p{
     @include breakpoint(desktop){
         position: fixed;
-        background-color: $black;
+        background-color: transparent;
         
     }
 }

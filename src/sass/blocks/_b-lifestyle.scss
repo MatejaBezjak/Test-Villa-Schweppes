@@ -100,9 +100,9 @@
                     padding-left: 2.5rem;
                     left: 0;
                 }
-                p{
-                    font-weight: 500;
-                }
+                // p{
+                //     font-weight: 500;
+                // }
             }
             &__imgright{
                 height: 46.8rem;
@@ -137,7 +137,7 @@
                 @include breakpoint(desktop){
                     position: relative;
                     &:nth-of-type(1){
-                        padding-right: 2rem;
+                        margin-right: 2rem;
                     }
                 }
             }
@@ -155,9 +155,9 @@
                     padding-left: 6.1rem;
                     width: 80%;
                 }
-                p{
-                    font-weight: 500;
-                }
+                // p{
+                //     font-weight: 500;
+                // }
                 &--right{
                     @include breakpoint(desktop){
                         line-height: 2.7rem;
@@ -173,12 +173,13 @@
     &__field{
         padding-left: 8rem;
         @include breakpoint(desktop){
-            line-height: 7.7rem;        }
+            // line-height: 7.7rem;  
+        }
         &::before{
             left: 4.5rem;
             @include breakpoint(desktop){
                 left: 3.6rem;
-                top: 3.8rem;
+                // top: 3.8rem;
             }
         }
     }
