@@ -4,6 +4,7 @@ var sticky = header.offsetTop;
 
 
 $(window).scroll(function(){
+    event.preventDefault();
     if(window.pageYOffset > sticky){
         $('.b-header').addClass('b-header--sticky');
     }

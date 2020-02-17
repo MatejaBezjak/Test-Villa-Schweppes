@@ -1,6 +1,7 @@
 .b-evenements{
     position: relative;
     width: 100%;
+    padding-bottom: 0.2rem;
     &__content{
         position: relative;
         width: 100%;
@@ -28,9 +29,9 @@
         padding-left: 4.4rem;
         letter-spacing: -0.009em;
         @include breakpoint(desktop){
-            top: 8.1rem;
+            top: 8.2rem;
             padding-left: 40.3rem;
-            letter-spacing: -0.016em;
+            letter-spacing: -0.017em;
         }
         span{
             position: relative;
@@ -55,11 +56,11 @@
         &__slide{
             position: relative;
             padding-top: 2rem;
-            margin-left: -7.7rem;
+            margin-left: -9.9rem;
             height: 55rem;
             @include breakpoint(desktop){
-                padding-top: 3.5rem;
-                margin-left: 1.2rem;
+                padding-top: 3.6rem;
+                margin-left: 1.3rem;
                 width: 20.7%;
             }
             
@@ -72,11 +73,10 @@
                 padding-top: 2rem;
                 padding-left: 3.6rem;
                 @include breakpoint(desktop){
-                    padding-bottom: 3.3rem;
                     &--last{
-                        padding-left: 4.6rem;
-                        padding-top: 1.9rem;
-                        padding-bottom: 3.3rem;
+                        padding-left: 4.4rem;
+                        padding-top: 2rem;
+                        padding-bottom: 3.5rem;
                     }
                 }
                 &--day{
@@ -88,15 +88,16 @@
                 &--month{
                     font-size: 4rem;
                     font-weight: 700;
-                    margin-left: 0.7rem;
-                    margin-top: 0.3rem;
+                    margin-left: 0.8rem;
+                    margin-top: 0.4rem;
                     display: block;
                     @include breakpoint(desktop){
-                        margin-left: 0.59rem;
-                        margin-top: -1.3rem;
+                        margin-left: 0.5rem;
+                        margin-top: -1.4rem;
                         &--last{
-                            margin-left: 1.4rem;
-                            margin-top: -1.1rem;
+                            margin-left: 1.5rem;
+                            margin-top: -1.3rem;
+                            letter-spacing: -0.012em;
                         }
                     }
                 }
@@ -104,12 +105,12 @@
                     position: absolute;
                     content: "";
                     width: 21.8rem;
-                    height: 0.2rem;
+                    height: 0.16rem;
                     background-color: $yellow;
-                    top: 100%;
+                    top: 99.5%;
                     left: 0;
                     @include breakpoint(desktop){
-                        height: 0.3rem;
+                        height: 0.1rem;
                     }
                 }
             }
@@ -118,14 +119,13 @@
                 font-size: 3rem;
                 font-weight: 500;
                 color: $white;
-                width: 35%;
-                padding-top: 4.2rem;
-                padding-left: 1.5rem;
+                width: 43%;
+                padding-top: 4.1rem;
+                padding-left: 1.7rem;
                 @include breakpoint(desktop){
                     width: 69%;
                     padding-left: 1.47rem;
-                    padding-bottom: 1.7rem;
-                    padding-top: 4.3rem;
+                    padding-bottom: 1.6rem;
                     &--last{
                         padding-bottom: 1.61rem;
                     }
@@ -141,13 +141,14 @@
                     font-size: 1.2rem;
                     color: $white;
                     width: 66%;
-                    left: 1.54rem;
+                    left: 1.4rem;
                     line-height: 1.9rem;
+                    letter-spacing: 0.007em;
                 }
             }
             &--main{
                 position: relative;
-                padding-left: 7.2rem;
+                padding-left: 7.1rem;
                 padding-top: 3.9rem;
                 height: 55rem;
                 margin-left: -16.3rem;
@@ -191,7 +192,7 @@
                     position: relative;
                     font-family: $raleway;
                     @include fontSizeRem (60, 51);
-                    font-weight: 500;
+                    font-weight: 600;
                     color: $white;
                     width: 54%;
                     @include breakpoint(desktop){
@@ -269,25 +270,21 @@
     margin-top: 4rem;
     padding-bottom: 4.2rem;
     @include breakpoint(desktop){
-        margin-top: 1rem;
+        margin-top: 1.1rem;
         padding-bottom: 4.2rem;
         bottom: 2.5rem;
     }
     &__field{
         background-color: $yellow;
-        // line-height: 9.3rem;
         padding-left: 8.8rem;
         padding-right: 3.7rem;
         @include breakpoint(desktop){
-            // line-height: 6.9rem;
             padding-left: 8.5rem;
             padding-right: 4rem;
         }
         &::before{
             background-color: $black;
-            // top: 5.1rem;
             @include breakpoint(desktop){
-                // top: 3.6rem;
                 left: 5.1rem;
             }
         }

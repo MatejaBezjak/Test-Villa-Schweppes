@@ -20,7 +20,7 @@
         @include breakpoint(desktop){
             padding: 9.1rem 19.8rem 0 22.8rem;
 
-            margin-bottom: 10.2rem;
+            margin-bottom: 10.1rem;
         }
         &--top{
             position: relative;
@@ -88,11 +88,11 @@
             }
             &__textleft{
                 color: $black;
-                width: 88%;
+                width: 87%;
                 line-height: 1.19em;
-                padding-top: 2rem;
+                padding-top: 1.9rem;
                 left: 2.2rem;
-                letter-spacing: 0.001em;
+                letter-spacing: 0.011em;
                 @include breakpoint(desktop){
                     width: 88%;
                     line-height: 2.61rem;
@@ -100,9 +100,6 @@
                     padding-left: 2.5rem;
                     left: 0;
                 }
-                // p{
-                //     font-weight: 500;
-                // }
             }
             &__imgright{
                 height: 46.8rem;
@@ -118,13 +115,14 @@
                 left: 37.6rem;
                 line-height: 1.21em;
                 top: 9rem;
-                letter-spacing: 0;
+                letter-spacing: 0.011em;
                 z-index: 0;
                 @include breakpoint(desktop){
-                    width: 41%;
+                    width: 42%;
                     left: 43.4rem;
                     line-height: 2.61rem;
                     top: 20.6rem;
+                    letter-spacing: 0.006em;
                 }
             }
         }
@@ -149,15 +147,12 @@
             }
             &__text{
                 @include breakpoint(desktop){
-                    top: 70.9%;
-                    line-height: 2.61rem;
-                    letter-spacing: 0.001rem;
+                    top: 70%;
+                    line-height: 2.71rem;
+                    letter-spacing: 0.015rem;
                     padding-left: 6.1rem;
                     width: 80%;
                 }
-                // p{
-                //     font-weight: 500;
-                // }
                 &--right{
                     @include breakpoint(desktop){
                         line-height: 2.7rem;
@@ -173,13 +168,11 @@
     &__field{
         padding-left: 8rem;
         @include breakpoint(desktop){
-            // line-height: 7.7rem;  
         }
         &::before{
             left: 4.5rem;
             @include breakpoint(desktop){
                 left: 3.6rem;
-                // top: 3.8rem;
             }
         }
     }

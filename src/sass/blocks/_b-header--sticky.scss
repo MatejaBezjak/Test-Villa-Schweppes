@@ -1,11 +1,12 @@
 .b-header--sticky{
     @include breakpoint(desktop){
         display: block;
-        position: fixed;
+        position: sticky;
         width: 100%;
         top: 0;
         background-color: $black;
         padding: 1.3rem 6.1rem 1.1rem 11.7rem;
+        transition: all 0.5s linear;
         z-index: 3;
     }
     .b-header__content{

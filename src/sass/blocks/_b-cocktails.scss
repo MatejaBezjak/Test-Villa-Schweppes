@@ -1,14 +1,14 @@
 .b-cocktails{
-    margin-bottom: 10.1rem;
+    margin-bottom: 10.2rem;
     margin-top: -0.2rem;
     @include breakpoint(desktop){
-        margin-bottom: 11.1rem;
+        margin-bottom: 12.1rem;
     }
     &__picker{
-        padding-bottom: 4.4rem;
+        padding-bottom: 34.3rem;
         position: relative;
         @include breakpoint(desktop){
-            padding-bottom: 1.4rem;
+            padding-bottom: 27.4rem;
         }
         &__title{
             position: relative;
@@ -16,13 +16,15 @@
             font-size: 6.1rem;
             color: $white;
             font-weight: 500;
-            padding: 0 5rem 4rem 3.9rem;
+            padding: 0 5rem 4.2rem 3.9rem;
             letter-spacing: -0.007em;
             text-align: left;
+            line-height: 6rem;
             @include breakpoint(desktop){
                 font-size: 4.9rem;
                 padding-left: 30.8rem;
-                padding-bottom: 4.3rem;
+                padding-bottom: 6.8rem;
+                line-height: 0;
             }
         }
         &__container{
@@ -41,8 +43,6 @@
                     padding-right: 3.2rem;
                 }
             }
-            &__text{
-            }
             &__icon{
                 &::before{
                     background: url("../images/Arrow_black.png") no-repeat;
@@ -53,16 +53,18 @@
         }
     }
     &__list{
-        padding-top: 3rem;
+        padding-top: 2.8rem;
+        margin-top: -29.8rem;
         @include breakpoint(desktop){
             padding-top: 0;
+            margin-top: -26.1rem;
         }
     }
     &__articles{
         position: relative;
         padding-left: 3.9rem;
         padding-right: 4rem;
-        padding-bottom: 6.7rem;
+        padding-bottom: 6.8rem;
         @include breakpoint(desktop){
             padding: 2.8rem 14.4rem 0.2rem 17.1rem;
         }
@@ -97,9 +99,9 @@
                     left: 0;
                     z-index: 0;
                     @include breakpoint(desktop){
-                        width: 56.8rem;
+                        width: 56.7rem;
                         height: 41.9rem;
-                        top: -0.1rem;
+                        top: 0.1rem;
                         left: -6.2rem;
                         z-index: -1;
                     }
@@ -119,7 +121,7 @@
                 top: 49rem;
                 padding-left: 7.1rem;
                 color: $black;
-                letter-spacing: -0.008em;
+                letter-spacing: 0.007em;
                 @include breakpoint(desktop){
                     width: 67%;
                     font-size: 2.6rem;
@@ -128,13 +130,12 @@
                     line-height: 3.3rem;
                     letter-spacing: 0.007em;
                 }
-                // p{
-                //     padding-bottom: 0.9rem;
-                //     font-weight: 600;
-                //     @include breakpoint(desktop){
-                //         padding-bottom: 0;
-                //     }
-                // }
+                p{
+                    padding-bottom: 1rem;
+                    @include breakpoint(desktop){
+                        padding-bottom: 0;
+                    }
+                }
                 span{
                     font-size: 2.5rem;
                     color: $light;
@@ -196,23 +197,26 @@
             &__text{
                 width: 81%;
                 padding-left: 7rem;
-                top: 52.7%;
+                top: 52.9%;
                 line-height: 1.2em;
-                letter-spacing: -0.004em;
+                letter-spacing: 0.008em;
                 @include breakpoint(desktop){
                     width: 75%;
-                    top: 70.7%;
+                    top: 70.6%;
                     padding-left: 4.1rem;
-                    line-height: 2.35rem;
-                    letter-spacing: -0.005em;
+                    line-height: 2.7rem;
                 }
-                // p{
-                //     font-weight: 600;
-                //     padding-bottom: 0.6rem;
-                //     @include breakpoint(desktop){
-                //         padding-bottom: 0.3rem;
-                //     }
-                // }
+                &--last{
+                    top: 71%;
+                    letter-spacing: 0.005em;
+
+                }
+                p{
+                    padding-bottom: 0.6rem;
+                    @include breakpoint(desktop){
+                        padding-bottom: 0;
+                    }
+                }
                 span{
                     font-size: 2.5rem;
                     top: -1rem;
@@ -281,13 +285,15 @@
                 width: 87%;
                 padding-top: 1.8rem;
                 color: $black;
-                padding-left: 1.1rem;
+                padding-left: 1.2rem;
+                letter-spacing: 0.01em;
                 @include breakpoint(desktop){
                     font-size: 1.6rem;
                     line-height: 2.3rem;
                     width: 78%;
-                    padding-top: 2.1rem;
+                    padding-top: 2.2rem;
                     padding-left: 2.1rem;
+                    letter-spacing: 0.006em;
                     &--second{
                         padding-left: 1.8rem;
                     }
@@ -296,19 +302,17 @@
 
                     }
                 }
-                // p{
-                //     font-weight: 500;
-                //     padding-bottom: 0.6rem;
-                //     @include breakpoint(desktop){
-                //         padding-bottom: 0.3rem;
-                //     }
-                // }
+                p{
+                    padding-bottom: 0.6rem;
+                    @include breakpoint(desktop){
+                        padding-bottom: 0.3rem;
+                    }
+                }
             }
             &__date{
                 display: block;
                 font-size: 2.4rem;
                 font-weight: 500;
-                margin-left: 0.1rem;
                 color: $light;
                 @include breakpoint(desktop){
                     font-size: 1.2rem;
@@ -391,18 +395,17 @@
                 font-size: 2.8rem;
                 line-height: 3.4rem;
                 width: 89%;
-                padding-top: 1.8rem;
-                color: $black;
+                padding-top: 1.9rem;
                 padding-left: 1.2rem;
                 color: $black;
-                letter-spacing: 0.014em;
+                letter-spacing: 0.01em;
                 @include breakpoint(desktop){
                     font-size: 1.6rem;
                     line-height: 2.3rem;
                     width: 61%;
                     padding-top: 2.6rem;
                     padding-left: 3.1rem;
-                    letter-spacing: 0;
+                    letter-spacing: 0.008em;
                     &--right{
                         width: 47%;
                         padding-top: 2.5rem;
@@ -410,13 +413,12 @@
                     }
     
                 }
-                // p{
-                //     padding-bottom: 0.7rem;
-                //     font-weight: 500;
-                //     @include breakpoint(desktop){
-                //         padding-bottom: 0.3rem;
-                //     }
-                // }
+                p{
+                    padding-bottom: 0.6rem;
+                    @include breakpoint(desktop){
+                        padding-bottom: 0.3rem;
+                    }
+                }
             }
             &__date{
                 position: relative;
@@ -442,10 +444,8 @@
 
 .c-btn--cocktails{
     &__field{
-        // line-height: 9.5rem;
         padding-left: 7.9rem;
         @include breakpoint(desktop){
-            // line-height: 7.8rem;
             padding-left: 4.9rem;
             padding-right: 0.8rem;
             letter-spacing: 0.05em;
@@ -453,10 +453,8 @@
 
         }
         &::before{
-            // top: 4.9rem;
             left: 12.7rem;
             @include breakpoint(desktop){
-                // top: 4rem;
                 left: 10.7rem;
                 width: 3.6rem;
                 height: 0.2rem;

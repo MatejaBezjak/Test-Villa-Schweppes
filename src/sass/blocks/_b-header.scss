@@ -9,7 +9,7 @@
         background-color: $black;
         padding: 3.7rem 6.1rem 0 9.2rem;
         z-index: 1;
-        transition: all 0.3s linear;
+        transition: all 0.5s linear;
     }
     &__content{
         position: relative;
@@ -60,7 +60,6 @@
                 display: flex;
                 font-family: $raleway;
                 font-size: 1.5rem;
-                font-weight: 700;
                 color: $white;
                 line-height: 2rem;
                 letter-spacing: .25rem;
@@ -80,6 +79,9 @@
                     width: 100%;
                     color: $yellow;
                     transition: all 0.3s linear;
+                }
+                span{
+                    font-weight: 700;
                 }
 
                 &--last{
@@ -154,7 +156,7 @@
 
 .b-header--mixologie-p{
     @include breakpoint(desktop){
-        position: fixed;
+        position: absolute;
         background-color: transparent;
         
     }

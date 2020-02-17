@@ -1,13 +1,13 @@
 .b-hero{
     padding-bottom: 4.5rem;
     @include breakpoint(desktop){
-        padding-bottom: 5.4rem;
+        padding-bottom: 7.7rem;
     }
     &__content{
         @include breakpoint(desktop){
             display: flex;
             flex-direction: row-reverse;
-            align-items: flex-end;
+            align-items: stretch;
         }
     }
     &__visual{
@@ -17,6 +17,7 @@
         @include breakpoint(desktop){
             width: 71rem;
             height: 86rem;
+            display: flex;
         }
         &__img{
             position: relative;
@@ -25,6 +26,7 @@
             
             img{
                 width: 100%;
+                height: 100%;
             }
         }
     }
@@ -32,6 +34,8 @@
         position: relative;
         @include breakpoint(desktop){
             width: 49%;
+            display: flex;
+            flex-direction: column;
         }
         &__title{
             position: absolute;
@@ -42,7 +46,7 @@
             padding-left: 3.3rem;
             @include breakpoint(desktop){
                 font-size: 15rem;
-                top: -38.4rem;
+                top: 33.4rem;
                 left: 20rem;
             }
             span{
@@ -74,31 +78,49 @@
             font-weight: 400;
             font-size: 2.6rem;
             font-family: $raleway;
-            padding: 19.2rem 8rem 7rem 6.8rem;
+            padding: 19.3rem 8rem 7rem 6.8rem;
             text-align: left;
             line-height: 4rem;
-            letter-spacing: -0.002em;
+            letter-spacing: 0.007em;
             @include breakpoint(desktop){
                 font-size: 1.4rem;
                 padding: 0;
-                bottom: 12.3rem;
                 width: 40.6%; 
                 line-height: 2.11rem;
                 margin-left: 28.6rem;
+                top: 69.3%;
+                height: fit-content;
             }
-    
-            &::first-letter{
-                text-transform: uppercase;
-                font-weight: 400;
-                font-size: 14.1rem;
-                opacity: 100%;
-                color: $white;
-                margin-right: 1rem;
-                margin-left: -0.9rem;
+            &--first-p{
+                &::first-letter{
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: 14.1rem;
+                    opacity: 100%;
+                    color: $white;
+                    margin-right: 1rem;
+                    margin-left: -0.9rem;
+                    @include breakpoint(desktop){
+                        font-size: 6rem;
+                        margin-right: 0.5rem;
+                        margin-left: -0.4rem;
+                    }
+                }
+            }
+            &--mob{
                 @include breakpoint(desktop){
-                    font-size: 6rem;
-                    margin-right: 0.5rem;
-                    margin-left: -0.4rem;
+                    display: none;
+                }
+            }
+            &--desk{
+                display: none;
+                @include breakpoint(desktop){
+                    display: block;
+                    width: 41.2%;
+                    padding-bottom: 2.3rem;
+                    line-height: 2.2rem;
+                    letter-spacing: 0.016rem;
+                    top: 69.2%;
                 }
             }
         }
