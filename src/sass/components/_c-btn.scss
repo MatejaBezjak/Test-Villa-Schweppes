@@ -15,6 +15,7 @@
         padding-right: 3.5rem;
         min-width: 42rem;
         @include breakpoint(desktop){
+            transition: all 0.2s linear;
             padding-left: 2.7rem;
             min-width: 35.2rem;
             padding-right: 0;
@@ -35,11 +36,13 @@
             cursor: pointer;
             @include breakpoint(desktop){
                 width: 3.1rem;
+                transition: all 0.2s linear;
+
             }
         }
         &:hover::before{
             @include breakpoint(desktop){
-                transition: all .3s linear;
+                transition: all 0.2s linear;
                 width: 0;
                 height: 0;
             }
