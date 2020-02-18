@@ -293,3 +293,14 @@
         color: $black;
     }
 }
+
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .b-evenements__title { 
+        padding-left: 4.2rem; 
+        @include breakpoint(desktop){
+            padding-left: 40.3rem;
+        }
+    }
+}}
