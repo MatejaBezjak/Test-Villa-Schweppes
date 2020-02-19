@@ -165,6 +165,7 @@
                     left: 0.3rem;
                     @include breakpoint(desktop){
                         left: 0;
+                        cursor: pointer;
                     }
                    
                     &::after{

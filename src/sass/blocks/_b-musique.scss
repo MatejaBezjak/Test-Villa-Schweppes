@@ -55,6 +55,7 @@
                 @include breakpoint (desktop){
                     height: 53.6rem;
                     width: 56.6rem;
+                    cursor: pointer;
                 }
             }  
             &__img{
@@ -112,6 +113,9 @@
             &__img{
                 height: 100%;
                 width: 100%;
+                @include breakpoint(desktop){
+                    cursor: pointer;
+                }
                 img{
                     width: 100%;
                 }

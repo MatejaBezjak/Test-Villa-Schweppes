@@ -146,6 +146,7 @@
             @include breakpoint(desktop){
                 width: 31.6rem;
                 height: 23.5rem;
+                cursor: pointer;
             }
             &__img{
                 position: relative;

@@ -61,20 +61,3 @@
     }
 }
 
-@supports (-ms-ime-align:auto) {
-    @include breakpoint(desktop){
-        .c-btn__field::before {
-            cursor: auto;
-        }
-    }
-    
-}
-
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    @include breakpoint(desktop){
-        .c-btn__field::before {
-            cursor: auto;
-        }
-    }
-}}
