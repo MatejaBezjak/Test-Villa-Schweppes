@@ -29,7 +29,7 @@
         @include breakpoint(desktop){
             display: flex;
             justify-content: space-between;
-            padding: 0 4.1rem 5.2rem 14.2rem;
+            padding: 0 7.4rem 5.2rem 14.2rem;
             top: 7.2rem;
         }
     }
@@ -142,3 +142,21 @@
         }
     }
 }
+
+@supports (-ms-ime-align:auto) {
+    @include breakpoint(desktop){
+        .b-footer__link:hover .b-footer__social_-field-icon {
+            cursor: auto;
+        }
+    }
+    
+}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    @include breakpoint(desktop){
+        .b-footer__link:hover .b-footer__social_-field-icon {
+            cursor: auto;
+        }
+    }
+}}

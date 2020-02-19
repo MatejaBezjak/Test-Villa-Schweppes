@@ -83,6 +83,7 @@
                 }
                 span{
                     font-weight: 700;
+                    cursor: pointer;
                 }
 
                 &--last{
@@ -162,3 +163,21 @@
         
     }
 }
+
+@supports (-ms-ime-align:auto) {
+    @include breakpoint(desktop){
+        .b-header__navigation-link span {
+            cursor: auto;
+        }
+    }
+    
+}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    @include breakpoint(desktop){
+        .b-header__navigation-link span {
+            cursor: auto;
+        }
+    }
+}}
