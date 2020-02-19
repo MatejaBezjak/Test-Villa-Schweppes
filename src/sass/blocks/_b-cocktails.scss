@@ -187,6 +187,7 @@
                 @include breakpoint(desktop){
                     width: 48.3rem;
                     height: 30.9rem;
+                    cursor: pointer;
                 }
                 &__img{
                     width: 100%;
