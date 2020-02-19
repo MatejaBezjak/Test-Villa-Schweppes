@@ -178,20 +178,12 @@
 .c-btn--lieux{
     &__field{
         background-color: $yellow;
-        padding-left: 4.9rem;
-        @include breakpoint(desktop){
-            padding-left: 2.8rem;
-        }
-        &::before{
-            background-color: $black;
-            left: 6.8rem;
-            @include breakpoint(desktop){
-                left: 7rem;
-            }
-        }
     }
     &__text{
         color: $black;
+        &::before{
+            background-color: $black;
+        }
     }
 
 }

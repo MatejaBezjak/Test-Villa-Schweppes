@@ -142,14 +142,12 @@
 .c-btn--mixologie{
     &__field{
         background-color: $yellow;
-        &::before{
-            background-color: $black;
-            @include breakpoint(desktop){
-            }
-        }
     }
     &__text{
         color: $black;
+        &::before{
+            background-color: $black;
+        }
         
     }
 

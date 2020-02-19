@@ -156,18 +156,12 @@
     &__field{
         background-color: $yellow;
         color: $black;
-        padding-left: 8.1rem;
-        padding-right: 3.5rem;
-        &::before{
-            background-color: $black;
-            left: 3.1rem;
-            @include breakpoint(desktop){
-                left: 3.7rem;
-            }
-        }
     }
     &__text{
         color: $black;
+        &::before{
+            background-color: $black;
+        }
     }
 
 }

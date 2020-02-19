@@ -169,14 +169,11 @@
 }
 .c-btn--lifestyle{
     &__field{
-        padding-left: 8rem;
-        @include breakpoint(desktop){
-        }
+        background-color: $black;
+    }
+    &__text{
         &::before{
-            left: 4.5rem;
-            @include breakpoint(desktop){
-                left: 3.6rem;
-            }
+            background-color: $gold;
         }
     }
 }

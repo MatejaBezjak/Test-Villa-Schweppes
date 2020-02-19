@@ -6,6 +6,11 @@
     @include breakpoint(desktop){
         height: 74.8rem;
     }
+    &-wrapper{
+        @include breakpoint(desktop){
+            padding-top: 15.1rem;
+        }
+    }
     &__slide{
         display: block;
         position: relative;
