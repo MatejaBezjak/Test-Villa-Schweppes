@@ -67,6 +67,11 @@ module.exports = {
             template: path.resolve(__dirname, "src/mixologie_page.html"),
             excludeChunks: ["homePage"]
         }),
+        new HtmlWebpackPlugin({
+            filename: "detail_page.html",
+            template: path.resolve(__dirname, "src/detail_page.html"),
+            excludeChunks: ["homePage"]
+        }),
         new CopyWebpackPlugin([{
             from: 'src/images',
             to: 'images'
