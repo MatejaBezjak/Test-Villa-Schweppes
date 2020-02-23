@@ -1,0 +1,518 @@
+.b-recipe{
+    &__intro{
+        position: relative;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 14.6rem;
+        @include breakpoint(desktop){
+            padding-left: 31.4rem;
+            padding-bottom: 13.8rem;
+        }
+        span{
+            display: block;
+            font-family: 'quaintonregular';
+            &::first-letter{
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 21rem;
+                opacity: 100%;
+                color: $black;
+                // margin-right: 1rem;
+                margin-left: -0.7rem;
+                @include breakpoint(desktop){
+                    font-size: 12.1rem;
+                //     margin-right: 0.5rem;
+                //     margin-left: -0.4rem;
+                }
+            }
+        }
+        &__text{
+            position: relative;
+            margin-top: -2.8rem;
+            // line-height: 4rem;
+            &--first{
+                position: absolute;
+                margin-top: 0;
+                top: 6.2rem;
+                left: 18rem;
+                width: 57%;
+                // letter-spacing: 0.046em;
+                // line-height: 3.9rem;
+                @include breakpoint(desktop){
+                    top: 1.4rem;
+                    left: 39.6rem;
+                    width: 50%;
+                }
+            }
+            
+            &-mob{
+                @include breakpoint(desktop){
+                    display: none;
+                }
+            }
+            &-desk{
+                display: none;
+                @include breakpoint(desktop){
+                    display: block;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &__info{
+        position: relative;
+        // padding-left: 3.7rem;
+        @include breakpoint(desktop){
+            padding-left: 22.6rem;
+        }
+        &-ingredients{
+            position: relative;
+            // padding-bottom: 15rem;
+            @include breakpoint(desktop){
+                padding-left: 8.5rem;
+                max-width: 90.3rem;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                background-color: $black;
+                width: 64rem;
+                height: 58.2rem;
+                top: -7.8rem;
+                @include breakpoint(desktop){
+                    width: 81.8rem;
+                    height: 43.9rem;
+                }
+            }
+            &__title{
+                position: relative;
+                font-size: 9.9rem;
+                padding-left: 8.8rem;
+                padding-bottom: 1.7rem;
+                color: $white;
+                @include breakpoint(desktop){
+                    font-size: 6.9rem;
+                    padding-left: 11.7rem;
+                    padding-bottom: 0.9rem;
+                }
+                span{
+                    left: -2.8rem;
+                    top: 1.5rem;
+                    @include breakpoint(desktop){
+                        left: -2rem;
+                        top: 0.9rem;
+                    }
+                }
+            }
+            &__subtitle{
+                position: relative;
+                font-size: 3.2rem;
+                text-align: end;
+                right: 10.2rem;
+                padding-bottom: 9.9rem;
+                color: $white;
+                @include breakpoint(desktop){
+                    font-size: 2.2rem;
+                    text-align: center;
+                    right: 6.2rem;
+                    padding-bottom: 5.1rem;
+                    letter-spacing: 0.005em;
+                }
+
+            }
+            &__details{
+                position: relative;
+                padding-right: 4rem;
+                width: 100%;
+                padding-left: 3.7rem;
+                @include breakpoint(desktop){
+                    padding-left: 9.5rem;
+                    padding-right: 12.5rem;
+                }
+                
+                &__detail{
+                    position: relative;
+                    font-size: 2.5rem;
+                    letter-spacing: -0.02em;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding-bottom: 0.3rem;
+                    color: $white;
+                    @include breakpoint(desktop){
+                        font-size: 1.6rem;
+                        letter-spacing: 0.001em;
+                        width: 64%;
+                        line-height: 2.6rem;
+                    }
+                    &:nth-of-type(2){
+                        padding-bottom: 0.8rem;
+                    }
+                    &--left{
+                        position: relative;
+                        width: 50%;
+                        @include breakpoint(desktop){
+                            font-weight: 500;
+                        }
+                    }
+                    &--right{
+                        position: relative;
+                        width: 33%;
+                        @include breakpoint(desktop){
+                            font-weight: 500;
+                            letter-spacing: -0.01em;
+                        }
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            background-color: $yellow;
+                            width: 6rem;
+                            height: 0.2rem;
+                            left: -7.1rem;
+                            bottom: 1.06rem;
+                            @include breakpoint(desktop){
+                                width: 4.1rem;
+                                height: 0.1rem;
+                                left: -4.9rem;
+                                bottom: 0.7rem;
+                            }
+
+
+                        }
+                    }
+                    span{
+                            
+                    }
+                }
+            }
+        }
+        &-ranking{
+            position: relative;
+            width: 100%;
+            padding-top: 12.1rem;
+            background-color: $dark-grey;
+            z-index: -1;
+            padding-bottom: 1.7rem;
+            @include breakpoint(desktop){
+                position: absolute;
+                width: 33.8rem;
+                padding-bottom: 2.9rem;
+                top: 10.2rem;
+                right: 22.7rem;
+                z-index: 1;
+                // padding-left: 4.5rem;
+                padding-top: 0;
+                height: 25.9rem;
+            }
+            &__details{
+                position: relative;
+                width: 64rem;
+                padding-left: 3.7rem;
+                padding-right: 3.6rem;
+                @include breakpoint(desktop){
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 100%;
+                    padding-right: 2.4rem;
+                    padding-top: 5.3rem;
+                    padding-left: 4.5rem;
+                    height: 100%;
+                }
+                &__detail{
+                    position: relative;
+                    font-family: 'quaintonregular';
+                    color: $white;
+                    font-size: 3.4rem;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 2.43rem;
+                    letter-spacing: -0.012em;
+                    @include breakpoint(desktop){
+                        font-size: 2.4rem;
+                        width: 99%;
+                        margin-bottom: 2.73rem;
+                    }
+                    span{
+                        position: relative;
+
+                    }
+                    &-time{
+                        font-family: $raleway;
+                        font-size: 2.6rem;
+                        letter-spacing: -0.013em;
+                        @include breakpoint(desktop){
+                            font-size: 1.8rem;
+                            width: 40%;
+                            margin-top: 1.2rem;
+                            margin-right: 1.4rem;
+                        }
+                    }
+                    &__dots{
+                        position: relative;
+                        padding-right: 2.3rem;
+                        @include breakpoint(desktop){
+                            padding-right: 3.4rem;
+                            margin-top: -0.2rem;
+                        }
+                        span{
+                            position: relative;
+                            margin-left: -1.4rem;
+                            @include breakpoint(desktop){
+                                margin-left: -1rem;
+                            }
+                            &::before{
+                                position: relative;
+                                content: "";
+                                width: 1.4rem;
+                                height: 1.4rem;
+                                display: inline-block;
+                                border-radius: 100%;
+                                background-color: $white;
+                                opacity: 0.3;
+                                margin: 0 0.4rem;
+                                @include breakpoint(desktop){
+                                    width: 1.02rem;
+                                    height: 1.02rem;
+                                    margin: 0 0.3rem;
+                                }
+                                
+                            }
+                            &:nth-of-type(1)::before{
+                                background-color: $yellow;
+                                opacity: 1;
+                            }
+                            &:nth-of-type(2)::before{
+                                background-color: $yellow;
+                                opacity: 1;
+                            }
+                            
+                        }
+                        &--second{
+                            margin-top: -0.5rem;
+                            @include breakpoint(desktop){
+                                margin-top: -0.33rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-preparation{
+            position: relative;
+            width: 64rem;
+            background-color: $yellow;
+            padding-bottom: 6.5rem;
+            margin-bottom: 7.1rem;
+            @include breakpoint(desktop){
+                width: 90.3rem;
+                padding-bottom: 8.1rem;
+                margin-top: -12.6rem;
+                padding-top: 18.6rem;
+                margin-bottom: 6.5rem;
+                z-index: -1;
+            }
+
+            &__title{
+                position: relative;
+                font-size: 9.9rem;
+                padding-top: 8.6rem;
+                padding-left: 3.6rem;
+                letter-spacing: 0.004em;
+                padding-bottom: 6.7rem;
+                @include breakpoint(desktop){
+                    font-size: 6.8rem;
+                    padding-top: 8.7rem;
+                    padding-left: 14.9rem;
+                    padding-bottom: 5.3rem;
+                }
+                span{
+                    position: relative;
+                    margin-left: -3rem;
+                    top: 0.9rem;
+                    @include breakpoint(desktop){
+                        margin-left: -1.8rem;
+                        top: 1rem;
+                    }
+                }
+            }
+            &__details{
+                position: relative;
+                padding-left: 10.6rem;
+                width: 95%;
+                @include breakpoint(desktop){
+                    padding-left: 21.6rem;
+                    width: 76%;
+                }
+
+                &__detail{
+                    position: relative;
+                    padding-bottom: 2.4rem;
+                    letter-spacing: 0.04em;
+                    @include breakpoint(desktop){
+                        padding-bottom: 1.5rem;
+                        letter-spacing: 0.04em;
+                        line-height: 2.1rem;
+                    }
+                    &:nth-of-type(2){
+                        padding-bottom: 2.7rem;
+                        @include breakpoint(desktop){
+                            padding-bottom: 1.5rem;
+                        }
+                    }
+                    &:nth-of-type(4){
+                        padding-bottom: 2.3rem;
+                        @include breakpoint(desktop){
+                            padding-bottom: 1.6rem;
+                        }
+                    }
+
+                    span{
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: counter(detail) "";
+                            counter-increment: detail;
+                            font-family: $raleway;
+                            color: $black;
+                            font-weight: 800;
+                            margin-left: -6.5rem;
+                            font-size: 3rem;
+                            top: -0.6rem;
+                            @include breakpoint(desktop){
+                                font-size: 2.5rem;
+                                top: -0.3rem;
+                            }
+                        }
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            background-color: $dark-grey;
+                            width: 2.8rem;
+                            height: 1px;
+                            left: -4.4rem;
+                            top: 2.3rem;
+                            @include breakpoint(desktop){
+                                left: -4.8rem;
+                                top: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__about{
+            position: relative;
+            padding-left: 4rem;
+            padding-right: 2.1rem;
+            @include breakpoint(desktop){
+                padding-left: 8.3rem;
+                padding-right: 31.1rem;
+            }
+
+            &__content{
+                position: relative;
+
+
+            }
+            &__title{
+                position: relative;
+                font-weight: 800;
+                letter-spacing: 0.045em;
+                padding-bottom: 4rem;
+                @include breakpoint(desktop){
+                    font-weight: 900;
+                    letter-spacing: 0.053em;
+                    padding-bottom: 2rem;
+                    font-size: 2.2rem;
+                }
+
+            }
+            &__text{
+                position: relative;
+                padding-bottom: 4rem;
+                @include breakpoint(desktop){
+                    padding-bottom: 4.8rem;
+                    font-size: 1.3rem;
+                    letter-spacing: 0.024em;
+                    &--last{
+                        padding-bottom: 4.1rem;
+                    }
+                }
+
+                &--warning{
+                    position: relative;
+                    padding-top: 2.6rem;
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    letter-spacing: 0.04em;
+                    line-height: 3rem;
+                    @include breakpoint(desktop){
+                        padding-top: 0;
+                        font-size: 1.2rem;
+                        letter-spacing: 0.077em;
+                        padding-bottom: 4.8rem;
+                    }
+                }
+            }
+            &__social{
+                position: relative;
+                margin: 4.4rem 0 0 0;
+                max-width: 60.4%;
+                padding-bottom: 8.9rem;
+                @include breakpoint(desktop){
+                    margin: 0;
+                    right: 0;
+                    left: 0.3rem;
+                    top: -0.6rem;
+                    justify-content: flex-start;
+                }
+
+                &__field{
+                    position: relative;
+                    width: 7.7rem;
+                    height: 7.7rem;
+                    @include breakpoint(desktop){
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+
+                    &__icon{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+
+                        svg{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            &__tags{
+                position: relative;
+                display: flex;
+                width: 100%;
+                padding-bottom: 23rem;
+                &__tag{
+                    position: relative;
+                    font-family: $raleway;
+                    font-size: 2.5rem;
+                    color: $white;
+                    line-height: 3rem;
+                    background-color: $dark-grey;
+                    margin-right: 1.3rem;
+                    // min-width: 16.2rem;
+                    text-align: center;
+                    border-radius: 2rem;
+                    letter-spacing: 0.033em;
+                    span{
+                        font-weight: 800;
+                        padding-left: 2.7rem;
+                        padding-right: 3.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

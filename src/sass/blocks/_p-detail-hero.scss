@@ -1,13 +1,23 @@
 .p-detail-hero{
     position: relative;
+    padding-bottom: 4.5rem;
     @include breakpoint(desktop){
         padding-top: 15.2rem;
+        padding-bottom: 4.2rem;
     }
     &__content{
         position: relative;
         @include breakpoint(desktop){
             display: flex;
             flex-direction: row-reverse;
+            &::before{
+                position: absolute;
+                content: "";
+                background-color: $black;
+                width: 100%;
+                height: 39.6rem;
+                top: 0;
+            }
         }
     }
     &__visual{
@@ -27,6 +37,13 @@
                 height: 100%;
             }
 
+        }
+    }
+    &-about{
+        display: flex;
+        flex-direction: column;
+        @include breakpoint(desktop){
+            flex-direction: column-reverse;
         }
     }
     &__intro{
@@ -98,18 +115,22 @@
     &__social{
         position: relative;
         max-width: 54.5%;
-        margin-left: 4rem;
+        // margin-left: 4rem;
+        margin: 0 0 0 4rem;
         padding-bottom: 0;
         @include breakpoint(desktop){
-            right: 0;
+            right: 15.5rem;
+            max-width: 100%;
+            margin: 0;
+            top: -3.2rem;
         }
         &__field{
             position: relative;
             width: 7.6rem;
             height: 7.6rem;
             @include breakpoint(desktop){
-                width: 2.6rem;
-                height: 2.6rem;
+                width: 2.5rem;
+                height: 2.5rem;
             }
             &__icon{
                 position: relative;
