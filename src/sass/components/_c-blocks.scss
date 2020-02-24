@@ -55,3 +55,32 @@
         }
     }
 }
+
+.c-list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 5.8rem;
+    @include breakpoint(desktop){
+        width: 79%;
+        margin: auto;
+        padding-bottom: 8rem;
+    }
+    &__article{
+        width: 42.8%;
+        padding-bottom: 4.9rem;
+        @include breakpoint(desktop){
+            width: 29.6%;
+            padding-bottom: 2.3rem;
+            &--first-desk{
+                margin-left: 2.1rem;
+            }
+        }
+        &--left{
+            margin-right: 1.3rem;
+        }
+    }
+}

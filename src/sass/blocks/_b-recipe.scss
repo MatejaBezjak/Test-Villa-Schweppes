@@ -1,4 +1,7 @@
 .b-recipe{
+    @include breakpoint(desktop){
+    padding-bottom: 8.6rem;
+    }
     &__intro{
         position: relative;
         padding-left: 4rem;
@@ -407,7 +410,7 @@
             padding-right: 2.1rem;
             @include breakpoint(desktop){
                 padding-left: 8.3rem;
-                padding-right: 31.1rem;
+                padding-right: 32.1rem;
             }
 
             &__content{
@@ -422,9 +425,9 @@
                 padding-bottom: 4rem;
                 @include breakpoint(desktop){
                     font-weight: 900;
-                    letter-spacing: 0.053em;
-                    padding-bottom: 2rem;
-                    font-size: 2.2rem;
+                    letter-spacing: 0.047em;
+                    padding-bottom: 2.1rem;
+                    font-size: 2.4rem;
                 }
 
             }
@@ -433,10 +436,10 @@
                 padding-bottom: 4rem;
                 @include breakpoint(desktop){
                     padding-bottom: 4.8rem;
-                    font-size: 1.3rem;
-                    letter-spacing: 0.024em;
+                    font-size: 1.64rem;
+                    letter-spacing: 0.033em;
                     &--last{
-                        padding-bottom: 4.1rem;
+                        padding-bottom: 4rem;
                     }
                 }
 
@@ -449,9 +452,10 @@
                     line-height: 3rem;
                     @include breakpoint(desktop){
                         padding-top: 0;
-                        font-size: 1.2rem;
-                        letter-spacing: 0.077em;
+                        font-size: 1.6rem;
+                        letter-spacing: 0.042em;
                         padding-bottom: 4.8rem;
+                        margin-left: 0.2rem;
                     }
                 }
             }
@@ -466,6 +470,7 @@
                     left: 0.3rem;
                     top: -0.6rem;
                     justify-content: flex-start;
+                    padding-bottom: 4rem;
                 }
 
                 &__field{
@@ -494,22 +499,61 @@
                 display: flex;
                 width: 100%;
                 padding-bottom: 23rem;
+                // &__tag{
+                //     position: relative;
+                //     font-family: $raleway;
+                //     font-size: 2.4rem;
+                //     color: $white;
+                //     line-height: 5rem;
+                //     background-color: $dark-grey;
+                //     margin-right: 1.2rem;
+                //     // min-width: 16.2rem;
+                //     text-align: center;
+                //     border-radius: 2rem;
+                //     letter-spacing: 0.057em;
+                //     padding-left: 3.2rem;
+                //     padding-right: 3.2rem;
+                //     span{
+                //         font-weight: 700;
+                //         display: contents;
+                //         // padding-left: 2.7rem;
+                //         // padding-right: 3.7rem;
+                //     }
+                // }
+                @include breakpoint(desktop){
+                    padding-bottom: 6.3rem;
+                }
                 &__tag{
                     position: relative;
-                    font-family: $raleway;
-                    font-size: 2.5rem;
-                    color: $white;
-                    line-height: 3rem;
-                    background-color: $dark-grey;
-                    margin-right: 1.3rem;
-                    // min-width: 16.2rem;
-                    text-align: center;
-                    border-radius: 2rem;
-                    letter-spacing: 0.033em;
-                    span{
-                        font-weight: 800;
-                        padding-left: 2.7rem;
-                        padding-right: 3.7rem;
+                    @include breakpoint(desktop){
+                        padding-left: 0.3rem;
+                        padding-right: 0.3rem;
+                    }
+                    &__link{
+                        font-weight: 700;
+                        position: relative;
+                        font-family: $raleway;
+                        font-size: 2.47rem;
+                        color: $white;
+                        line-height: 5.1rem;
+                        background-color: $dark-grey;
+                        // margin-right: 1.2rem;
+                        // min-width: 16.2rem;
+                        text-align: center;
+                        border-radius: 2rem;
+                        letter-spacing: 0.017em;
+                        padding-left: 2.5rem;
+                        padding-right: 2.5rem;
+                        // min-width: 16.3rem;
+                        max-width: 19.3rem;
+                        display: block;
+                        @include breakpoint(desktop){
+                            font-size: 1.4rem;
+                            line-height: 2.8rem;
+                            border-radius: 1rem;
+                            padding-left: 1.5rem;
+                            padding-right: 1.5rem;
+                        }
                     }
                 }
             }

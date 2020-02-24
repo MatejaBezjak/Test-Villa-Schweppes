@@ -1,0 +1,94 @@
+.b-derniers{
+    @include breakpoint(desktop){
+        padding-left: 22.9rem;
+    }
+    position: relative;
+    &__intro{
+        position: relative;
+        @include breakpoint(desktop){
+            padding-left: 1.3rem;
+        }
+        &__title{
+            display: block;
+            position: relative;
+            font-size: 5.2rem;
+            @include breakpoint(desktop){
+                font-size: 5.5rem;
+            }
+            &__first-row{
+                display: block;
+                position: relative;
+
+            }
+            &__second-row{
+                position: relative;
+                display: block;
+                @include breakpoint(desktop){
+                    top: -1.3rem;
+                    left: 2.8rem;
+                }
+
+            }
+            &__third-row{
+                position: relative;
+                display: block;
+                @include breakpoint(desktop){
+                    font-size: 2.3rem;
+                    top: -1.3rem;
+                    left: 2.3rem;
+                }
+
+            }
+        }
+    }
+    &__articles{
+        position: relative;
+        @include breakpoint(desktop){
+            justify-content: left;
+            width: 100%;
+            // padding-left: 22.9rem;
+            margin-top: -3.6rem;
+        }
+    }
+    &__article{
+        position: relative;
+        @include breakpoint(desktop){
+            width: 18.9%;
+            margin-right: 2.2rem;
+            &:nth-of-type(1){
+                margin-top: 4.8rem;
+            }
+        }
+        &__visual{
+            position: relative;
+            width: 27.1rem;
+            height: 27.8rem;
+            @include breakpoint(desktop){
+                width: 23rem;
+                height: 23.6rem;
+            }
+            &__img{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
+        }
+        &__text{
+            position: relative;
+            color: $black;
+            p{
+                position: relative;
+
+            }
+        }
+        &__date{
+            position: relative;
+
+        }
+    }
+}
