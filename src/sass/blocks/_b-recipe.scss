@@ -369,12 +369,14 @@
                             font-family: $raleway;
                             color: $black;
                             font-weight: 800;
-                            margin-left: -6.5rem;
-                            font-size: 3rem;
+                            margin-left: -6.6rem;
+                            font-size: 2.8rem;
                             top: -0.6rem;
                             @include breakpoint(desktop){
-                                font-size: 2.5rem;
-                                top: -0.3rem;
+                                font-size: 2.4rem;
+                                top: -0.2rem;
+                                font-weight: 700;
+                                margin-left: -6.8rem;
                             }
                         }
                         &::after{
@@ -397,7 +399,7 @@
         &__about{
             position: relative;
             padding-left: 4rem;
-            padding-right: 2.1rem;
+            padding-right: 3.1rem;
             @include breakpoint(desktop){
                 padding-left: 8.3rem;
                 padding-right: 33.9rem;
@@ -408,13 +410,11 @@
             }
             &__title{
                 position: relative;
-                font-weight: 800;
+                font-weight: 700;
                 letter-spacing: 0.045em;
                 padding-bottom: 4rem;
                 @include breakpoint(desktop){
-                    font-weight: 900;
-                    letter-spacing: 0.03em;
-
+                    letter-spacing: 0.05em;
                     padding-bottom: 2.1rem;
                     font-size: 2.4rem;
                 }
@@ -425,8 +425,8 @@
                 padding-bottom: 4rem;
                 @include breakpoint(desktop){
                     padding-bottom: 4.8rem;
-                    font-size: 1.2rem;
-                    letter-spacing: 0.07em;
+                    font-size: 1.6rem;
+                    letter-spacing: 0.04em;
                     font-weight: 500;
                     &--last{
                         padding-bottom: 4rem;
@@ -442,10 +442,11 @@
                     line-height: 3rem;
                     @include breakpoint(desktop){
                         padding-top: 0;
-                        font-size: 1.2rem;
-                        letter-spacing: 0.074em;
+                        font-size: 1.5rem;
+                        letter-spacing: 0.079em;
                         padding-bottom: 4.8rem;
                         margin-left: 0.2rem;
+                        font-weight: 700;
                     }
                 }
             }
@@ -476,7 +477,7 @@
                         position: relative;
                         width: 100%;
                         height: 100%;
-
+                        cursor: pointer;
                         svg{
                             width: 100%;
                             height: 100%;
@@ -504,19 +505,19 @@
                         font-weight: 700;
                         position: relative;
                         font-family: $raleway;
-                        font-size: 2.47rem;
+                        font-size: 2.4rem;
                         color: $white;
                         line-height: 5.1rem;
                         background-color: $dark-grey;
                         text-align: center;
                         border-radius: 2rem;
-                        letter-spacing: 0.017em;
+                        letter-spacing: 0.05em;
                         padding-left: 2.5rem;
                         padding-right: 2.5rem;
                         max-width: 19.3rem;
                         display: block;
                         @include breakpoint(desktop){
-                            font-size: 1.4rem;
+                            font-size: 1.3rem;
                             line-height: 2.8rem;
                             border-radius: 1rem;
                             padding-left: 1.5rem;
@@ -534,3 +535,17 @@
         }
     }
 }
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .b-recipe__info-ingredients__details { 
+        position: relative;
+        width: 100%;
+        padding-left: 2.8rem;
+        padding-right: 2.8rem; 
+        @include breakpoint(desktop){
+            padding-left: 9.5rem;
+            padding-right: 12.5rem;
+        }
+    }
+}}
