@@ -332,6 +332,7 @@
                 position: relative;
                 padding-left: 10.6rem;
                 width: 95%;
+                counter-reset: numbers;
                 @include breakpoint(desktop){
                     padding-left: 21.6rem;
                     width: 76%;
@@ -363,8 +364,8 @@
                         position: relative;
                         &::before{
                             position: absolute;
-                            content: counter(detail) "";
-                            counter-increment: detail;
+                            content: counter(numbers) "";
+                            counter-increment: numbers;
                             font-family: $raleway;
                             color: $black;
                             font-weight: 800;
