@@ -73,7 +73,6 @@
                 padding-bottom: 0.2rem;
                 line-height: 4.4rem;
                 padding-left: 0;
-                // font-weight: 400;
             }
 
         }
@@ -87,7 +86,7 @@
             @include breakpoint(desktop){
                 letter-spacing: 0.04em;
                 line-height: 1.5rem;
-                font-weight: 400;
+                font-weight: 600;
                 padding-left: 0;
                 margin-top: 1.7rem;
             }
@@ -115,7 +114,6 @@
     &__social{
         position: relative;
         max-width: 54.5%;
-        // margin-left: 4rem;
         margin: 0 0 0 4rem;
         padding-bottom: 0;
         @include breakpoint(desktop){

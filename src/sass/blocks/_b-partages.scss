@@ -1,0 +1,312 @@
+.b-partages{
+    position: relative;
+    &__intro{
+        position: relative;
+        padding-top: 17rem;
+        padding-left: 9.6rem;
+        padding-bottom: 6.2rem;
+        @include breakpoint(desktop){
+            padding-top: 8.4rem;
+            padding-left: 14.1rem;
+            padding-bottom: 0;
+        }
+        &__title{
+            position: relative;
+            font-size: 7.9rem;
+            color: $black;
+            @include breakpoint(desktop){
+                font-size: 7.1rem;
+            }
+            &__first-row{
+                position: relative;
+                display: inline-block;
+                top: -1rem;
+                letter-spacing: 0.02em;
+                @include breakpoint(desktop){
+                    padding-left: 7.9rem;
+                }
+            }
+            &__second-row{
+                position: relative;
+                font-size: 12.02rem;
+                top: -3.6rem;
+                left: -1rem;
+                @include breakpoint(desktop){
+                    font-size: 10.4rem;
+                    top: -3.3rem;
+                }
+            }
+            &__third-row{
+                position: relative;
+                font-size: 12.8rem;
+                top: -5.6rem;
+                left: 0.7rem;
+                @include breakpoint(desktop){
+                    font-size: 11.1rem;
+                    top: -5rem;
+                    left: 8.6rem;
+                    display: block;
+                }
+            }
+        }
+    }
+    &__articles{
+        position: relative;
+        padding-bottom: 3rem;
+        padding-left: 3.9rem;
+        padding-right: 4.1rem;
+        @include breakpoint(desktop){
+            padding: 4.3rem 9rem 6.1rem 11rem;
+        }
+        &--left{
+            position: relative;
+            @include breakpoint(desktop){
+                width: 50%;
+            }
+            &__content{
+                position: relative;
+                @include breakpoint(desktop){
+                    width: 100%;
+                    padding-left: 3.4rem;
+                }
+            }
+            &__visual{
+                position: relative;
+                width: 56rem;
+                height: 32.7rem;
+                @include breakpoint(desktop){
+                    width: 50.2rem;
+                    height: 33.2rem;
+                    cursor: pointer;
+                }
+                &::after{
+                    width: 56rem;
+                    top: -4.2rem;
+                    height: 4.2rem;
+                    left: 0;
+                    z-index: 0;
+                    @include breakpoint(desktop){
+                        width: 50.2rem;
+                        height: 3rem;
+                        top: -3rem;
+                        z-index: -1;
+                    }
+                }
+                &__img{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+
+                    }
+                }
+            }
+            &__text{
+                position: relative;
+                width: 81%;
+                top: 100%;
+                padding-left: 3.7rem;
+                color: $black;
+                letter-spacing: 0.007em;
+                padding-bottom: 1.8rem;
+                font-size: 2.8rem;
+                padding-top: 2.4rem;
+                line-height: 3.3rem;
+                @include breakpoint(desktop){
+                    position: absolute;
+                    font-size: 1.8rem;
+                    width: 63%;
+                    top: 94%;
+                    padding-left: 4.9rem;
+                    line-height: 2.7rem;
+                }
+                p{
+                    padding-top: 0.4rem;
+                    font-weight: 500;
+                }
+            }
+            &__tag{
+                position: relative;
+                font-size: 2.4rem;
+                color: $light;
+                @include breakpoint(desktop){
+                    font-size: 1.3rem;
+                    top: 0.4rem;
+                    left: 0.2rem;
+                    letter-spacing: 0.002em;
+                }
+            }
+            &__date{
+                position: relative;
+                font-size: 2.3rem;
+                top: 0.7rem;
+                letter-spacing: 0.028em;
+                font-weight: 500;
+                color: $light;
+                @include breakpoint(desktop){
+                    font-size: 1.2rem;
+                    top: -0.4rem;
+                    letter-spacing: 0.024em;
+                    left: 0.1rem;
+                }
+            }
+        }
+        &--right{
+            position: relative;
+            @include breakpoint(desktop){
+                padding-right: 8.2rem;
+                margin-top: -18rem;
+            }
+            &__content{
+                position: relative;
+                @include breakpoint(desktop){
+                    margin-bottom: 2.7rem;
+                }
+            }
+            &__visual{
+                position: relative;
+                width: 56rem;
+                height: 41.4rem;
+                @include breakpoint(desktop){
+                    width: 48.2rem;
+                    height: 30.7rem;
+                    cursor: pointer;
+                }
+                &__img{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            &__text{
+                position: absolute;
+                width: 81%;
+                padding-left: 6.8rem;
+                top: 48.6%;
+                line-height: 1.2em;
+                letter-spacing: 0.008em;
+                z-index: 1;
+                @include breakpoint(desktop){
+                    width: 75%;
+                    top: 60.7%;
+                    padding-left: 4.2rem;
+                    line-height: 2.7rem;
+                    &--last{
+                        top: 60.5%;
+                    }
+                }
+                p{
+                    padding-top: 0.3rem;
+                    letter-spacing: 0.005em;
+                }
+            }
+            &__tag{
+                position: relative;
+                font-size: 2.4rem;
+                color: $yellow;
+                @include breakpoint(desktop){
+                    font-size: 1.3rem;
+                    top: 0.5rem;
+                    letter-spacing: -0.03em;
+                }
+            }
+            &__date{
+                position: relative;
+                font-size: 2.3rem;
+                top: 0.2rem;
+                letter-spacing: 0.028em;
+                font-weight: 500;
+                @include breakpoint(desktop){
+                    font-size: 1.3rem;
+                    top: -0.1rem;
+                    letter-spacing: -0.03em;
+                }
+            }
+        }
+    }
+    &__second-list{
+        position: relative;
+        &__articles{
+            position: relative;
+        }
+        &__article{
+            position: relative;
+            &__visual{
+                position: relative;
+                width: 27.3rem;
+                height: 20.3rem;
+                cursor: pointer;
+                @include breakpoint(desktop){
+                    width: 31.6rem;
+                    height: 23.5rem;
+                }
+                &__img{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            &__text{
+                position: relative;
+                color: $white;
+                font-size: 2.8rem;
+                padding-top: 1.6rem;
+                padding-left: 1.2rem;
+                line-height: 3.4rem;
+                @include breakpoint(desktop){
+                    font-size: 1.6rem;
+                    line-height: 2.3rem;
+                    width: 78%;
+                    padding-top: 1.32rem;
+                    padding-left: 2.4rem;
+                    letter-spacing: 0.006em;
+                    &--second{
+                        padding-left: 1.8rem;
+                    }
+                    &--third{
+                        padding-left: 1.5rem;
+
+                    }
+                }
+                p{
+                    padding-top: 0.4rem;
+                    letter-spacing: 0.005em;
+                    font-weight: 500;
+                }
+            }
+            &__tag{
+                position: relative;
+                font-size: 2.4rem;
+                color: $light;
+                // padding-left: 0.3rem;
+                @include breakpoint(desktop){
+                    font-size: 1.3rem;
+                    top: 0.5rem;
+                    letter-spacing: -0.03em;
+                }
+            }
+            &__date{
+                position: relative;
+                font-size: 2.4rem;
+                top: 1rem;
+                letter-spacing: 0.031em;
+                color: $light;
+                @include breakpoint(desktop){
+                    font-size: 1.3rem;
+                    top: -0.1rem;
+                    letter-spacing: -0.03em;
+                }
+            }
+        }
+    }
+}

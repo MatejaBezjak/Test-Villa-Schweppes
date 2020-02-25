@@ -163,7 +163,7 @@
     }
 }
 
-.b-header__logo--mixopogie-p{
+.b-header__logo--mixopogie-p, .b-header__logo--detail-p{
     @include breakpoint(desktop){
         cursor: pointer;
     }

@@ -84,3 +84,24 @@
         }
     }
 }
+
+.c-inline{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @include breakpoint(desktop){
+        margin-left: 1rem;
+        padding-bottom: 7.2rem;
+    }
+    &__article{
+        position: relative;
+            width: 42.7%;
+            margin: 0 0.6rem;
+            max-width: 100%;
+            @include breakpoint(desktop){
+                width: 23.3%;
+                margin: 0;
+            }
+    }
+}
