@@ -24,12 +24,15 @@
         // padding: 4.8rem 4rem 1rem 4.7rem;
         padding-left: 4.7rem;
         padding-right: 4rem;
+        max-width: 64rem;
+        margin: auto;
 
         @include breakpoint(desktop){
             align-items: flex-start;
             // padding: 3.7rem 6.1rem 0 9.2rem;
             padding-left: 9.2rem;
             padding-right: 6.1rem;
+            max-width: 144rem;
 
         }
     }
@@ -86,12 +89,12 @@
                     transform: rotate(12deg);
                     left: 2.2rem;
                 }
-                &:hover{
-                    height: 100%;
-                    width: 100%;
-                    color: $yellow;
-                    transition: all 0.3s linear;
-                }
+                // &:hover{
+                //     height: 100%;
+                //     width: 100%;
+                //     color: $yellow;
+                //     transition: all 0.3s linear;
+                // }
                 span{
                     font-weight: 500;
                     cursor: pointer;
